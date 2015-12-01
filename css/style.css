@@ -181,8 +181,8 @@ position:absolute;
 top:220px;
  width:85%;
 
- overflow-y:auto;
- height: calc(100% + -220px);
+ //overflow-y:auto;
+ //height: calc(100% + -220px);
 }
 
 
