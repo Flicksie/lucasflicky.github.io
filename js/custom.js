@@ -1,5 +1,3 @@
-<script>
-
 var backForth = 0;
 var active = ".nav-1"
 	//-------------HOVER---------------//
