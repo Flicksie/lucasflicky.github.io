@@ -1,10 +1,23 @@
 
 
-<html>
+<html class="prelod">
 	<head>
 		<title>Lucas Flicky - Multimedia Artist</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
+		<style>
+		.prelod div#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #222 url('images/load.gif') no-repeat center center; }
+		</style>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script>
+		jQuery(document).ready(function($) {  
+$(window).load(function(){
+	$('#preloader').fadeOut('slow',function(){$(this).remove();});
+});
+});
+		</script>
+		
+		
 		<link rel="shortcut icon" href="images/favicon.png">
 		<link rel="icon" type="image/png" id="favicon" href="images/favicon.png">
 		<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
@@ -12,11 +25,12 @@
 		<link href="css/grid_16.css" rel="stylesheet" async>
 		<link href="css/comingSoon.css" rel="stylesheet" async>
 		<link href="css/ResponsiveShit.css" rel="stylesheet" async>
-		<script type="text/javascript" src="js/jquery.js"></script>
+		
 		<script src="js/main.js"></script>		
 		<script src="js/imgload.js"></script>		
 	</head>
 	<body>
+	 <div id="preloader"></div>
 		<div id="redrestrain">
 			<p>Lorem ipsum dolor sit amet, homero facilisi iudicabit cu sit. Has te alii magna numquam, essent habemus gloriatur ei ius, nec paulo veniam no. Etiam solet deterruisset in vim, et illum suscipiantur qui. Sonet zril noluisse eam te, eum ex eius legere rationibus.</p>
 		</div>
