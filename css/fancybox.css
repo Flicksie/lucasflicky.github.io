@@ -141,12 +141,23 @@
 
 .fancybox-prev span {
 	left: 10px;
-	background-position: 0 -36px;
+background: transparent url("../assets/arrw.png") repeat scroll 0px 0px;
+width: 63px;
+height: 63px;
+	TRANSFORM: SCALE(.5);
+		opacity:0.6;
 }
 
 .fancybox-next span {
 	right: 10px;
-	background-position: 0 -72px;
+background: transparent url("../assets/arrw.png") repeat scroll 0px -63px;
+background-color:rgba(0,0,0,0.3);
+	width: 63px;
+height: 63px;
+	TRANSFORM: SCALE(.5);
+		opacity:0.6;
+	border-radius:100%;
+box-shadow:0 0px 5px 5px rgba(0,0,0,.3);
 }
 
 .fancybox-nav:hover {

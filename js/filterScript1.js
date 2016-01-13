@@ -67,7 +67,7 @@ $.Isotope.prototype._masonryGetContainerSize = function() {
 $(window).load(function(){
 
 
-var $container = $('.projects');
+var $container = $('.projectsa');
 
   $container.isotope({
 	itemSelector : '.element',
@@ -110,6 +110,7 @@ var $container = $('.projects');
 	$( "#filters li a" ).click(function() {
 		currentTitle1.empty();
 		currentTitle1.append($(this).text());
+		$('#filterbck').animate({scrollTop: '0'},1000);
 	});
 
 		   $( "#close_affil" ).click(function() {

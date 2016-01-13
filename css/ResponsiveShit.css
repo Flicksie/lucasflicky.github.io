@@ -1,0 +1,195 @@
+
+
+@media screen and (max-width: 768px){
+
+.navbar{
+
+border-top: solid #F63636 3px;
+height:35px;
+box-shadow:0 5px 8px 0 rgba(0,0,0,.4);
+}
+
+.navbar ul{
+float:left;
+padding: 0 10px;
+}
+
+.navbar ul li{
+
+margin: 0 -2px;
+
+}
+
+.navbar ul li a{
+
+padding: 0 15px;
+font-size: 16;
+width: 65px;
+line-height:35px;
+
+}
+.thisDies{
+display:none !important;
+}
+.thisLives{
+display:inline-block !important;
+}
+   .red{
+     transition: width 500ms ease 0s;
+     
+   }
+  #landing{
+
+   }
+} /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  720 */
+
+@media screen and (max-width: 680px){
+
+.nav-110{
+display:inline-block !important;
+}
+
+.menuitem{
+display:none !important;
+}
+
+#landing{
+//opacity:0 !important;  
+
+top:90%;
+left:0% !important;
+
+}
+  .red
+  {
+    width: 100%;}
+  
+.container{
+  width: 100%;
+  
+}
+
+  #options{padding:95px 0;}
+  #options ul{width: 111px; margin:0;float: right}
+  #options li{margin: 2px; height:26px;width:95px;}
+  #options li a{font-size: 12}
+  #filterbck{width: 100% !important; height:calc(100% + -60px)!important;;top: 60px !important;}
+  .blockelement{
+    
+    width:70%;
+    padding:1px;
+    margin:0 4px;
+    background: darkred;
+  }
+  .navbar .wsite-menu-item{font-size: 14;}
+  .menuitem {width:20%;padding:0;margin:2px;}
+  .navbar ul li{margin: 0 2px; float:left;}
+  .navbar ul li a{
+  padding: 1px;
+  width: 100%;
+  line-height:25px;
+  }
+  .nav-0 {width:80px;margin-right:12px !important;}
+  .nav-0 a{margin-top: -28px; font-size:16 !important;}
+  .navbar{
+  border-top: solid #F63636 3px;
+  height:50px;
+  box-shadow:0 5px 8px 0 rgba(0,0,0,.4);
+  }
+  .header-red{
+height:100px;
+}
+.title{visibility: hidden;}
+
+  
+} /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  320 */
+
+
+
+@media (min-width: 1621px) {
+
+    .flk-contact .col.form { width: 61.75%; margin-left: 0 }
+    .flk-contact .col.details { width: 31.875%; margin-left: 5.375%; margin-right: 0 }
+    .flk-contact form .col:first-child { width: 43.625%; margin-left: 0; margin-right: 2%; }
+    .flk-contact form .col:first-child + .col { width: 50%; margin-left: 2%; margin-right: 0 }
+    .flk-contact form textarea { width:80em; height: 24.6em; }
+
+ 
+ 
+}
+
+@media (min-width: 1221px) and (max-width: 1620px) {
+
+    body { font-size: 0.938em }
+   
+    .flk-contact .col.form { width: 100%; margin-left: 0 }0
+    .flk-contact .col.details { width: 31.875%; margin-left: 3%; margin-right: 0 }
+    .flk-contact form .col:first-child { width: 45.625%; margin: 2% 1% -110 0 }
+    .flk-contact form .col:first-child + .col { width: 50%; margin: 2% 0 -110 0 }
+    .flk-contact form textarea {  width:100%;height: 15.6em; }
+
+
+
+}
+
+@media (min-width: 821px) and (max-width: 1220px) {
+
+    body { font-size: 0.875em } 
+
+
+    .flk-contact .col.form { margin: 0 11.5% 0 0; width: 47%; }
+    .flk-contact .col.details { margin: 0 0 0 1.5%; width: 37%; }
+    .flk-contact .col + .col .formInput {margin-top: 2em !important;}
+    .flk-contact form .col:first-child { width: 100%; margin: 0; }
+    .flk-contact form .col:first-child + .col { width: 100%; margin: 0; }
+    .flk-contact textarea { height: 15em; }
+
+
+
+}
+
+
+
+
+@media (max-width: 1220px) {
+
+body {   font-size: 0.75em; }
+
+      .flk-contact .col.form { width: 100%; margin-left: 0 }
+    #contactw{width:100%;margin-top:-5em;height:100%}
+.txtbox{margin:11em 5px;padding: 5px;}
+#redanim, #bluanim{display:none}
+
+
+.up{
+  position: absolute; 
+  margin:  6.5em 0 0 5 ;
+    right:1em;
+  transform: scale(.5)rotate(-90deg);
+  z-index: 9999;
+}
+ .flk-contact textarea { height: 10em; }
+
+
+}
+
+@media (max-width: 800px) {
+
+body {   font-size: 0.75em; }
+.major{display:none;}
+    #contactw{width:100%;margin-top:-5em;height:100%}
+.txtbox{margin:11em 5px;padding: 5px;}
+#redanim, #bluanim{display:none}
+
+
+.up{
+  position: absolute; 
+  margin:  6.5em 0 0 5 ;
+    right:1em;
+  transform: scale(.5)rotate(-90deg);
+  z-index: 9999;
+}
+ .flk-contact textarea { height: 10em; }
+
+
+}

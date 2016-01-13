@@ -5,12 +5,18 @@
 
 body{
 background:#050505;
-font-family:Oswald;
+font-family:Oswald Regular;
 }
 
 a{
 text-decoration:none;
 }
+
+li :nth-child(2){
+
+background:blue!important;
+}
+
 .blockelement .svge{
 text-decoration:none;
 color:rgba(255,255,255,0);
@@ -28,8 +34,9 @@ transition: all 500ms ease;
 
 
 
+
 /* background of our portfolio items */
-.projects{
+.projectsa{
     width: 100% !important;
 	
     margin: auto;
@@ -41,7 +48,16 @@ transition: all 500ms ease;
     padding: 10px;
     text-align:right;
     width: 100%;
-    margin: 20px auto 35px;
+
+	margin-top:5px;
+	
+
+
+box-sizing: border-box;
+height: 140px;
+	
+	
+	
     //text-align: center;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -50,21 +66,26 @@ transition: all 500ms ease;
 
 #filters li {
     display:inline-block;
-    margin-right: 10px;
-	width:80px;
+		margin-top:2px;
+  //  margin-right: 10px;
+	width:125px;
+	//float:left;
 }
 
 /* the filter options */
 #filters li a {
+
+font-family: inherit;
+font-weight: 300;
+line-height: 18px;
+color: #a55;
+font-size: 15px;
     margin:0;
-    font-family:inherit;
-    font-weight:300;
-    line-height:26px;
     padding: 5px 10px;
     display:block;
     color: #522; 
     font-size: 16px;
-    background: #a62626; 
+    background: #862626; 
     -webkit-border-radius: 3px;
        -moz-border-radius: 3px;
             border-radius: 3px;
@@ -81,10 +102,10 @@ transition: all 500ms ease;
 
 
 .blockelement{
-    width:33%;
-    min-height: 50px;
+    width:25%;
+    height: auto;
     background: rgba(20,20,30,0.5);
-    margin: 0px;
+    margin: 0;
     padding: 0px;
     height: auto;
     background: #f9fafb;
@@ -327,6 +348,20 @@ h2#current-title1:before{
     width: 200px;
   }
   
+}
+
+
+@media screen and (min-width:1800px){
+.blockelement{
+    width:19% !important;
+    height: auto;
+    background: rgba(20,20,30,0.5);
+    margin: 0;
+    padding: 0px;
+    height: auto;
+    background: #f9fafb;
+	
+}
 }
 
 /*--------------------------------------------------------------
