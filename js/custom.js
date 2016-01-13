@@ -29,7 +29,9 @@ $('#blue').on('mouseover', function(e) {
 
 function undo(col,lv){
 	
-	
+dismissRed();
+dismissBlue();
+
 if (col=='red'){
     $('#visual').css('pointer-events', 'none');
     $('#audio').css('pointer-events', 'auto');
@@ -64,6 +66,9 @@ $('#blue').on('click', function(e) {
     $('.nav-0').addClass('ativo');
 	$(document.body).animate({scrollTop: '0'},500);
 anime_out()
+callBlue()
+
+
 });
 
 $('#red').on('click', function(e) {	
@@ -86,6 +91,7 @@ allPassive();
     $('.nav-0').addClass('ativo');
 	$(document.body).animate({scrollTop: '0'},500);
 anime_out()
+callRed()
 });	
 
 
@@ -117,6 +123,7 @@ $('#bkred').on('click', function(e) {
     returneRed();
     undo('red');
 	$(document.body).animate({scrollTop: '0'},500);
+
 });
 
 $('#bkblu').on('click', function(e) {	
@@ -144,6 +151,11 @@ $('#bkb').on('click',function(e) {
     function goTo(target){ $(target).animate({top: '5%'},800);};
     function goToL(target){ $(target).animate({right: '0px'},800);};
     function goToP(){ $('#Projects').animate({bottom: '0%'},1000);  };
+	
+	function callBlue()	{ setTimeout("$('#blurestrain').animate({opacity: '1'},600);",1100);}
+	function callRed()	{ setTimeout("$('#redrestrain').animate({opacity: '1'},600);",1100);}
+	function dismissBlue()	{ $('#blurestrain').animate({opacity: '0'},400);}
+	function dismissRed()	{ $('#redrestrain').animate({opacity: '0'},400);}
 
     function returneBlu(){
         backForth < 1 ? firstAlt() : alternates();
@@ -156,6 +168,9 @@ $('#bkb').on('click',function(e) {
         backForth += 1;
         $('body').css('overflow-y', 'hidden');
         setTimeout("document.getElementById('visaud').innerHTML = '';",150);
+		
+		
+		
         active = ".nav-1";
         allPassive();
         $('.nav-1').addClass('ativo');

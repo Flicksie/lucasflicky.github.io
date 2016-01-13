@@ -1,5 +1,26 @@
 
+#redrestrain{
 
+width:13%;
+color: white;
+position:absolute;
+right:1em;
+top:calc(300px + 7% );
+z-index: 10;
+height: calc(83% + -330px);
+opacity:0;
+}
+#blurestrain{
+
+width:13%;
+color: white;
+position:absolute;
+left:1em;
+top:calc(300px + 7% );
+z-index: 10;
+height: calc(83% + -330px);
+opacity:0;
+}
 
 //CHANGE RED
 .navbar{border-top: solid #F63636 5px;}
