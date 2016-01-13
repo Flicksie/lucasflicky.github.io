@@ -345,7 +345,7 @@ return `<table  class="tg" style="table-layout: margin-bottom: 10px; fixed; widt
 			<img class="crestpic" title="`+ category + `" src="images/`+ icon +`">
 		</th>
 	<!-- NAME -->
-		<th align="left" class="name" colspan="3">`+ name.toUpperCase() +`</th> <!-- Espacinho -->
+		<th align="left" class="name" colspan="3">`+ name +`</th> <!-- Espacinho -->
 	<!-- TIER -->
 		<th align="left" class="tiername"><span class="tierlevel">` + category + `</th>
 	</tr>
