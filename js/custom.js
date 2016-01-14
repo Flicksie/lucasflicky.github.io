@@ -216,7 +216,7 @@ $('#bkb').on('click',function(e) {
 	//document.body.scrollTop = 0
 	
     function resetPage(type){
-		dismissRed();
+dismissRed();
 dismissBlue();
 		
     if (type == 'hard'){
@@ -248,6 +248,8 @@ dismissBlue();
 //--------------------------------------------------------------
 
 function allPassive(){
+dismissRed();
+dismissBlue();
 $('.nav-0').removeClass('ativo');
 $('.nav-1').removeClass('ativo');
 $('.menuitem').removeClass('ativo');
