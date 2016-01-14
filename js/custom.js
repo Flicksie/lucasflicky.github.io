@@ -216,6 +216,9 @@ $('#bkb').on('click',function(e) {
 	//document.body.scrollTop = 0
 	
     function resetPage(type){
+		dismissRed();
+dismissBlue();
+		
     if (type == 'hard'){
         returneBlu();
         returneRed();
