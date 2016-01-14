@@ -6,21 +6,31 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
 		<style>
-		.prelod div#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #262626 url('/images/load.gif') no-repeat center center; }
+		.prelod div#preloader {
+			position: fixed;
+			left: 0;
+			top: 0;
+			z-index: 999;
+			width: 100%;
+			height: 100%;
+			display: block;
+			background: #262626 url('./images/load.gif') no-repeat center center; }
 		</style>
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script>
-		jQuery(document).ready(function($) {  
-$(window).load(function(){
-	$('#preloader').fadeOut('slow',function(){$(this).remove();});
-});
-});
+		$(document).ready(function($) {
+			setTimeout(
+				function () {
+					$('#preloader').fadeOut('slow',function(){$(this).remove();});
+				},5000 // 5s
+			);
+		});
 		</script>
-		
+
 <meta http-equiv="Cache-Control" content="cache,store" />
 <meta http-equiv="Pragma" content="cache" />
 <meta http-equiv="Expires" content="80080805884564560" />
-		
+
 		<link rel="shortcut icon" href="images/favicon.png">
 		<link rel="icon" type="image/png" id="favicon" href="images/favicon.png">
 		<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
@@ -28,16 +38,16 @@ $(window).load(function(){
 		<link href="css/grid_16.css" rel="stylesheet" async>
 		<link href="css/comingSoon.css" rel="stylesheet" >
 		<link href="css/ResponsiveShit.css" rel="stylesheet" async>
-		
-		<script   src="js/main.js"></script>		
-		<script async  src="js/imgload.js"></script>		
+
+		<script   src="js/main.js"></script>
+		<script async  src="js/imgload.js"></script>
 	</head>
 	<body>
-	
-	
-	 <div id="preloader" style="background: #262626 url('/images/load.gif') no-repeat center center;  ">_</div>
-	 
-	 
+
+
+	 <div id="preloader"></div>
+
+
 		<div id="redrestrain">
 			<p>Lorem ipsum dolor sit amet, homero facilisi iudicabit cu sit. Has te alii magna numquam, essent habemus gloriatur ei ius, nec paulo veniam no. Etiam solet deterruisset in vim, et illum suscipiantur qui. Sonet zril noluisse eam te, eum ex eius legere rationibus.</p>
 		</div>
@@ -52,7 +62,7 @@ $(window).load(function(){
 					<a  style="font-family:Arial; font-size:22;float:left; position:absolute; top:15px; left:15px" href="#" class="wsite-menu-item">
 					X
 					</a>
-					</li>	
+					</li>
 					<li  >
 					<li>
 						<a  id="home2" href="#lan5ding" class="wsite-menu-item">
@@ -62,22 +72,22 @@ $(window).load(function(){
 					<li  >
 						<a  id="goproj2"  href="#" class="wsite-menu-item">
 						Projects
-						</a>			
+						</a>
 					</li>
 					<li>
 						<a  href="http://www.lucasflicky.com/blog.html" class="wsite-menu-item">
 						Blog
-						</a>			
+						</a>
 					</li>
 					<li>
 						<a id="aboutgo2" class="wsite-menu-item">
 						About
-						</a>			
+						</a>
 					</li>
 					<li  >
 						<a  id="contactgo2" class="wsite-menu-item">
 						Contact
-						</a>			
+						</a>
 					</li>
 					<li>
 						<a  id="visaud2" href="#visaud" class="wsite-menu-item">
@@ -100,22 +110,22 @@ $(window).load(function(){
 				<li  class="menuitem nav-2">
 					<a  id="goproj"  href="#" class="wsite-menu-item">
 					Projects
-					</a>			
+					</a>
 				</li>
 				<li class="menuitem nav-3">
 					<a  href="http://www.lucasflicky.com/blog.html" class="wsite-menu-item">
 					Blog
-					</a>			
+					</a>
 				</li>
 				<li class="menuitem nav-6">
 					<a id="aboutgo" class="wsite-menu-item">
 					About
-					</a>			
+					</a>
 				</li>
 				<li  class="menuitem nav-7">
 					<a  id="contactgo" class="wsite-menu-item">
 					Contact
-					</a>			
+					</a>
 				</li>
 				<li  class="nav-110">
 					<a  id="memenu" href="#" class="wsite-menu-item">
@@ -198,7 +208,7 @@ $(window).load(function(){
 			<style>
 			</style>
 			<div id="filterbck" >
-				<div id="feed-gallery" style="  position: relative; width:100%; !important; " class="projectsa isotope"> 
+				<div id="feed-gallery" style="  position: relative; width:100%; !important; " class="projectsa isotope">
 				</div>
 				<!-- end projects -->
 			</div>
@@ -385,8 +395,8 @@ $(window).load(function(){
 	</body>
 	<script   src="js/jquery_002.js"></script>
 	<script async  src="js/filterScript1.js"></script >
-	<script   src="js/custom.js"></script>	
-	<script async  src="js/snip.js"></script >	
+	<script   src="js/custom.js"></script>
+	<script async  src="js/snip.js"></script >
 	<script src="js/touchSwipe.js"></script >
 	<script src="js/comingSoon.js"></script>
 	<script async  src="js/projects.js"></script >
@@ -394,12 +404,12 @@ $(window).load(function(){
 		var redmoon	 = false;
 		var bluemoon = false;
 		var projota	 = false;
-		
+
 		window.onkeydown = function(key){
-			
-			
+
+
 			if(key.which === 37){
-				
+
 				if (!redmoon && !bluemoon){
 					$('#red').click();
 					redmoon = true;
@@ -408,9 +418,9 @@ $(window).load(function(){
 					bluemoon = false;
 					$('#bkblu').click();
 					}
-		
+
 			}else if(key.which === 39){
-				
+
 				if (!bluemoon && !redmoon){
 					$('#blue').click();
 					bluemoon = true;
@@ -419,15 +429,15 @@ $(window).load(function(){
 					$('#bkred').click();
 					}
 			}else if(key.which === 38){
-				
+
 				!projota ? ($('#goproj').click(), projota = true) : false ;
 			}else if(key.which === 40){
-				
+
 				!projota ?  $('body,html').animate({scrollTop: '0'},0) : ($('#home').click(), projota = false);
 			}
-		
+
 			}
-		
+
 	</script>
 	<!-- 	CSS Last Calls 		-->
 	<link rel="stylesheet" type="text/css" href="css/filter-center-n.css" async>
@@ -435,4 +445,3 @@ $(window).load(function(){
 	<link rel="stylesheet" type="text/css" href="css/table.css" async>
 	<!--						-->
 	<html>
-
