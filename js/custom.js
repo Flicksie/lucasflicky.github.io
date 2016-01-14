@@ -248,8 +248,6 @@ dismissBlue();
 //--------------------------------------------------------------
 
 function allPassive(){
-dismissRed();
-dismissBlue();
 $('.nav-0').removeClass('ativo');
 $('.nav-1').removeClass('ativo');
 $('.menuitem').removeClass('ativo');
@@ -294,7 +292,8 @@ $('#goproj2').on('click',function(e) {
 
 
 $('#home').on('click',function(e) {
-
+dismissRed();
+dismissBlue();
     allPassive();
     $('.nav-1').addClass('ativo');
     resetPage('hard');
@@ -318,7 +317,8 @@ $('#contactgo2').on('click',function(e) {
 });
 
 $('#home2').on('click',function(e) {
-
+dismissRed();
+dismissBlue();
     allPassive();
     $('.nav-1').addClass('ativo');
     resetPage('hard');
