@@ -37,7 +37,7 @@ opacity:0;
 .sublogo{
 	margin-left:1%;
 	color: #AAA;
-	
+	display:none;
 }
 
 //CHANGE RED
@@ -103,7 +103,7 @@ h1.title{font-size:60;color:white;text-shadow: 3px 3px 3px rgba(0,0,0,0.8);margi
 transition: all 500ms ease;
 padding: 0 15px;
 margin:0px;
-width:42%;
+width: 550px;
 height:100%;
 float:right;
 }

@@ -46,9 +46,11 @@ else{
 };
 $('#blue').on('click', function(e) {	
  gotopg("audio");
+ location.hash = "audio";
 });
 $('#red').on('click', function(e) {	
  gotopg("visual");
+  location.hash = "visual";
 });	
 $('#visaud').on('click', function(e) {			
     resetPage('soft');
@@ -66,23 +68,28 @@ $('#bkred').on('click', function(e) {
     returneRed();
     undo('red');
 	$(document.body).animate({scrollTop: '0'},500);
+			location.hash = "";
 });
 $('#bkblu').on('click', function(e) {	
     returneBlu();
+
     undo('blue');
 	$(document.body).animate({scrollTop: '0'},500);
+			location.hash = "";
 });
 $('#bk').on('click',function(e) {
     $(this.parentElement).animate({top: '-100%'},800);  // <--- Global Back Button i hope
     allPassive();
     $(active).addClass('ativo');
 	$(document.body).animate({scrollTop: '0'},500);
+		location.hash = "";
 });
 $('#bkb').on('click',function(e) {
     $(this.parentElement).animate({right: '-100%'},800);  // <--- Global Back Button i hope
     allPassive();
     $(active).addClass('ativo');
 	$(document.body).animate({scrollTop: '0'},500);
+		location.hash = "";
 	
 	
 });$('#bkbpj').on('click',function(e) {
@@ -90,6 +97,7 @@ $('#bkb').on('click',function(e) {
     allPassive();
     $(active).addClass('ativo');
 	$(document.body).animate({scrollTop: '0'},500);
+		location.hash = "";
 });
 //-------------FUNCTIONFEST---------------//
     function firstAlt(){document.getElementById('headline-intro').innerHTML = "Wanna see something else?"};
@@ -157,7 +165,12 @@ $('#bkb').on('click',function(e) {
     };
 	
 	//document.body.scrollTop = 0
-	
+
+$('#home').on('click',function(e) { go_home();});	
+
+$('#home2').on('click',function(e) { go_home();});	
+
+
     function resetPage(type){
 		
     if (type == 'hard'){
@@ -167,6 +180,7 @@ $('#bkb').on('click',function(e) {
         active = ".nav-1"
 		dismissRed();
 		dismissBlue();
+		
         };
 		$(document.body).animate({scrollTop: '0'},500);
         $('body').animate({margin: '0 0 0 0'},1000);
@@ -174,6 +188,7 @@ $('#bkb').on('click',function(e) {
         $('#Projects').animate({bottom: '-100%'},500);
         $('#about').animate({right: '-100%'},500);
         $('body').css('overflow-y', 'hidden');
+		
 	document.body.scrollTop = 0
     };
     function allZto5(){
@@ -188,6 +203,7 @@ $('.nav-0').removeClass('ativo');
 $('.nav-1').removeClass('ativo');
 $('.menuitem').removeClass('ativo');
 	$(document.body).animate({scrollTop: '0'},500);
+
 };
 
 
@@ -200,30 +216,23 @@ $('.menuitem').removeClass('ativo');
 	
 	
 	
-	
-$('#aboutgo').on('click',function(e) { go_about();});
-$('#contactgo').on('click',function(e) { go_contact();});
-$('#goproj').on('click',function(e) { go_projects();});
-$('#home').on('click',function(e) { go_home();});	
-//////////////////////////// MOBILE
-$('#aboutgo2').on('click',function(e) { go_about();});
-$('#contactgo2').on('click',function(e) { go_contact();});
-$('#goproj2').on('click',function(e) { go_projects();});
-$('#home2').on('click',function(e) { go_home();});	
+
+
+
 
 
 
 
 
 function gotopg(input){
-	
+
 	var	home 		= ".nav-1",
 			projects 	= ".nav-2",
 			blog 		= ".nav-3",
 			about		= ".nav-6",
 			contact	= ".nav-7";
 			
-	
+
 	switch(input){
 		case "about":
 			paint("red");
@@ -237,6 +246,7 @@ function gotopg(input){
 			go_home();
 			allPassive();
 			$(home).addClass('ativo');
+				location.hash = "";
 			break;
 			
 		case "contact":
@@ -305,7 +315,9 @@ function gotopg(input){
 		
 		default: break;
 		
-		
+
+	
+	
 	};
 };
 
@@ -328,6 +340,7 @@ function go_home(){
     $('#red').animate({right: '0%', left: '0'},0);
     $('#blue').animate({left: '50%', right: '0%'});
     $('body,html').animate({scrollTop: '0'},1000);
+		location.hash = "";
 };
 function go_projects(){
 	allPassive();
@@ -349,8 +362,8 @@ function go_audio(){
     allPassive();
     $('.nav-0').addClass('ativo');
 	$(document.body).animate({scrollTop: '0'},500);
-anime_out()
-callBlue()
+anime_out();
+callBlue();
 	
 }
 function go_visual(){
@@ -368,8 +381,8 @@ active=".nav-0"
 allPassive();
     $('.nav-0').addClass('ativo');
 	$(document.body).animate({scrollTop: '0'},500);
-anime_out()
-callRed()
+anime_out();
+callRed();
 	
 }
 	
