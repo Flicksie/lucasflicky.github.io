@@ -22,6 +22,26 @@ height: calc(83% + -330px);
 opacity:0;
 }
 
+.logo{
+	
+
+	margin-left:1%;
+	font-size:28px;
+	font-weight:900;
+	color: white;
+	text-transform: uppercase;
+	
+	
+}.sublogo{
+	
+
+	margin-left:1%;
+	color: #AAA';
+
+	
+	
+}
+
 //CHANGE RED
 .navbar{border-top: solid #F63636 5px;}
 .navbar li a:active, .ativo{background:#F63636;}
@@ -367,7 +387,7 @@ z-index:1000;
   border-radius:0 0 35px 0;
 }
 .button-back-2{
-margin: 0 0 0 -50 ;
+margin: 0 0 0 50px ;
 cursor:pointer;
 background: url("../assets/arrw.png") no-repeat scroll 0px -63.5px  transparent;
  transform: scale(.6,.6);
@@ -385,7 +405,13 @@ transition: all 300ms;
   transform: scale(.5)rotate(-90deg);
   z-index: 9999;
 }
-
+.dwn{
+  position: absolute; 
+  margin-left:  5px  ;
+  margin-top:  -10px  ;
+  transform: scale(.5)rotate(90deg);
+  z-index: 9999;
+}
 .aboveiro{
 
 }
@@ -406,4 +432,4 @@ transition: all 300ms;
   
   
 }
-.less{padding-top:15px;height:90%;margin-top:-40}
+.less{padding-top:15px;height:90%;margin-top:0}

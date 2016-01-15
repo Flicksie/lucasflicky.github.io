@@ -17,14 +17,27 @@
 			background: #262626 url('./images/load.gif') no-repeat center center; }
 		</style>
 		<script type="text/javascript" src="js/jquery.js"></script>
+			
 		<script>
 		$(document).ready(function($) {
+		
+			var currentPage = location.hash.substring(2);
+			
+			
+		
 			setTimeout(
 				function () {
 					$('#preloader').fadeOut('slow',function(){$(this).remove();});
 				},5000 // 5s
 			);
 		});
+		</script>
+		
+	
+		
+	
+		
+		
 		</script>
 
 <meta http-equiv="Cache-Control" content="cache,store" />
@@ -39,7 +52,7 @@
 		<link href="css/comingSoon.css" rel="stylesheet" >
 		<link href="css/ResponsiveShit.css" rel="stylesheet" async>
 
-		<script   src="js/main.js"></script>
+
 		<script async  src="js/imgload.js"></script>
 	</head>
 	<body>
@@ -59,18 +72,18 @@
 		<div id="memeno">
 			<div>
 				<dl class="mobile-menu">
-					<a  style="font-family:Arial; font-size:22;float:left; position:absolute; top:15px; left:15px" href="#" class="wsite-menu-item">
+					<a  style="font-family:Arial; font-size:22;float:left; position:absolute; top:15px; left:15px" oncewashref class="wsite-menu-item">
 					X
 					</a>
 					</li>
 					<li  >
 					<li>
-						<a  id="home2" href="#lan5ding" class="wsite-menu-item">
+						<a  id="home2"  class="wsite-menu-item" >
 						Home
 						</a>
 					</li>
 					<li  >
-						<a  id="goproj2"  href="#" class="wsite-menu-item">
+						<a  id="goproj2"  href="#/projects" class="wsite-menu-item">
 						Projects
 						</a>
 					</li>
@@ -80,55 +93,57 @@
 						</a>
 					</li>
 					<li>
-						<a id="aboutgo2" class="wsite-menu-item">
+						<a id="aboutgo2" href="#/about" class="wsite-menu-item">
 						About
 						</a>
 					</li>
 					<li  >
-						<a  id="contactgo2" class="wsite-menu-item">
+						<a  id="contactgo2" href="#/contact" class="wsite-menu-item">
 						Contact
 						</a>
 					</li>
 					<li>
-						<a  id="visaud2" href="#visaud" class="wsite-menu-item">
+						<a  id="visaud2" oncewashref class="wsite-menu-item">
 						</a>
 					</li>
 				</dl>
 			</div>
 		</div>
 		<div class="navbar shadow">
+		
+		<span class="logo">LUCASFLICKY</span><span class="sublogo">Digital Graphic Artist - Sound Designer - Aviation Dork</span>
 			<ul class="wsite-menu-default">
 				<li  class="nav-0">
-					<a  id="visaud" href="#visaud" class="wsite-menu-item">
+					<a  id="visaud" oncewashref class="wsite-menu-item">
 					</a>
 				</li>
 				<li  class="menuitem nav-1 ativo">
-					<a  id="home" href="#lan5ding" class="wsite-menu-item">
+					<a  id="home" oncewashref class="wsite-menu-item">
 					Home
 					</a>
 				</li>
 				<li  class="menuitem nav-2">
-					<a  id="goproj"  href="#" class="wsite-menu-item">
+					<a  id="goproj"  href="#/projects" class="wsite-menu-item">
 					Projects
 					</a>
 				</li>
 				<li class="menuitem nav-3">
-					<a  href="http://www.lucasflicky.com/blog.html" class="wsite-menu-item">
+					<a  href="blog.lucasflicky.com" class="wsite-menu-item">
 					Blog
 					</a>
 				</li>
 				<li class="menuitem nav-6">
-					<a id="aboutgo" class="wsite-menu-item">
+					<a id="aboutgo" href="#/about" class="wsite-menu-item">
 					About
 					</a>
 				</li>
 				<li  class="menuitem nav-7">
-					<a  id="contactgo" class="wsite-menu-item">
+					<a  id="contactgo" href="#/contact" class="wsite-menu-item">
 					Contact
 					</a>
 				</li>
 				<li  class="nav-110">
-					<a  id="memenu" href="#" class="wsite-menu-item">
+					<a  id="memenu" oncewashref class="wsite-menu-item">
 					MENU ►
 					</a>
 				</li>
@@ -393,13 +408,15 @@
 		</div>
 		<!--END -->
 	</body>
+	<script   src="js/main.js"></script>
+	<script   src="js/custom.js"></script>
 	<script   src="js/jquery_002.js"></script>
 	<script async  src="js/filterScript1.js"></script >
-	<script   src="js/custom.js"></script>
 	<script async  src="js/snip.js"></script >
 	<script src="js/touchSwipe.js"></script >
 	<script src="js/comingSoon.js"></script>
 	<script async  src="js/projects.js"></script >
+	
 	<script>
 		var redmoon	 = false;
 		var bluemoon = false;

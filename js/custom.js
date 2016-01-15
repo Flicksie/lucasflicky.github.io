@@ -143,8 +143,14 @@ $('#bkb').on('click',function(e) {
     allPassive();
     $(active).addClass('ativo');
 	$(document.body).animate({scrollTop: '0'},500);
+	
+	
+});$('#bkbpj').on('click',function(e) {
+    $(this.parentElement).animate({bottom: '-100%'},800);  // <--- Global Back Button i hope
+    allPassive();
+    $(active).addClass('ativo');
+	$(document.body).animate({scrollTop: '0'},500);
 });
-
 //-------------FUNCTIONFEST---------------//
 
     function firstAlt(){document.getElementById('headline-intro').innerHTML = "Wanna see something else?"};
@@ -213,18 +219,19 @@ $('#bkb').on('click',function(e) {
         document.getElementById('headline-intro').innerHTML = "Need Help? I'd Recommend the <a onclick=\"goTo(\'#contactw\');\">contactw Form</a>";
         }; 
     };
+	
 	//document.body.scrollTop = 0
 	
     function resetPage(type){
-dismissRed();
-dismissBlue();
+
 		
     if (type == 'hard'){
         returneBlu();
         returneRed();
         setTimeout("document.getElementById('visaud').innerHTML = '';",150);
         active = ".nav-1"
-	
+		dismissRed();
+		dismissBlue();
         };
 		$(document.body).animate({scrollTop: '0'},500);
         $('body').animate({margin: '0 0 0 0'},1000);
@@ -260,72 +267,58 @@ $('.menuitem').removeClass('ativo');
         $(this).addClass('ativo');
     });
     ////////////////////////////
+$('#aboutgo').on('click',function(e) { go_about();});
+$('#contactgo').on('click',function(e) { go_contact();});
+$('#goproj').on('click',function(e) { go_projects();});
+$('#home').on('click',function(e) { go_home();});	
 
-$('#aboutgo').on('click',function(e) {
+
+
+//////////////////////////// MOBILE
+$('#aboutgo2').on('click',function(e) { go_about();});
+$('#contactgo2').on('click',function(e) { go_contact();});
+$('#goproj2').on('click',function(e) { go_projects();});
+$('#home2').on('click',function(e) { go_home();});	
+
+
+
+
+function go_about(){
     allPassive();
     resetPage('soft');
     goToL('#about');
+};
 
-});
-
-$('#contactgo').on('click',function(e) {
+function go_contact(){
     allPassive();
     resetPage('soft');
     goTo('#contactw');
+};
 
-});
-
-$('#goproj').on('click',function(e) {
-    allPassive();
-    resetPage('soft');
-    $('#Projects').animate({bottom: '0%'},1000);
-
-});
-$('#goproj2').on('click',function(e) {
-    allPassive();
-    resetPage('soft');
-    $('#Projects').animate({bottom: '0%'},1000);
-
-});
-
-
-
-
-$('#home').on('click',function(e) {
-dismissRed();
-dismissBlue();
+function go_home(){
+	dismissRed();
+	dismissBlue();
     allPassive();
     $('.nav-1').addClass('ativo');
     resetPage('hard');
     $('#red').animate({right: '0%', left: '0'},0);
     $('#blue').animate({left: '50%', right: '0%'});
     $('body,html').animate({scrollTop: '0'},1000);
-});
-////////////////////////////
-    $('#aboutgo2').on('click',function(e) {
-    allPassive();
+};
+
+function go_projects(){
+	allPassive();
     resetPage('soft');
-    goToL('#about');
+    $('#Projects').animate({bottom: '0%'},1000);
+};
 
-});
 
-$('#contactgo2').on('click',function(e) {
-    allPassive();
-    resetPage('soft');
-    goTo('#contactw');
 
-});
 
-$('#home2').on('click',function(e) {
-dismissRed();
-dismissBlue();
-    allPassive();
-    $('.nav-1').addClass('ativo');
-    resetPage('hard');
-    $('#red').animate({right: '0%', left: '0'},0);
-    $('#blue').animate({left: '50%', right: '0%'});
-    $('body,html').animate({scrollTop: '0'},1000);
-});
+
+
+	
+
 ///////////////////////////
 
 
