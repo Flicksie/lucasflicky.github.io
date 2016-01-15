@@ -4,21 +4,28 @@ var anime_out = function(e){$('.anime').css('visibility', 'hidden') };
 var anime_in = function(e){$('.anime').css('visibility', 'visible') };
 //-------------HOVER---------------//
 $('#blue').on('mouseover', function(e) {	
-    //$('.navbar').css('border-top', 'solid #3c56b5 5px');
-    //$('.ativo').css('background', '#3c56b5');
-    //$('menuitem a:hover').css('background', '#363676');
-    $('.navbar').addClass('navbar-blu');
-    $('.navbar').removeClass('navbar-red');
-	$(document.body).animate({scrollTop: '0'},100);
+	paint("blue");
+ });
+
+$('#red').on('mouseover', function(e) {
+		paint("red");
 });
-    $('#red').on('mouseover', function(e) {	
-    //$('.navbar').css('border-top', 'solid #f63636 5px');
-    //$('.ativo').css('background', '#f63636');
-    //$('menuitem a:hover').css('background', '#A63636');
-    $('.navbar').removeClass('navbar-blu');
-    $('.navbar').addClass('navbar-red');
-		$(document.body).animate({scrollTop: '0'},100);
-});
+
+function paint(col){
+
+		if (col == "blue"){
+				$('.navbar').addClass('navbar-blu');
+				$('.navbar').removeClass('navbar-red');
+				$(document.body).animate({scrollTop: '0'},100);
+		}else{
+				$('.navbar').removeClass('navbar-blu');
+				$('.navbar').addClass('navbar-red');
+				$(document.body).animate({scrollTop: '0'},100);
+		}
+			
+};
+
+
 //-------------CLICK---------------//
 function undo(col,lv){
 	
@@ -182,6 +189,9 @@ $('.nav-1').removeClass('ativo');
 $('.menuitem').removeClass('ativo');
 	$(document.body).animate({scrollTop: '0'},500);
 };
+
+
+
     $('.menuitem').on('click',function(e) {
         $(this).addClass('ativo');
     });
@@ -202,51 +212,96 @@ $('#goproj2').on('click',function(e) { go_projects();});
 $('#home2').on('click',function(e) { go_home();});	
 
 
+
+
+
 function gotopg(input){
+	
+	var	home 		= ".nav-1",
+			projects 	= ".nav-2",
+			blog 		= ".nav-3",
+			about		= ".nav-6",
+			contact	= ".nav-7";
+			
+	
 	switch(input){
 		case "about":
+			paint("red");
 			go_about();
-			break;
-		case "home":
-			go_home();
-			break;
-		case "contact":
-			go_contact();
-			break;
-		case "portfolio":
-			go_visual();
-			break;
-		
-		case "visual":
-			go_visual();
-			break;
-		
-		case "audio":
-			go_audio();
+			allPassive();
+			$(about).addClass('ativo');
 			break;
 			
-		case "music":
-			go_audio();
+		case "home":
+			paint("red");
+			go_home();
+			allPassive();
+			$(home).addClass('ativo');
 			break;
+			
+		case "contact":
+			paint("red");
+			go_contact();
+			allPassive();
+			$(contact).addClass('ativo');
+			break;
+			
+		case "portfolio":
+			paint("red");
+			go_visual();
+			break;
+			
+		
+		case "visual":
+			paint("red");
+			go_visual();
+			allPassive();
+		break;
+			
+		
+		case "audio":
+			paint("blue");
+			go_audio();
+		break;
+			
+			
+		case "music":
+			paint("blue");
+			go_audio();
+		break;
+			
 
 		case "audio":
+			paint("blue");
 			go_audio();
 			break;
 		
 		case "illustration":
+			paint("red");
 			go_visual();
 			break;
+			
 		
 		case "art":
 			go_visual();
+			paint("red");
 			break;
+			
 		
 		case "gallery":
 			go_visual();
+			paint("red");
 			break;
+			
 		
 		case "projects":
+			go_projects();
+			paint("red");
+			allPassive();
+			$(projects).addClass('ativo');
+			
 			break;
+			
 		
 		default: break;
 		
