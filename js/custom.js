@@ -1,11 +1,8 @@
-
-
 var backForth = 0;
 var active = ".nav-1";
 var anime_out = function(e){$('.anime').css('visibility', 'hidden') };
 var anime_in = function(e){$('.anime').css('visibility', 'visible') };
 //-------------HOVER---------------//
-
 $('#blue').on('mouseover', function(e) {	
     //$('.navbar').css('border-top', 'solid #3c56b5 5px');
     //$('.ativo').css('background', '#3c56b5');
@@ -14,7 +11,6 @@ $('#blue').on('mouseover', function(e) {
     $('.navbar').removeClass('navbar-red');
 	$(document.body).animate({scrollTop: '0'},100);
 });
-
     $('#red').on('mouseover', function(e) {	
     //$('.navbar').css('border-top', 'solid #f63636 5px');
     //$('.ativo').css('background', '#f63636');
@@ -23,15 +19,11 @@ $('#blue').on('mouseover', function(e) {
     $('.navbar').addClass('navbar-red');
 		$(document.body).animate({scrollTop: '0'},100);
 });
-
 //-------------CLICK---------------//
-
-
 function undo(col,lv){
 	
 dismissRed();
 dismissBlue();
-
 if (col=='red'){
     $('#visual').css('pointer-events', 'none');
     $('#audio').css('pointer-events', 'auto');
@@ -45,87 +37,29 @@ else{
     $('#audio').animate({opacity: '0' }, 2000);
     };
 };
-
-
-
-
 $('#blue').on('click', function(e) {	
-    $('.button-capsule').css('pointer-events', 'auto');
-    $('#landing').css('pointer-events', 'none');
-    $('.containera').css('pointer-events', 'none');
-    $('#landing').animate({left: '-85%', right: '85%' }, 1);
-    $('#landblu').animate({top: '10%',right: '5%',width: '20%'}, 1100);
-    undo('red',1);
-
-    $('#bkblu').animate({left: '5%'}, 1100);
-
-    active=".nav-0"
-    document.getElementById('visaud').innerHTML = "AUDIO";
-    document.getElementById('visaud2').innerHTML = "AUDIO";
-    allPassive();
-    $('.nav-0').addClass('ativo');
-	$(document.body).animate({scrollTop: '0'},500);
-anime_out()
-callBlue()
-
-
+ gotopg("audio");
 });
-
 $('#red').on('click', function(e) {	
-    $('.button-capsule').css('pointer-events', 'auto');
-    $('#landing').css('pointer-events', 'none');
-    $('.containera').css('pointer-events', 'none');
-    $('#landing').animate({right: '-85%', left: '85%'}, 1);
-    $('#landred').animate({top: '10%',left: '5%',width: '20%'}, 1100);
-
-    undo('blue',1);
-
-
-
-    $('#bkred').animate({right: '5%'}, 1100);
-
-active=".nav-0"
-    document.getElementById('visaud').innerHTML = "VISUAL";
-    document.getElementById('visaud2').innerHTML = "VISUAL";
-allPassive();
-    $('.nav-0').addClass('ativo');
-	$(document.body).animate({scrollTop: '0'},500);
-anime_out()
-callRed()
+ gotopg("visual");
 });	
-
-
-
 $('#visaud').on('click', function(e) {			
-
     resetPage('soft');
     allPassive();
     $('.nav-0').addClass('ativo');
-
 });
-
 $('#visaud2').on('click', function(e) {			
-
     resetPage('soft');
     allPassive();
     $('.nav-0').addClass('ativo');
-
 });
-
-
-
-
 //-------------TEMPORARY BUTTNS---------------//
-
 //transformo os but em img ou div depois
-
 $('#bkred').on('click', function(e) {	
     returneRed();
     undo('red');
 	$(document.body).animate({scrollTop: '0'},500);
-
 });
-
 $('#bkblu').on('click', function(e) {	
     returneBlu();
     undo('blue');
@@ -134,7 +68,6 @@ $('#bkblu').on('click', function(e) {
 $('#bk').on('click',function(e) {
     $(this.parentElement).animate({top: '-100%'},800);  // <--- Global Back Button i hope
     allPassive();
-
     $(active).addClass('ativo');
 	$(document.body).animate({scrollTop: '0'},500);
 });
@@ -152,7 +85,6 @@ $('#bkb').on('click',function(e) {
 	$(document.body).animate({scrollTop: '0'},500);
 });
 //-------------FUNCTIONFEST---------------//
-
     function firstAlt(){document.getElementById('headline-intro').innerHTML = "Wanna see something else?"};
     function goTo(target){ $(target).animate({top: '5%'},800);};
     function goToL(target){ $(target).animate({right: '0px'},800);};
@@ -162,7 +94,6 @@ $('#bkb').on('click',function(e) {
 	function callRed()	{ setTimeout("$('#redrestrain').animate({opacity: '1'},600);",1100);}
 	function dismissBlue()	{ $('#blurestrain').animate({opacity: '0'},400);}
 	function dismissRed()	{ $('#redrestrain').animate({opacity: '0'},400);}
-
     function returneBlu(){
         backForth < 1 ? firstAlt() : alternates();
         $('.button-capsule').css('pointer-events', 'none');
@@ -184,7 +115,6 @@ $('#bkb').on('click',function(e) {
 		anime_in()
 		 
     };
-
     function returneRed(){
         backForth < 1 ? firstAlt() : alternates();
         $('.button-capsule').css('pointer-events', 'none');
@@ -202,7 +132,6 @@ $('#bkb').on('click',function(e) {
 		$(document.body).animate({scrollTop: '0'},500);
 		anime_in()
     }
-
     function alternates(){
     //misqueci como é case em js 
 		$(document.body).animate({scrollTop: '0'},500);
@@ -223,7 +152,6 @@ $('#bkb').on('click',function(e) {
 	//document.body.scrollTop = 0
 	
     function resetPage(type){
-
 		
     if (type == 'hard'){
         returneBlu();
@@ -241,39 +169,32 @@ $('#bkb').on('click',function(e) {
         $('body').css('overflow-y', 'hidden');
 	document.body.scrollTop = 0
     };
-
     function allZto5(){
     $('#about').css('z-index', '5000');
     $('#contactw').css('z-index', '5000');
     $('#projects').css('z-index', '5000');
     $('#blog').css('z-index', '5000');
     };
-
-
-
-
 //--------------------------------------------------------------
-
 function allPassive(){
 $('.nav-0').removeClass('ativo');
 $('.nav-1').removeClass('ativo');
 $('.menuitem').removeClass('ativo');
 	$(document.body).animate({scrollTop: '0'},500);
 };
-
-
-
     $('.menuitem').on('click',function(e) {
         $(this).addClass('ativo');
     });
     ////////////////////////////
+	
+	
+	
+	
+	
 $('#aboutgo').on('click',function(e) { go_about();});
 $('#contactgo').on('click',function(e) { go_contact();});
 $('#goproj').on('click',function(e) { go_projects();});
 $('#home').on('click',function(e) { go_home();});	
-
-
-
 //////////////////////////// MOBILE
 $('#aboutgo2').on('click',function(e) { go_about();});
 $('#contactgo2').on('click',function(e) { go_contact();});
@@ -281,20 +202,68 @@ $('#goproj2').on('click',function(e) { go_projects();});
 $('#home2').on('click',function(e) { go_home();});	
 
 
+function gotopg(input){
+	switch(input){
+		case "about":
+			go_about();
+			break;
+		case "home":
+			go_home();
+			break;
+		case "contact":
+			go_contact();
+			break;
+		case "portfolio":
+			go_visual();
+			break;
+		
+		case "visual":
+			go_visual();
+			break;
+		
+		case "audio":
+			go_audio();
+			break;
+			
+		case "music":
+			go_audio();
+			break;
 
+		case "audio":
+			go_audio();
+			break;
+		
+		case "illustration":
+			go_visual();
+			break;
+		
+		case "art":
+			go_visual();
+			break;
+		
+		case "gallery":
+			go_visual();
+			break;
+		
+		case "projects":
+			break;
+		
+		default: break;
+		
+		
+	};
+};
 
 function go_about(){
     allPassive();
     resetPage('soft');
     goToL('#about');
 };
-
 function go_contact(){
     allPassive();
     resetPage('soft');
     goTo('#contactw');
 };
-
 function go_home(){
 	dismissRed();
 	dismissBlue();
@@ -305,49 +274,70 @@ function go_home(){
     $('#blue').animate({left: '50%', right: '0%'});
     $('body,html').animate({scrollTop: '0'},1000);
 };
-
 function go_projects(){
 	allPassive();
     resetPage('soft');
     $('#Projects').animate({bottom: '0%'},1000);
 };
-
-
-
-
-
-
+function go_audio(){
 	
-
+	$('.button-capsule').css('pointer-events', 'auto');
+    $('#landing').css('pointer-events', 'none');
+    $('.containera').css('pointer-events', 'none');
+    $('#landing').animate({left: '-85%', right: '85%' }, 1);
+    $('#landblu').animate({top: '10%',right: '5%',width: '20%'}, 1100);
+    undo('red',1);
+    $('#bkblu').animate({left: '5%'}, 1100);
+    active=".nav-0"
+    document.getElementById('visaud').innerHTML = "AUDIO";
+    document.getElementById('visaud2').innerHTML = "AUDIO";
+    allPassive();
+    $('.nav-0').addClass('ativo');
+	$(document.body).animate({scrollTop: '0'},500);
+anime_out()
+callBlue()
+	
+}
+function go_visual(){
+	
+	   $('.button-capsule').css('pointer-events', 'auto');
+    $('#landing').css('pointer-events', 'none');
+    $('.containera').css('pointer-events', 'none');
+    $('#landing').animate({right: '-85%', left: '85%'}, 1);
+    $('#landred').animate({top: '10%',left: '5%',width: '20%'}, 1100);
+    undo('blue',1);
+    $('#bkred').animate({right: '5%'}, 1100);
+active=".nav-0"
+    document.getElementById('visaud').innerHTML = "VISUAL";
+    document.getElementById('visaud2').innerHTML = "VISUAL";
+allPassive();
+    $('.nav-0').addClass('ativo');
+	$(document.body).animate({scrollTop: '0'},500);
+anime_out()
+callRed()
+	
+}
+	
 ///////////////////////////
-
-
-
 $('#memenu').on('click', function(e) {	
 $('#darknes').animate({left: '0%'},00);
     $('#memeno').animate({left: '0%'},600);
     $('body').animate({margin: '0 0 0 150px'},600);
 $('#darknes').animate({opacity: '.5'},600);
 $(document.body).animate({scrollTop: '0'},500);
-
 });	$('#memeno').on('click', function(e) {	
 $('#darknes').animate({opacity: '0'},600);
     $('body').animate({margin: '0 0 0 0'},600);
     $('#memeno').animate({left: '-150px'},600);
     $('#darknes').animate({left: '-100%'},000);
-
 $(document.body).animate({scrollTop: '0'},500);
-
 });
-
-
 function printProj(name,category,displayPic,icon,describ){
 name = name			 	|| "Nome do Projeto"
 category = category		|| "Categoria"
 displayPic =displayPic	|| "placeholder.png"
 icon = icon				|| "favicon.png"
 describ = describ		|| "Lorem ipsum dolor sit amet consectetur adipiscing elit."
-
 return `<table  class="tg" style="table-layout: margin-bottom: 10px; fixed; width: 100%"> 
 	<colgroup>
 		<col style="width: 50px"><col style="width: 150px">
@@ -366,7 +356,6 @@ return `<table  class="tg" style="table-layout: margin-bottom: 10px; fixed; widt
 	<tr>
 		<!-- PROFILE PIC -->
 		<td align="center" class="profilepic" colspan="2" rowspan="5"><a target="_blank" ><img class="profile" src="images/` + displayPic + `"></a></td><tr><td HEIGHT="12px" colspan="2" ></td></tr>
-
 	</tr>
 	<tr>
 		<!-- DESCRIB -->
@@ -381,5 +370,4 @@ return `<table  class="tg" style="table-layout: margin-bottom: 10px; fixed; widt
 </table>`
 			
 }
-
  document.getElementById('dumproj').innerHTML = printProj() 
