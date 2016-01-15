@@ -32,14 +32,12 @@ opacity:0;
 	text-transform: uppercase;
 	
 	
-}.sublogo{
-	
+}
 
+.sublogo{
 	margin-left:1%;
-	color: #AAA';
-
-	
-	
+	color: #AAA;
+	display:none;
 }
 
 //CHANGE RED
