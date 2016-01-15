@@ -19,13 +19,18 @@
 		<script type="text/javascript" src="js/jquery.js"></script>
 			
 		<script>
+		function grabUrl(){
+			var currentPage = location.hash.substring(2);
+			currentPage ? gotopg(currentPage) : false;
+		}
+		
+$(window).bind('hashchange', function() {
+grabUrl();
+});
+		
 		$(document).ready(function($) {
 		
-			var currentPage = location.hash.substring(2);
-			
-			
-			
-			currentPage ? gotopg(currentPage) : false;
+	grabUrl();
 			setTimeout(
 				function () {
 					
@@ -38,9 +43,7 @@
 	
 		
 	
-		
-		
-		</script>
+
 
 <meta http-equiv="Cache-Control" content="cache,store" />
 <meta http-equiv="Pragma" content="cache" />
@@ -414,6 +417,7 @@
 	<script   src="js/custom.js"></script>
 	<script   src="js/jquery_002.js"></script>
 	<script async  src="js/filterScript1.js"></script >
+	<script async  src="js/hash.js"></script >
 	<script async  src="js/snip.js"></script >
 	<script src="js/touchSwipe.js"></script >
 	<script src="js/comingSoon.js"></script>
