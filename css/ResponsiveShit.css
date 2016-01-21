@@ -1,3 +1,8 @@
+@media screen and (min-width: 680px){
+	#yesmob {  display:none;}
+}
+
+
 .btnmob{
   height:2em!important;
   text-align: center;
@@ -53,14 +58,11 @@ display:inline-block !important;
 } /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  720 */
 
 @media screen and (max-width: 680px){
+
+  
+#notmob {display:none !important;}
 body{color: white}
 #header{text-align: center}
-  
-#notmob {
-  display:none;
-  
-}
-  
 .nav-110{
 display:inline-block !important;
 }
@@ -134,7 +136,7 @@ height:53%;
   .menuitem {width:20%;padding:0;margin:2px;}
   .navbar ul li{margin: 0 2px; float:left;}
   .navbar ul li a{
-  margin: 0 0 0 -100px;
+  margin: 0 0 0 -20px;
   width: 4em;
   line-height:25px;
     

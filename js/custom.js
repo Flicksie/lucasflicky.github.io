@@ -46,11 +46,11 @@ else{
 };
 $('#blue').on('click', function(e) {	
  gotopg("audio");
- location.hash = "audio";
+ location.hash = "/audio";
 });
 $('#red').on('click', function(e) {	
  gotopg("visual");
-  location.hash = "visual";
+  location.hash = "/visual";
 });	
 $('#visaud').on('click', function(e) {			
     resetPage('soft');

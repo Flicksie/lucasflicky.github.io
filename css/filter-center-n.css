@@ -5,7 +5,7 @@
 
 body{
 background:#050505;
-font-family:oswald;
+font-family:Oswald;
 }
 
 a{
@@ -71,20 +71,20 @@ height: 140px;
 	width:125px;
 	//float:left;
 }
-
+.filterall{ text-align: center;width:50px !important;;}
 /* the filter options */
 #filters li a {
 
 font-family: inherit;
-font-weight: 300;
+
 line-height: 18px;
 color: #a55;
-font-size: 15px;
+font-size: 14px;
     margin:0;
     padding: 5px 10px;
     display:block;
-    color: #522; 
-    font-size: 16px;
+    color: #FEE; 
+ 
     background: #862626; 
     -webkit-border-radius: 3px;
        -moz-border-radius: 3px;
