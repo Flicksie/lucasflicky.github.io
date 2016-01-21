@@ -8,7 +8,7 @@
 			}
 			
 			
-			 .txtbox{
+.txtbox{
   
   overflow-y:scroll;
   
@@ -448,4 +448,4 @@ transition: all 300ms;
   
   
 }
-.less{padding-top:15px;height:90%;margin-top:0}
+.less{padding-top:15px;height:90%;margin-top:-40}
