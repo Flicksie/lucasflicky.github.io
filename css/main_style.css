@@ -391,17 +391,23 @@ box-shadow: 15px -30px 35px 55px rgba(0,0,0,0.4);
 .mugshot{width:200px; border-radius:100%;float:right;margin:25 -40;}
 .subtit{color:white;}
 .white{color:white;}
-.txtbox{background: #202020; height: 75%;margin:0 15px; padding: 65px 0 15px 35px  ;border-radius:25px}
+.conta{
+	font-weight:300;
+		font-size:14;
+}
+.txtbox{background: #202020; height: 80%;margin:0 15px; padding: 65px 0 15px 35px  ;border-radius:25px}
 #contactw{
 position:fixed;
 background:#161616;
-width:60%;
-height:25em;
+width:70%;
+height:35em;
 top:-100%;
 box-shadow: 0px -20px 35px 15px rgba(0,0,0,0.3);
 z-index:1000;
   border-radius:0 0 35px 0;
 }
+.hidbox{overflow-y: hidden !important;}
+
 .button-back-2{
 margin: 0 0 0 50px ;
 cursor:pointer;

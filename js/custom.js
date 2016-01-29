@@ -438,4 +438,3 @@ return `<table  class="tg" style="table-layout: margin-bottom: 10px; fixed; widt
 </table>`
 			
 }
- document.getElementById('dumproj').innerHTML = printProj() 

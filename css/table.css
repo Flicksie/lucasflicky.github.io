@@ -1,5 +1,6 @@
 .role{
-font-size: 12;
+font-size: 13;
+  color:#AAA
 
 }
 
@@ -9,7 +10,7 @@ font-size: 12;
 }
   table {
     
-    background: #1b1b1b; /*rgba(38, 43, 86, 0.68); */
+   // background: #1b1b1b; /*rgba(38, 43, 86, 0.68); */
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
   }
@@ -77,7 +78,7 @@ img.badgeicon{
     color: white;
     font-size: 16px;
       font-weight: 100;
-    letter-spacing: .2em;
+    letter-spacing: .05em;
     padding: 10px 5px;
     border-style: none;
     border-width: 0px;

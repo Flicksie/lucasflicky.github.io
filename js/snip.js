@@ -463,7 +463,7 @@ return `<table  class="tg" style="table-layout: margin-bottom: 10px; fixed;">
 	</tr>
 	<tr>
 		<!-- DESCRIB -->
-		<td class="badges" colspan="4">	 `+ describ  +`<br><span class="role"><i> (`+ role  +`) </i></span></td>
+		<td class="badges" colspan="4">	 `+ describ  +`<br><span class="role"> (`+ role  +`) </span></td>
 	</tr>
 	<tr>
 		<td colspan="2" class="tabfooter"></td>
@@ -553,7 +553,7 @@ var projects =	[
 						"Music",
 						"toren.png",
 						"audio",
-						"describ",
+						"Toren, the first adventure game from Brazilian indie developer Swordtales. You are Moonchild, destined to climb the tower (known as Toren) on a hauntingly solitary journey to find your purpose.",
 						"Soundtrack",
 						"http://toren-game.com"
 						
@@ -563,7 +563,7 @@ var projects =	[
 						"Personal",
 						"slnt.jpg",
 						"icon",
-						"describ",
+						"Personal SchizoTech-SciFi-Warfare-Fantasy Comic Book  & Worldbuilding Project.",
 						"Worldbuilding/Illustration",
 						"Undisclosed"
 					],
@@ -572,7 +572,7 @@ var projects =	[
 						"Music",
 						"steam.jpg",
 						"icon",
-						"describ",
+						"Prototype Game developed by the Graphic Design division from RioGrande do Sul Federal University (UFRGS)",
 						"Soundtrack",
 						"http://vgmdb.net/album/38576"
 					],
@@ -581,7 +581,7 @@ var projects =	[
 						"Academic",
 						"te3d.jpg",
 						"icon",
-						"describ",
+						"Pedagogic DIgital Game developed within a research project, supported by Secretary of Distance Learning - UFRGS.",
 						"Soundtrack",
 						"http://pt.slideshare.net/CnthiaKulpa/jogo-digital-pedaggico-te-3-d-tetris"
 					],
@@ -590,7 +590,7 @@ var projects =	[
 						"Music",
 						"thuat.jpg",
 						"icon",
-						"describ",
+						'Animation and Comic Book project leaded by Felipe "Drickenin" Gomes.',
 						"Soundtrack",
 						"https://www.facebook.com/Drickenin"
 					],
@@ -599,7 +599,7 @@ var projects =	[
 						"Design",
 						"tav.jpg",
 						"icon",
-						"describ",
+						'Online Mag created at the community of followers and friends from the Cogumelando Blog.',
 						"Art Direction / Layout / Illustration",
 						"Down"
 					],
@@ -608,8 +608,8 @@ var projects =	[
 						"Game",
 						"fuq.jpg",
 						"icon",
-						"describ",
-						"Art, Game Design, Sound Design",
+						'FUQUEST is a "traditional" RPG, coded in <s>Ruby</s> NodeJS. By traditional, I mean you explore, fight enemies, level up, equip badass things and all the like. Otherwise, be ready to experience the most nonsensical adventure ever, complete with child elves, stray dogs with jetpacks, mythical trees and a ton of other stuff!',
+						"Art, Game Design, Sound Design, Former Programmer",
 						"TBA"
 					],
 			
