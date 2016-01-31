@@ -10,19 +10,28 @@
 			
 .txtbox{
   
-  overflow-y:scroll;
+  //overflow-y:scroll;
   
 }
-
+.abot{
+  
+ // overflow-y: initial !important;
+	 text-indent: 2em;
+	text-align: justify;
+  padding: 24px  10px !important;
+}
 			
-			
+.aboute{
+padding:0 50px;
+	
+}		
 #redrestrain{
 
 width:13%;
 color: white;
 position:absolute;
 right:1em;
-top:calc(300px + 7% );
+top:calc(42% + 20px );
 z-index: 10;
 height: calc(83% + -330px);
 opacity:0;
@@ -33,7 +42,7 @@ width:13%;
 color: white;
 position:absolute;
 left:1em;
-top:calc(300px + 7% );
+top:calc(42% + 20px );
 z-index: 10;
 height: calc(83% + -330px);
 opacity:0;
@@ -283,8 +292,9 @@ z-index:1;
 #redanim{
   position:fixed;
 z-index:10;
-bottom: 5%;
-margin: 5% 13%;
+bottom: 0px;
+margin-bottom:3%;
+left:11%;
 background: url("../assets/arrw.png") no-repeat scroll 10% -189px transparent;
 border: none;
 height: 63px;
@@ -307,8 +317,9 @@ animation: anime 1s linear infinite;
 #bluanim{
   position:fixed;
 z-index:10;
-bottom: 5%;
-margin: 5% 13%;
+bottom: 0px;
+margin-bottom:3%;
+right:14%;
 background: url("../assets/arrw.png") no-repeat scroll 10% -126px transparent;
 border: none;
 height: 63px;
@@ -372,14 +383,14 @@ position:absolute;
 top:163px;
  width:85%;
 
- overflow-y:auto;
+ //overflow-y:auto;
  height: calc(100% + -158px);
 }
 
 #about{
 position:fixed;
 background:#161616;
-width:60%;
+width:70%;
 padding:50px;
 height:100%;
 right:-100%;
@@ -388,14 +399,14 @@ z-index:1000;
 box-shadow: 15px -30px 35px 55px rgba(0,0,0,0.4);
 }
 
-.mugshot{width:200px; border-radius:100%;float:right;margin:25 -40;}
+.mugshot{width:160px; border-radius:100%;float:right;margin:25 -40;}
 .subtit{color:white;}
 .white{color:white;}
 .conta{
 	font-weight:300;
 		font-size:14;
 }
-.txtbox{background: #202020; height: 80%;margin:0 15px; padding: 65px 0 15px 35px  ;border-radius:25px}
+.txtbox, .contabox{background: #202020; height: 75%;margin:0 15px; padding: 65px 0 15px 35px  ;border-radius:25px}
 #contactw{
 position:fixed;
 background:#161616;
@@ -421,6 +432,9 @@ width: 63.5px;
 transition: all 300ms;
 
 }
+
+.minblack{background:#202020}
+
 .up{
   position: absolute; 
   margin:  10 0 0 5 ;

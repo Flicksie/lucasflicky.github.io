@@ -10,7 +10,7 @@ font-size: 13;
 }
   table {
     
-   // background: #1b1b1b; /*rgba(38, 43, 86, 0.68); */
+    background: #1b1b1b; /*rgba(38, 43, 86, 0.68); */
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
   }

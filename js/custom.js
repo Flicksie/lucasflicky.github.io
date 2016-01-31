@@ -64,6 +64,12 @@ $('#visaud2').on('click', function(e) {
 });
 //-------------TEMPORARY BUTTNS---------------//
 //transformo os but em img ou div depois
+
+
+
+
+
+
 $('#bkred').on('click', function(e) {	
     returneRed();
     undo('red');
@@ -105,10 +111,11 @@ $('#bkb').on('click',function(e) {
     function goToL(target){ $(target).animate({right: '0px'},800);};
     function goToP(){ $('#Projects').animate({bottom: '0%'},1000);  };
 	
-	function callBlue()	{ setTimeout("$('#blurestrain').animate({opacity: '1'},600);",1100);}
-	function callRed()	{ setTimeout("$('#redrestrain').animate({opacity: '1'},600);",1100);}
-	function dismissBlue()	{ $('#blurestrain').animate({opacity: '0'},400);}
-	function dismissRed()	{ $('#redrestrain').animate({opacity: '0'},400);}
+	function callBlue()	{ setTimeout("$('#blurestrain').animate({opacity: '1'},600);",1100);  $('#blurestrain').css('pointer-events', 'auto');}
+	function callRed()	{ setTimeout("$('#redrestrain').animate({opacity: '1'},600);",1100);  $('#redrestrain').css('pointer-events', 'auto');}
+
+	function dismissBlue()	{ $('#blurestrain').animate({opacity: '0'},400); $('#blurestrain').css('pointer-events', 'none');}
+	function dismissRed()	{ $('#redrestrain').animate({opacity: '0'},400); $('#redrestrain').css('pointer-events', 'none');}
     function returneBlu(){
         backForth < 1 ? firstAlt() : alternates();
         $('.button-capsule').css('pointer-events', 'none');
@@ -231,7 +238,7 @@ function gotopg(input){
 			blog 		= ".nav-3",
 			about		= ".nav-6",
 			contact	= ".nav-7";
-			
+		console.log(input)	
 
 	switch(input){
 		case "about":
@@ -313,7 +320,15 @@ function gotopg(input){
 			break;
 			
 		
-		default: break;
+		default: 
+			
+			paint("red");
+			go_home();
+			allPassive();
+			$(home).addClass('ativo');
+			location.hash = "";
+			
+			break;
 		
 
 	

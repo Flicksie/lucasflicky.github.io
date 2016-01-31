@@ -1,11 +1,10 @@
-
-
 <html class="prelod">
-	<head>
-		<title>Lucas Flicky - Multimedia Artist</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
-		<style>
+
+<head>
+	<title>Lucas Flicky - Multimedia Artist</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
+	<style>
 		.prelod div#preloader {
 			position: fixed;
 			left: 0;
@@ -14,52 +13,69 @@
 			width: 100%;
 			height: 100%;
 			display: block;
-			background: #262626 url('./images/load.gif') no-repeat center center; }
-		</style>
-		<script type="text/javascript" src="js/jquery.js"></script>
-			
-		<script>
-		function grabUrl(){
+			background: #262626 url('./images/load.gif') no-repeat center center;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script src="js/hash.js"></script>
+	<script>
+		function grabUrl() {
 			var currentPage = location.hash.substring(2);
 			currentPage ? gotopg(currentPage) : false;
 		};
-		
-window.onhashchange = function(){grabUrl()};
-		
-		$(document).ready(function($) {
-		
-	grabUrl();
+
+	$(window).hashchange( function(){//	window.onhashchange = function () {
+			grabUrl()
+		}); //};
+
+		$(document).ready(function ($) {
+
+			grabUrl();
 			setTimeout(
 				function () {
-					
-					$('#preloader').fadeOut('slow',function(){$(this).remove();});
-				},5000 // 5s
+
+					$('#preloader').fadeOut('slow', function () {
+						$(this).remove();
+					});
+				}, 5000 // 5s
 			);
 		});
-		</script>
 		
+		
+
+
 	
 
 
-<meta http-equiv="Cache-Control" content="cache,store" />
-<meta http-equiv="Pragma" content="cache" />
-<meta http-equiv="Expires" content="80080805884564560" />
 
-		<link rel="shortcut icon" href="images/favicon.png">
-		<link rel="icon" type="image/png" id="favicon" href="images/favicon.png">
-		<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/main_style.css">
-		<link href="css/grid_16.css" rel="stylesheet" async>
-		<link href="css/comingSoon.css" rel="stylesheet" >
-		<link href="css/ResponsiveShit.css" rel="stylesheet" async>
+	</script>
 
 
-		<script async  src="js/imgload.js"></script>
-	</head>
-	<body>
 
-<div id ="notmob">
-	 <div id="preloader"></div>
+
+	<meta http-equiv="Cache-Control" content="cache,store" />
+	<meta http-equiv="Pragma" content="cache" />
+	<meta http-equiv="Expires" content="80080805884564560" />
+
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="icon" type="image/png" id="favicon" href="images/favicon.png">
+	<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/main_style.css">
+	<link href="css/grid_16.css" rel="stylesheet" async>
+	<link href="css/comingSoon.css" rel="stylesheet">
+	<link href="css/ResponsiveShit.css" rel="stylesheet" async>
+	
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	
+
+	<script async src="js/imgload.js"></script>
+</head>
+
+<body>
+
+	<div id="notmob">
+		<div id="preloader"></div>
 
 
 		<div id="redrestrain">
@@ -70,28 +86,28 @@ window.onhashchange = function(){grabUrl()};
 		</div>
 		<!--NAV -->
 		<div id="darknes"></div>
-	
-		
+
+
 		<div class="navbar shadow">
-		
-		<span class="logo">LUCASFLICKY</span><span class="sublogo">Digital Graphic Artist - Sound Designer - Aviation Dork</span>
+
+			<span class="logo">LUCASFLICKY.com</span><span class="sublogo">Digital Graphic Artist - Sound Designer - Aviation Dork</span>
 			<ul class="wsite-menu-default">
-				<li  class="nav-0">
-					<a  id="visaud" style="display:none" class="wsite-menu-item">
+				<li class="nav-0">
+					<a id="visaud" style="display:none" class="wsite-menu-item">
 					</a>
 				</li>
-				<li  class="menuitem nav-1 ativo">
-					<a  id="home" oncewashref class="wsite-menu-item">
+				<li class="menuitem nav-1 ativo">
+					<a id="home" oncewashref class="wsite-menu-item">
 					Home
 					</a>
 				</li>
-				<li  class="menuitem nav-2">
-					<a  id="goproj"  href="#/projects" class="wsite-menu-item">
+				<li class="menuitem nav-2">
+					<a id="goproj" href="#/projects" class="wsite-menu-item">
 					Projects
 					</a>
 				</li>
 				<li class="menuitem nav-3">
-					<a  href="blog.lucasflicky.com" class="wsite-menu-item">
+					<a href="blog.lucasflicky.com" class="wsite-menu-item">
 					Blog
 					</a>
 				</li>
@@ -100,13 +116,13 @@ window.onhashchange = function(){grabUrl()};
 					About
 					</a>
 				</li>
-				<li  class="menuitem nav-7">
-					<a  id="contactgo" href="#/contact" class="wsite-menu-item">
+				<li class="menuitem nav-7">
+					<a id="contactgo" href="#/contact" class="wsite-menu-item">
 					Contact
 					</a>
 				</li>
-				<li  class="nav-110">
-					<a  id="notmeme" oncewashref class="wsite-menu-item">
+				<li class="nav-110">
+					<a id="notmeme" oncewashref class="wsite-menu-item">
 					MENU ►
 					</a>
 				</li>
@@ -118,12 +134,12 @@ window.onhashchange = function(){grabUrl()};
 				<div class="textboks">
 					<h1 id="headline-intro">First things first, what are you looking for?</h1>
 				</div>
-				<div id="red" class="red" >
-					<img  id="landred" class="landicon" src="images/visu.png">
+				<div id="red" class="red">
+					<img id="landred" class="landicon" src="images/visu.png">
 					<div class="anime" id="redanim"></div>
 				</div>
 				<div id="blue" class="blue">
-					<img  id="landblu" class="landicon" src="images/audi.png">
+					<img id="landblu" class="landicon" src="images/audi.png">
 					<div class="anime" id="bluanim"></div>
 				</div>
 			</div>
@@ -134,48 +150,48 @@ window.onhashchange = function(){grabUrl()};
 			</div> -->
 		<div id="visual">
 			<div class="button-capsule">
-				<button id="bkred"class="button-back"></button>
+				<button id="bkred" class="button-back"></button>
 			</div>
 			<div class="header-red">
-				<h1  class="title"style="float:left">VISUAL</h1>
+				<h1 class="title" style="float:left">VISUAL</h1>
 			</div>
 			<div class="container">
 				<div id="options">
 					<ul id="filters" class="option-set" data-option-key="filter">
 						<ul class="row-1">
-							<li id="filters_shown" style="padding-left:12px;">Display:  </li>
+							<li id="filters_shown" style="padding-left:12px;">Display: </li>
 							<li class="thisLives filterall"><a class="selected" href="#filter" data-option-value="*" class="btn dark_btn">
 								All
 								</a>
 							</li>
-							<li><a href="#filter"data-option-value=".DSG"><span class="wsite-text">Graphic Design</span></a></li>
-							<li class="thisDies" ><a href="#filter"data-option-value=".VID"><span class="wsite-text">Visual Identidy</span></a></li>
-							<li class="thisDies"><a href="#filter"data-option-value=".PHM"><span class="wsite-text">Photomanipulation</span></a></li>
-							<li class="thisDies"><a href="#filter"data-option-value=".ITF"><span class="wsite-text">Interface</span></a></li>
-							<li class="thisDies"><a href="#filter"data-option-value=".PRN"><span class="wsite-text">Print Media</span></a></li>
-							<li><a href="#filter"data-option-value=".ELY"><span class="wsite-text">Editorial / Layout</span></a></li>
+							<li><a href="#filter" data-option-value=".DSG"><span class="wsite-text">Graphic Design</span></a></li>
+							<li class="thisDies"><a href="#filter" data-option-value=".VID"><span class="wsite-text">Visual Identidy</span></a></li>
+							<li class="thisDies"><a href="#filter" data-option-value=".PHM"><span class="wsite-text">Photomanipulation</span></a></li>
+							<li class="thisDies"><a href="#filter" data-option-value=".ITF"><span class="wsite-text">Interface</span></a></li>
+							<li class="thisDies"><a href="#filter" data-option-value=".PRN"><span class="wsite-text">Print Media</span></a></li>
+							<li><a href="#filter" data-option-value=".ELY"><span class="wsite-text">Editorial / Layout</span></a></li>
 						</ul>
 						<ul class="row-4">
-							<li class="thisDies filterall" ><a class="selected" href="#filter" data-option-value="*" class="btn dark_btn">
+							<li class="thisDies filterall"><a class="selected" href="#filter" data-option-value="*" class="btn dark_btn">
 								All
 								</a>
 							</li>
-							<li><a href="#filter"data-option-value=".ILS"><span class="wsite-text">Illustration</span></a></li>
-							<li><a href="#filter"data-option-value=".DGA"><span class="wsite-text">Digital Art</span></a></li>
-							<li class="thisDies" ><a href="#filter"data-option-value=".DGP"><span class="wsite-text">Digital Paint</span></a></li>
-							<li><a href="#filter"data-option-value=".TRD"><span class="wsite-text">Traditional Art</span></a></li>
-							<li><a href="#filter"data-option-value=".PXA"><span class="wsite-text">Pixel Art</span></a></li>
-							<li class="thisDies" ><a href="#filter"data-option-value=".CRD"><span class="wsite-text">Colouring/Render</span></a></li>
+							<li><a href="#filter" data-option-value=".ILS"><span class="wsite-text">Illustration</span></a></li>
+							<li><a href="#filter" data-option-value=".DGA"><span class="wsite-text">Digital Art</span></a></li>
+							<li class="thisDies"><a href="#filter" data-option-value=".DGP"><span class="wsite-text">Digital Paint</span></a></li>
+							<li><a href="#filter" data-option-value=".TRD"><span class="wsite-text">Traditional Art</span></a></li>
+							<li><a href="#filter" data-option-value=".PXA"><span class="wsite-text">Pixel Art</span></a></li>
+							<li class="thisDies"><a href="#filter" data-option-value=".CRD"><span class="wsite-text">Colouring/Render</span></a></li>
 						</ul>
 						<ul class="row-3">
-							<li><a href="#filter"data-option-value=".ADR"><span class="wsite-text">Art Direction</span></a></li>
-							<li class="thisDies" ><a href="#filter"data-option-value=".CLB"><span class="wsite-text">Collaborations</span></a></li>
-							<li class="thisDies"><a href="#filter"data-option-value=".CPT"><span class="wsite-text">Concept Art</span></a></li>
+							<li><a href="#filter" data-option-value=".ADR"><span class="wsite-text">Art Direction</span></a></li>
+							<li class="thisDies"><a href="#filter" data-option-value=".CLB"><span class="wsite-text">Collaborations</span></a></li>
+							<li class="thisDies"><a href="#filter" data-option-value=".CPT"><span class="wsite-text">Concept Art</span></a></li>
 							<!--<li><a href="#filter"data-option-value=".TCI"><span class="wsite-text">Technical Illust.</span></a></li>-->
 							<!--<li><a href="#filter"data-option-value=".TYP"><span class="wsite-text">Typography</span></a></li>-->
-							<li><a href="#filter"data-option-value=".LGO"><span class="wsite-text">Logotype</span></a></li>
-							<li ><a href="#filter"data-option-value=".WEB"><span class="wsite-text">Web Design</span></a></li>
-							<li class="thisDies" ><a href="#filter"data-option-value=".SKT"><span class="wsite-text">Sketchbook</span></a></li>
+							<li><a href="#filter" data-option-value=".LGO"><span class="wsite-text">Logotype</span></a></li>
+							<li><a href="#filter" data-option-value=".WEB"><span class="wsite-text">Web Design</span></a></li>
+							<li class="thisDies"><a href="#filter" data-option-value=".SKT"><span class="wsite-text">Sketchbook</span></a></li>
 						</ul>
 					</ul>
 					<h2 id="current-title1">
@@ -184,8 +200,9 @@ window.onhashchange = function(){grabUrl()};
 				</div>
 			</div>
 			<style>
+
 			</style>
-			<div id="filterbck" >
+			<div id="filterbck">
 				<div id="feed-gallery" style="  position: relative; width:100%; !important; " class="projectsa isotope">
 				</div>
 				<!-- end projects -->
@@ -198,7 +215,7 @@ window.onhashchange = function(){grabUrl()};
 		<!--AUDIO -->
 		<div id="audio">
 			<div class="button-capsule">
-				<button id="bkblu"class="button-back inv" ></button>
+				<button id="bkblu" class="button-back inv"></button>
 			</div>
 			<div class="header-blue">
 				<h1 class="title" style="float:right">AUDIO</h1>
@@ -208,37 +225,65 @@ window.onhashchange = function(){grabUrl()};
 			</div>
 		</div>
 		<!--ABOUT -->
-		<div id="about">
-			<button id="bkb"class="button-back-2"></button>
+		<div id="about" >
+			<button id="bkb" class="button-back-2"></button>
 			<img class="mugshot" src="assets/self.png">
-			<div class="txtbox">
+			<div dir="rtl" class="txtbox abot"><div class="aboute" dir="ltr">
 				<h2 class="subtit">ABOUT</h2>
-				<p class="white">Lorem ipsum dolor sit amet
-					consectetur adipiscing elit.
+				<p class="white">
+					
+					
+					Greetings! I'm Flicky, Lucas Flicky. Visual Design student at Federal  University of Rio Grande do Sul. Composer/Arranger and Co-Founder of <a class="aboutlnk" href="http://novastrike.com">Novastrike Soundscape</a>, freelancer graphic designer/illustrator, hobbyist programmer, and crank spinner in the freetimes.
+You probably know me for my awesome visual pieces, or maybe my awesome sound works, if not, let me introduce myself better.
+				</p><p class="white">
+I'm specialised in many things within the distinct areas I follow, my fields of expertise are creative and technical execution duties, high software proficiency is my flagship.
+As most of professionals of my two areas, I'm a early learner, and quite passionate in what I do. I like experimenting with things around, and every time I have an opportunity to do so, I will. 
+</p><p class="white">
+As an illustrator, one of my first influences was Kazuki Takahashi for his bold and sharp lined drawing style, this dating from 2006 approximately, when I still were just a kid with a pen, but that characteristics drew my attention since then. Nowdays i can't even pick my influences very well, I could say I'm pursuing some stylistic polyvalence, yet I have my own aesthetic preferences and may use it to develop a very original style.
+</p><p class="white">
+As a musician, my influences may be very clear for those who know them. I have major influence from the genius chiptune composer Yuzo Koshiro, as well as some spices from composers as Spencer Nilsen and Trevor Morris. In general, the rule of experimenting counts here too, i like mixing up styles, rhythms, riffs... pure musical alchemy!
+</p><p class="white">
+As a designer, I really don't have people as influences, but in actual design and artistic movements and trends, I tend to like stuff if they look good, and that's what I try to achieve, obviously, always with the experimentation feature running.
+</p><p class="white">
+So far I've been working mostly as a freelancer than a in-house professional, but the office/studio routine isn't an issue at all for me. I've previously worked at a of <a class="aboutlnk" href="http://www.archimedia.com.br">Computer Graphics for Architecture Studio</a> as Graphic Designer, and a local  <a class="aboutlnk" href="http://www.editoraage.com.br/">Publishing House</a> as not just Designer but also their in-house Illustrator. 
+					</p><p class="white">Currently I'm working as an in-house at a Brazillian <a class="aboutlnk" href="http://redeglobo.globo.com/rs/rbstvrs/">TV Broadcasting Channel</a> as a general purpose and UX Designer, using the Design's problem-solving and process-optimization techniques to minimize bureaucracy and paperload within the Television's structure. As well as working with graphic assets used on internal communication &amp; Workshops.
+</p><p class="white">
+If you're interested in anything I could provide for you or your business,  <a class="aboutlnk" href="#/contact">get in touch</a> !
+					
+					
+					
+					
 				</p>
 			</div>
-		</div>
+		</div></div>
 		<!--CONTACT -->
 		<div id="contactw">
-			<button id="bk"class="button-back-2 up"></button>
-			<div class="txtbox hidbox">
-				<table>
+			<button id="bk" class="button-back-2 up"></button>
+			<div class="contabox hidbox" >
+				<table class="minblack">
 					<tr>
 						<td class="major">
 							<h2 class="subtit">CONTACT</h2>
 							<p class="white conta">
-							
-							Looking for some top-tier Photoshop expert for processing a bunch of resources? An awesome design job for your business or for a project of your own? Conceptual art pieces to bring your ideas into life?<br> 
-							Or you're after some soundscape-wise pump-up in your game/animation project? <br>
-							<br>Or maybe even all of them?<br><br>Well, then toss me a message and tell me more about it.<br>
-							I'd love to know more about what are you planning out there!<br><br>Don't trust this little box guy on the left? You can get in touch directly via email or phone.<br>
-							<br><strong><font size="4">contato@lucasflicky.com</font></strong><br><font size="1">+55 </font>51 <strong>8586-3223</strong>
-							
-							
-							
-							
-							
-							
+
+								Looking for some top-tier Photoshop expert for processing a bunch of resources? An awesome design job for your business or for a project of your own? Conceptual art pieces to bring your ideas into life?
+								<br> Or you're after some soundscape-wise pump-up in your game/animation project?
+								<br>
+								<br>Or maybe even all of them?
+								<br>
+								<br>Well, then toss me a message and tell me more about it.
+								<br> I'd love to know more about what are you planning out there!
+								<br>
+								<br>Don't trust this little box guy on the left? You can get in touch directly via email or phone.
+								<br>
+								<br><strong><font size="4">contato@lucasflicky.com</font></strong>
+								<br><font size="1">+55 </font>51 <strong>8586-3223</strong>
+
+
+
+
+
+
 							</p>
 						</td>
 						<td>
@@ -361,224 +406,228 @@ window.onhashchange = function(){grabUrl()};
 		</div>
 		<!--PROJ -->
 		<div id="Projects">
-			<button id="bkbpj"class="button-back-2 dwn"></button>
+			<button id="bkbpj" class="button-back-2 dwn"></button>
 			<div class="txtbox less">
 				<h2 class="subtit">Projects</h2>
-				<p class="white">Lorem ipsum dolor sit amet
-					consectetur adipiscing elit.
+				<p class="white">Lorem ipsum dolor sit amet consectetur adipiscing elit.
 				</p>
 				<div id="dumproj"> </div>
 			</div>
 		</div>
 		<!--END -->
-	
-	<!--<script async  src="js/projects.js"></script >-->
-	
-	<script>
-		var redmoon	 = false;
-		var bluemoon = false;
-		var projota	 = false;
 
-		window.onkeydown = function(key){
+		<!--<script async  src="js/projects.js"></script >-->
+
+		<script>
+			var redmoon = false;
+			var bluemoon = false;
+			var projota = false;
+
+			window.onkeydown = function (key) {
 
 
-			if(key.which === 37){
+				if (key.which === 37) {
 
-				if (!redmoon && !bluemoon){
-					$('#red').click();
-					redmoon = true;
-				}else if(bluemoon){
-					console.log("aasdsafa");
-					bluemoon = false;
-					$('#bkblu').click();
+					if (!redmoon && !bluemoon) {
+						$('#red').click();
+						redmoon = true;
+					} else if (bluemoon) {
+						console.log("aasdsafa");
+						bluemoon = false;
+						$('#bkblu').click();
 					}
 
-			}else if(key.which === 39){
+				} else if (key.which === 39) {
 
-				if (!bluemoon && !redmoon){
-					$('#blue').click();
-					bluemoon = true;
-				}else if(redmoon){
-					redmoon = false;
-					$('#bkred').click();
+					if (!bluemoon && !redmoon) {
+						$('#blue').click();
+						bluemoon = true;
+					} else if (redmoon) {
+						redmoon = false;
+						$('#bkred').click();
 					}
-			}else if(key.which === 38){
-
-				!projota ? ($('#goproj').click(), projota = true) : false ;
-			}else if(key.which === 40){
-
-				!projota ?  $('body,html').animate({scrollTop: '0'},0) : ($('#home').click(), projota = false);
-			}
+				} 
 
 			}
+		</script>
+		<!-- 	CSS Last Calls 		-->
+		<link rel="stylesheet" type="text/css" href="css/filter-center-n.css" async>
+		<link rel="stylesheet" type="text/css" href="css/fancybox.css" async>
+		<link rel="stylesheet" type="text/css" href="css/table.css" async>
+		<!--						-->
 
-	</script>
-	<!-- 	CSS Last Calls 		-->
-	<link rel="stylesheet" type="text/css" href="css/filter-center-n.css" async>
-	<link rel="stylesheet" type="text/css" href="css/fancybox.css" async>
-	<link rel="stylesheet" type="text/css" href="css/table.css" async>
-	<!--						-->
-	
 	</div>
 	<div id="yesmob">
-	
-	
-	
-	
-	
-	
-	<span class="logo">LUCASFLICKY</span><span class="sublogo">Digital Graphic Artist - Sound Designer - Aviation Dork</span>
-			<ul class="wsite-menu-default">
-			
-				<li  class="nav-110">
-					<a  id="memenu" oncewashref class="wsite-menu-item">
+
+
+
+
+
+
+		<span class="logo">LUCASFLICKY</span><span class="sublogo">Digital Graphic Artist - Sound Designer - Aviation Dork</span>
+		<ul class="wsite-menu-default">
+
+			<li class="nav-110">
+				<a id="memenu" oncewashref class="wsite-menu-item">
 					MENU ►
 					</a>
-				</li>
-			</ul>
-	<div id="memeno">
+			</li>
+		</ul>
+		<div id="memeno">
 
-<div>
+			<div>
 
 
-<dl class="mobile-menu">
-	<a  style="font-family:Arial; font-size:22;float:left; position:absolute; top:15px; left:15px" href="#" class="wsite-menu-item">
+				<dl class="mobile-menu">
+					<a style="font-family:Arial; font-size:22;float:left; position:absolute; top:15px; left:15px" href="#" class="wsite-menu-item">
 				X
 			</a>
-		</li>	
+					</li>
 
-		
-<li  >
-		
-	
-		<li>
-			<a  id="home2" href="#lan5ding" class="wsite-menu-item">
+
+					<li>
+
+
+						<li>
+							<a id="home2" href="#lan5ding" class="wsite-menu-item">
 				Home
 			</a>
-		</li>	
-		<li  >
-			<a  id="goproj2"  href="#" class="wsite-menu-item">
+						</li>
+						<li>
+							<a id="goproj2" href="#" class="wsite-menu-item">
 				Projects
-			</a>			
-		</li>
-		
-		<li>
-			<a  href="http://www.lucasflicky.com/blog.html" class="wsite-menu-item">
-				Blog
-			</a>			
-		</li>
-
-		
-		<li>
-			<a id="aboutgo2" class="wsite-menu-item">
-				About
-			</a>			
-		</li>
-		
-		<li  >
-			<a  id="contactgo2" class="wsite-menu-item">
-				Contact
-			</a>			
-		</li>
-		<li>
-			<a  id="visaud2" href="#visaud" class="wsite-menu-item">
-				
 			</a>
-		</li>	
-</dl>
+						</li>
 
-</div>
+						<li>
+							<a href="http://www.lucasflicky.com/blog.html" class="wsite-menu-item">
+				Blog
+			</a>
+						</li>
 
-</div>
+
+						<li>
+							<a id="aboutgo2" class="wsite-menu-item">
+				About
+			</a>
+						</li>
+
+						<li>
+							<a id="contactgo2" class="wsite-menu-item">
+				Contact
+			</a>
+						</li>
+						<li>
+							<a id="visaud2" href="#visaud" class="wsite-menu-item">
+
+							</a>
+						</li>
+				</dl>
+
+			</div>
+
+		</div>
 		<div id="header">
 			<h2>Hey there small-screener, don't worry, I've slimmed down the site so you don't blow up your phone bill.</h2>
 		</div>
 		<div class="mobwrap">
 			<div class="btnmob red"> VISUAL </div>
 			<div class="btnmob blue"> AUDIO </div>
-			
+
 			<div>
-			
-			<div class="container">
-				
-<div id="options">
 
-<ul id="filters" class="option-set" data-option-key="filter">
-<ul class="row-1">
-<li id="filters_shown">Display</li>
+				<div class="container">
 
-<li class="thisLives"><a class="selected" href="#filter" data-option-value="*" class="btn dark_btn">
+					<div id="options">
+
+						<ul id="filters" class="option-set" data-option-key="filter">
+							<ul class="row-1">
+								<li id="filters_shown">Display</li>
+
+								<li class="thisLives"><a class="selected" href="#filter" data-option-value="*" class="btn dark_btn">
 All
 </a></li>
-<li><a href="#filter"data-option-value=".DSG"><span class="wsite-text">Graphic Design</span></a></li>
-<li class="thisDies" ><a href="#filter"data-option-value=".VID"><span class="wsite-text">Visual Identidy</span></a></li>
-<li class="thisDies"><a href="#filter"data-option-value=".PHM"><span class="wsite-text">Photomanipulation</span></a></li>
-<li class="thisDies"><a href="#filter"data-option-value=".ITF"><span class="wsite-text">Interface</span></a></li>
-<li class="thisDies"><a href="#filter"data-option-value=".PRN"><span class="wsite-text">Print Media</span></a></li>
-<li><a href="#filter"data-option-value=".ELY"><span class="wsite-text">Editorial / Layout</span></a></li>
-</ul>
+								<li><a href="#filter" data-option-value=".DSG"><span class="wsite-text">Graphic Design</span></a></li>
+								<li class="thisDies"><a href="#filter" data-option-value=".VID"><span class="wsite-text">Visual Identidy</span></a></li>
+								<li class="thisDies"><a href="#filter" data-option-value=".PHM"><span class="wsite-text">Photomanipulation</span></a></li>
+								<li class="thisDies"><a href="#filter" data-option-value=".ITF"><span class="wsite-text">Interface</span></a></li>
+								<li class="thisDies"><a href="#filter" data-option-value=".PRN"><span class="wsite-text">Print Media</span></a></li>
+								<li><a href="#filter" data-option-value=".ELY"><span class="wsite-text">Editorial / Layout</span></a></li>
+							</ul>
 
-<ul class="row-4">
+							<ul class="row-4">
 
-<li class="thisDies"><a class="selected" href="#filter" data-option-value="*" class="btn dark_btn">
+								<li class="thisDies"><a class="selected" href="#filter" data-option-value="*" class="btn dark_btn">
 All
 </a></li>
 
-<li><a href="#filter"data-option-value=".ILS"><span class="wsite-text">Illustration</span></a></li>
-<li><a href="#filter"data-option-value=".DGA"><span class="wsite-text">Digital Art</span></a></li>
-<li class="thisDies" ><a href="#filter"data-option-value=".DGP"><span class="wsite-text">Digital Paint</span></a></li>
-<li><a href="#filter"data-option-value=".TRD"><span class="wsite-text">Traditional Art</span></a></li>
-<li><a href="#filter"data-option-value=".PXA"><span class="wsite-text">Pixel Art</span></a></li>
-<li class="thisDies" ><a href="#filter"data-option-value=".CRD"><span class="wsite-text">Colouring/Render</span></a></li>
+								<li><a href="#filter" data-option-value=".ILS"><span class="wsite-text">Illustration</span></a></li>
+								<li><a href="#filter" data-option-value=".DGA"><span class="wsite-text">Digital Art</span></a></li>
+								<li class="thisDies"><a href="#filter" data-option-value=".DGP"><span class="wsite-text">Digital Paint</span></a></li>
+								<li><a href="#filter" data-option-value=".TRD"><span class="wsite-text">Traditional Art</span></a></li>
+								<li><a href="#filter" data-option-value=".PXA"><span class="wsite-text">Pixel Art</span></a></li>
+								<li class="thisDies"><a href="#filter" data-option-value=".CRD"><span class="wsite-text">Colouring/Render</span></a></li>
 
 
-</ul>
-<ul class="row-3">
+							</ul>
+							<ul class="row-3">
 
-<li><a href="#filter"data-option-value=".ADR"><span class="wsite-text">Art Direction</span></a></li>
-<li class="thisDies" ><a href="#filter"data-option-value=".CLB"><span class="wsite-text">Collaborations</span></a></li>
-<li class="thisDies"><a href="#filter"data-option-value=".CPT"><span class="wsite-text">Concept Art</span></a></li>
-<!--<li><a href="#filter"data-option-value=".TCI"><span class="wsite-text">Technical Illust.</span></a></li>-->
-<!--<li><a href="#filter"data-option-value=".TYP"><span class="wsite-text">Typography</span></a></li>-->
-<li><a href="#filter"data-option-value=".LGO"><span class="wsite-text">Logotype</span></a></li>
-<li ><a href="#filter"data-option-value=".WEB"><span class="wsite-text">Web Design</span></a></li>
-<li class="thisDies" ><a href="#filter"data-option-value=".SKT"><span class="wsite-text">Sketchbook</span></a></li>
+								<li><a href="#filter" data-option-value=".ADR"><span class="wsite-text">Art Direction</span></a></li>
+								<li class="thisDies"><a href="#filter" data-option-value=".CLB"><span class="wsite-text">Collaborations</span></a></li>
+								<li class="thisDies"><a href="#filter" data-option-value=".CPT"><span class="wsite-text">Concept Art</span></a></li>
+								<!--<li><a href="#filter"data-option-value=".TCI"><span class="wsite-text">Technical Illust.</span></a></li>-->
+								<!--<li><a href="#filter"data-option-value=".TYP"><span class="wsite-text">Typography</span></a></li>-->
+								<li><a href="#filter" data-option-value=".LGO"><span class="wsite-text">Logotype</span></a></li>
+								<li><a href="#filter" data-option-value=".WEB"><span class="wsite-text">Web Design</span></a></li>
+								<li class="thisDies"><a href="#filter" data-option-value=".SKT"><span class="wsite-text">Sketchbook</span></a></li>
 
-</ul>
+							</ul>
 
-</ul>
+						</ul>
 
-<h2 id="current-title1">
+						<h2 id="current-title1">
 All
 </h2>
 
-</div>
-</div>
-			
-
-				<div id="filterbck" >
-
-					<div id="feed-galleryB" style="  position: relative; width:100%; !important; " class="projectsa isotope"> 
+					</div>
+				</div>
 
 
+				<div id="filterbck">
 
-</div><!-- end filterbck -->
-</div><!-- end portfolio -->
-</div><!-- end portfolio -->
+					<div id="feed-galleryB" style="  position: relative; width:100%; !important; " class="projectsa isotope">
 
 
-			
+
+					</div>
+					<!-- end filterbck -->
+				</div>
+				<!-- end portfolio -->
+			</div>
+			<!-- end portfolio -->
+
+
+
 		</div>
 	</div>
 </body>
-	<script   src="js/main.js"></script>
-	<script   src="js/custom.js"></script>
-	<script   src="js/jquery_002.js"></script>
-	<script async  src="js/filterScript1.js"></script >
-	<script async  src="js/hash.js"></script >
-	<script async  src="js/snip.js"></script >
-	<script src="js/touchSwipe.js"></script >
-	<script src="js/comingSoon.js"></script>
-	
-	
-	<html>
+<script src="js/main.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/jquery_002.js"></script>
+<script async src="js/filterScript1.js"></script>
+
+<script async src="js/snip.js"></script>
+<script src="js/touchSwipe.js"></script>
+<script src="js/comingSoon.js"></script>
+<script> 
+	(function($){
+        $(window).load(function(){
+            $(".txtbox").mCustomScrollbar({theme:"inset",position:"left"});
+            $("#filterbck").mCustomScrollbar({theme:"inset"});
+           // $(".abot").mCustomScrollbar({axis:"yx"});
+			
+        });
+    })(jQuery);
+</script>
+
+<html>

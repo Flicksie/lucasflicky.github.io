@@ -479,10 +479,10 @@ return `<table  class="tg" style="table-layout: margin-bottom: 10px; fixed;">
 function feed(){
 	
 
-	console.log('Loopstart >>>')
+	//console.log('Loopstart >>>')
 for (var i in gallery){
 	
-	console.log('loop #'+i)
+	//console.log('loop #'+i)
 	
 	
 	var seq = seq || [];
@@ -492,14 +492,14 @@ for (var i in gallery){
 					if (Math.round(Math.random()*100) % 3 > 0){
 					//document.getElementById("feed-gallery").innerHTML 
 					seq[u] += newPic(gallery[i][1],'',gallery[i][0],gallery[i][2],i,gallery[i][4]);
-					console.log(u+' ODD')
+					//console.log(u+' ODD')
 					}
 					else{		
 					//document.getElementById("feed-gallery").innerHTML 
 					seq[u] = newPic(gallery[i][1],'',gallery[i][0],gallery[i][2],i,gallery[i][4]);
 					//document.getElementById("feed-gallery").innerHTML 
 					seq[u] += out;
-					console.log(u+' EVEN')
+				//	console.log(u+' EVEN')
 				}
 };
 	
@@ -512,7 +512,7 @@ randomFeed(gallery[i][3]);
 	
 };
 	
-console.log(seq)
+//console.log(seq)
 	
 	document.getElementById("feed-gallery").innerHTML += seq[5];
 	document.getElementById("feed-gallery").innerHTML += seq[4];
