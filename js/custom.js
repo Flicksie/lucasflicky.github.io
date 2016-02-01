@@ -373,7 +373,7 @@ function go_audio(){
     $('#bkblu').animate({left: '5%'}, 1100);
     active=".nav-0"
     document.getElementById('visaud').innerHTML = "AUDIO";
-    document.getElementById('visaud2').innerHTML = "AUDIO";
+    //mobmendocument.getElementById('visaud2').innerHTML = "AUDIO";
     allPassive();
     $('.nav-0').addClass('ativo');
 	$(document.body).animate({scrollTop: '0'},500);
@@ -392,7 +392,7 @@ function go_visual(){
     $('#bkred').animate({right: '5%'}, 1100);
 active=".nav-0"
     document.getElementById('visaud').innerHTML = "VISUAL";
-    document.getElementById('visaud2').innerHTML = "VISUAL";
+   //mobmen document.getElementById('visaud2').innerHTML = "VISUAL";
 allPassive();
     $('.nav-0').addClass('ativo');
 	$(document.body).animate({scrollTop: '0'},500);

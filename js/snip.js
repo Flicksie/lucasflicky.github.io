@@ -386,12 +386,12 @@ optName=optName|| "Picture";
 path=path ||'assets/' || 'portf/'; //"files/theme/gallery/";
 category=category || "Misc";
 projName = projName || "Untitled";
-
+i = i || "weko";
 
 return " \
  \
  \
-<div 	id='feed-imageContainer"+ i +"' style='float:center;position: absolute; left: 0px; top: 0px; transform: translate(0px, 0px) scale(0.001); opacity: 1;' \
+<div 	id='feed-imageContainer' style='float:center;position: absolute; left: 0px; top: 0px; transform: translate(0px, 0px) scale(0.001); opacity: 1;' \
 class=' \
 blockelement \
 element \
@@ -415,9 +415,9 @@ onclick='if (!lightboxLoaded) return false'> \
  \
 "
 
-
-
 };
+
+
 function printProj(name,category,displayPic,icon,describ,role,link){
 name = name			 	|| "Nome do Projeto"
 category = category		|| "Categoria"
@@ -486,19 +486,29 @@ for (var i in gallery){
 	
 	
 	var seq = seq || [];
+	var seqB = seqB || [];
 	
 	function randomFeed(u){
 			var out = seq[u];
+			var outB = seqB[u];
 					if (Math.round(Math.random()*100) % 3 > 0){
 					//document.getElementById("feed-gallery").innerHTML 
 					seq[u] += newPic(gallery[i][1],'',gallery[i][0],gallery[i][2],i,gallery[i][4]);
+					seqB[u] += newPicMO(gallery[i][1],'',gallery[i][0],gallery[i][2],i,gallery[i][4]);
 					//console.log(u+' ODD')
+						
 					}
 					else{		
 					//document.getElementById("feed-gallery").innerHTML 
 					seq[u] = newPic(gallery[i][1],'',gallery[i][0],gallery[i][2],i,gallery[i][4]);
+					seqB[u] = newPicMO(gallery[i][1],'',gallery[i][0],gallery[i][2],i,gallery[i][4]);
+						
+					
+			
 					//document.getElementById("feed-gallery").innerHTML 
 					seq[u] += out;
+					seqB[u] += outB;
+						
 				//	console.log(u+' EVEN')
 				}
 };
@@ -507,12 +517,35 @@ gallery[i][3] = gallery[i][3] || 5;
 	
 randomFeed(gallery[i][3]);
 
-				
+
 
 	
 };
 	
-//console.log(seq)
+	
+	
+	
+function newPicMO(category,path,imgname,rank,optName,i,projName){
+
+optName=optName|| "Picture";
+path=path ||'assets/'; //"files/theme/gallery/";
+category=category || "Misc";
+projName = projName || "Untitled";
+
+
+return `<div class="galleryMOB">
+<div class="imgframe">
+<a href="./` + path +'origs/'+ imgname + `.png"> <img class="galM" src="./` + path + imgname + `.png">
+</img></a>
+</div>
+</div>`
+};
+	
+	
+	
+
+for (i in seqB) {seqB[i] = seqB[i].replace("undefined"," ");}
+
 	
 	document.getElementById("feed-gallery").innerHTML += seq[5];
 	document.getElementById("feed-gallery").innerHTML += seq[4];
@@ -520,11 +553,11 @@ randomFeed(gallery[i][3]);
 	document.getElementById("feed-gallery").innerHTML += seq[2];
 	document.getElementById("feed-gallery").innerHTML += seq[1];
 	
-	document.getElementById("feed-galleryB").innerHTML += seq[5];
-	document.getElementById("feed-galleryB").innerHTML += seq[4];
-	document.getElementById("feed-galleryB").innerHTML += seq[3];
-	document.getElementById("feed-galleryB").innerHTML += seq[2];
-	document.getElementById("feed-galleryB").innerHTML += seq[1];
+	document.getElementById("feed-galleryB").innerHTML += seqB[5];
+	document.getElementById("feed-galleryB").innerHTML += seqB[4];
+	document.getElementById("feed-galleryB").innerHTML += seqB[3];
+	document.getElementById("feed-galleryB").innerHTML += seqB[2];
+	document.getElementById("feed-galleryB").innerHTML += seqB[1];
 };
 
 feed();
