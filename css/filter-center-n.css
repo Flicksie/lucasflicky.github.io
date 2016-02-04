@@ -102,13 +102,13 @@ font-size: 14px;
 
 
 .blockelement{
-    width:25%;
+    width:24.5%;
     height: auto;
     background: rgba(20,20,30,0.5);
-    margin: 0;
-    padding: 0px;
+    margin: 0px;
+    padding: 2px;
     height: auto;
-    background: #f9fafb;
+ 
 	
 }
 

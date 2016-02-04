@@ -49,6 +49,7 @@
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  720 */
 
 @media screen and (max-width: 680px) {
+	body{overflow: auto !important;}
 	#filterbck {
 		overflow-y: auto;
 	}
@@ -246,7 +247,7 @@
 	}
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1270px) {
 	body {
 		font-size: 0.875em
 	}
