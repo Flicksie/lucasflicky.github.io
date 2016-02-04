@@ -557,7 +557,8 @@ return `<div class="galleryMOB">
 	document.getElementById("feed-galleryB").innerHTML += seqB[4];
 	document.getElementById("feed-galleryB").innerHTML += seqB[3];
 	document.getElementById("feed-galleryB").innerHTML += seqB[2];
-	document.getElementById("feed-galleryB").innerHTML += seqB[1];*/
+	document.getElementById("feed-galleryB").innerHTML += seqB[1]; 
+	*/
 };
 
 feed();
@@ -578,6 +579,9 @@ feed();
 
 
 */
+
+
+
 
 var projects =	[
 
@@ -656,4 +660,68 @@ for (var i in projects){
 
 document.getElementById('dumproj').innerHTML += printProj(projects[i][0],projects[i][1],projects[i][2],projects[i][3],projects[i][4],projects[i][5],projects[i][6]);
 
+
+
+
 };
+
+
+
+
+
+
+function printProjSimple(name,category,displayPic,icon,describ,role,link){
+name = name			 	|| "Nome do Projeto"
+category = category		|| "Categoria"
+displayPic =displayPic	|| "placeholder.png"
+icon = icon				|| "favicon.png"
+describ = describ		|| "Lorem ipsum dolor sit amet consectetur adipiscing elit."
+role = role				|| "Role"
+link = link				|| "link"
+
+		var caption = "Details"
+		var href = ""
+		var state = "disabled"
+
+		if (link.match("http")){
+			href = link;
+			state = "enabled";
+			
+			} else { 
+			caption = "N/A";
+			state = "disabled";
+			};
+
+
+
+return `
+
+<table class="tablera">
+<colgroup>
+<col style="width: 50px">
+<col style="width: 100%">
+<col style="width: 30%">
+</colgroup>
+  <tr>
+    <th class="taitoru" colspan="3">`+name+`</th>
+   
+  </tr>
+  <tr>
+    <td class="taitoIc"> <img class="tabP" src="images/project/` + displayPic + `"> </td>
+    <td class="taitoDesc">`+role+`</td>
+    <td class="taitoBut  `+state+`"  >	<a href="`+href+`">`+caption+` </a>	</td>
+  </tr>
+</table>`
+			
+}
+for (var i in projects){
+
+
+document.getElementById('spoonfed').innerHTML += printProjSimple(projects[i][0],projects[i][1],projects[i][2],projects[i][3],projects[i][4],projects[i][5],projects[i][6]);
+
+
+
+
+};
+
+

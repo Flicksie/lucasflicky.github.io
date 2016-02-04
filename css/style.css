@@ -1,0 +1,113 @@
+
+.cd-accordion-menu {
+  width: 99%;
+ // margin-left:-3em;
+  /*! max-width: 600px; */
+
+
+  list-style: none;
+}
+.cd-accordion-menu ul {
+  /* by default hide all sub menus */
+  display: none;
+    list-style: none;
+  
+}
+
+.tablera{table-layout: fixed; width: 100%;background:black; border-radius: 15px ;overflow:hidden;}
+
+.taitoru{
+text-align:left;
+text-indent:5%;
+background:#Dd2525;
+color: white;
+font-size:0.8em;
+  border-radius: 12px 12px  5px 5px ;
+}
+.taitoIc{
+width:50px;
+height:50px;
+background: #1b1b1b;
+
+}
+
+.tabP{width:50px; border-radius:10px;}
+
+.taitoDesc{
+background: #2b2b2b;
+color: white;
+padding-left:1em;
+font-size:0.8em;
+}
+.taitoBut{
+text-align:center;
+
+color:white;
+background:#Ad3535;
+  border-radius: 0 15px 15px 0;
+}
+.taitoBut:hover{
+background:#Fd3535;
+cursor:pointer;
+}
+.taitoBut:active{
+background:#Fd6565;
+cursor:pointer;
+}
+.taitoBut a{
+color:white;
+  font-size:0.8em;
+}
+
+
+.cd-accordion-menu label, .cd-accordion-menu {
+  position: relative;
+  display: block;
+  padding: 8px 0px 8px 10px;
+ // background: #4d5158 ;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.praj{ 
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 10px;
+  background: #4d5158 ;
+  color: #ffffff;
+  margin-left:-2em;
+  width:100%;
+  font-size: 0.8rem;
+  overflow: hidden;
+}
+
+
+
+.cd-accordion-menu , .praj {
+   box-shadow: inset 1px 3px 5px rgba(0,0,0,0.8);
+  border-radius: 0 0 10px 10px;
+}
+.cd-accordion-menu label{
+   border-radius: 10px 0px 0 10px;
+    box-shadow: 0 1px 2px 3px rgba(0,0,0,0.3);
+  background: #C43938 ;
+    font-size: 1.6rem;
+}
+.cd-accordion-menu label:hover {
+  background: #8d1118 ;
+}
+
+.cd-accordion-menu label {
+  cursor: pointer;
+}
+.cd-accordion-menu input[type=checkbox] {
+  /* hide native checkbox */
+  position: absolute;
+  opacity: 0;
+}
+.cd-accordion-menu li {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
