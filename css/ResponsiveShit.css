@@ -60,6 +60,9 @@
 		width: 100%;
 		text-align: center;
 	}
+	
+
+	
 	.galleryMOB {
 		position: relative;
 		width: 45%;
@@ -71,12 +74,20 @@
 	}
 	.imgframe {
 		position: absolute;
-		text-align: left;
-		width: 100%;
+			width: 100%;
+	
 	}
 	img.galM {
-		min-width: 100%;
+	//	min-width: 100%;
+	object-fit: cover; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+ height: 150px;
+  width: 100%;
 	}
+
+	
+	
+	
 	body {
 		color: white;
 		overflow: auto;
