@@ -28,25 +28,6 @@
 			grabUrl()
 		}); //};
 
-		$(document).ready(function ($) {
-
-			grabUrl();
-			setTimeout(
-				function () {
-
-					$('#preloader').fadeOut('slow', function () {
-						$(this).remove();
-					});
-				}, 5000 // 5s
-			);
-		});
-		
-		
-
-
-	
-
-
 
 	</script>
 
@@ -73,9 +54,9 @@
 </head>
 
 <body >
-
-	<div id="notmob">
 		<div id="preloader"></div>
+	<div id="notmob">
+
 
 
 		<div id="redrestrain">
@@ -816,6 +797,7 @@ If you're interested in anything I could provide for you or your business,  <a c
 <div class="imgframe">
 <a href="./assets/origs/tharma2k.png"> <img class="galM mCS_img_loaded" src="./assets/tharma2k.png">
 </a>
+</a>
 </div>
 </div> <div class="galleryMOB">
 <div class="imgframe">
@@ -864,6 +846,22 @@ If you're interested in anything I could provide for you or your business,  <a c
 			
         });
     })(jQuery);
+	
+		$(document).ready(function ($) {
+
+			grabUrl();
+			setTimeout(
+				function () {
+
+					$('#preloader').fadeOut('slow', function () {
+						$(this).remove();
+					});
+				}, 5000 // 5s
+			);
+		});
+		
+	
+	
 </script>
 
 <html>
