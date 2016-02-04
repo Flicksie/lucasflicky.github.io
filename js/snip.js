@@ -544,7 +544,7 @@ return `<div class="galleryMOB">
 	
 	
 
-// for (i in seqB) {seqB[i] = seqB[i].replace("undefined"," ");}
+//for (i in seqB) {seqB[i] = seqB[i].replace("undefined"," ");}
 
 	
 	document.getElementById("feed-gallery").innerHTML += seq[5];
@@ -557,8 +557,8 @@ return `<div class="galleryMOB">
 	document.getElementById("feed-galleryB").innerHTML += seqB[4];
 	document.getElementById("feed-galleryB").innerHTML += seqB[3];
 	document.getElementById("feed-galleryB").innerHTML += seqB[2];
-	document.getElementById("feed-galleryB").innerHTML += seqB[1];
-};*/
+	document.getElementById("feed-galleryB").innerHTML += seqB[1];*/
+};
 
 feed();
 
