@@ -23,56 +23,42 @@
 			var currentPage = location.hash.substring(2);
 			currentPage ? gotopg(currentPage) : false;
 		};
-
-	$(window).hashchange( function(){//	window.onhashchange = function () {
+		$(window).hashchange(function () { //	window.onhashchange = function () {
 			grabUrl()
 		}); //};
-
-
 	</script>
-
-
-
-
 	<meta http-equiv="Cache-Control" content="cache,store" />
 	<meta http-equiv="Pragma" content="cache" />
 	<meta http-equiv="Expires" content="800808058845645609" />
-
 	<link rel="shortcut icon" href="images/favicon.png">
 	<link rel="icon" type="image/png" id="favicon" href="images/favicon.png">
 	<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/main_style.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="css/grid_16.css" rel="stylesheet" async>
-	<link href="css/comingSoon.css" rel="stylesheet">
-	<link href="css/ResponsiveShit.css" rel="stylesheet" async>
-
-	
+	<link rel="stylesheet" type="text/css" href="css/grid_16.css">
+	<link rel="stylesheet" type="text/css" href="css/comingSoon.css">
+	<link rel="stylesheet" type="text/css" href="css/ResponsiveShit.css">
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
 	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-	
-
 	<script async src="js/imgload.js"></script>
 </head>
 
-<body >
-
+<body>
 	<div id="notmob">
-
 		<div id="preloader"></div>
-
 		<div id="redrestrain">
-			<p>Lorem ipsum dolor sit amet, homero facilisi iudicabit cu sit. Has te alii magna numquam, essent habemus gloriatur ei ius, nec paulo veniam no. Etiam solet deterruisset in vim, et illum suscipiantur qui. Sonet zril noluisse eam te, eum ex eius legere rationibus.</p>
+			<p>
+				The Visual section contains all works which bears any kind of visual appeal. From corporate branding to fantasy illustrations, there's also a "Sketchbook" filter for everyday casual doodles.
+			</p>
 		</div>
 		<div id="blurestrain">
-			<p>Lorem ipsum dolor sit amet, homero facilisi iudicabit cu sit. Has te alii magna numquam, essent habemus gloriatur ei ius, nec paulo veniam no. Etiam solet deterruisset in vim, et illum suscipiantur qui. Sonet zril noluisse eam te, eum ex eius legere rationibus.</p>
+			<p>
+				The Audio sections provides a brief selection of original and arranged songs produced commercially and personally. Styles range from orchestral to hybrid electronic.
+			</p>
 		</div>
 		<!--NAV -->
 		<div id="darknes"></div>
-
-
 		<div class="navbar shadow">
-
 			<span class="logo">LUCASFLICKY.com</span><span class="sublogo">Digital Graphic Artist - Sound Designer - Aviation Dork</span>
 			<ul class="wsite-menu-default">
 				<li class="nav-0">
@@ -130,71 +116,151 @@
 		</div>
 		<!--container-->
 		<!--VISUAL <div class="header-red">
-			</div> -->
+</div> -->
 		<div id="visual">
 			<div class="button-capsule">
 				<button id="bkred" class="button-back"></button>
 			</div>
+
 			<div class="header-red">
 				<h1 class="title" style="float:left">VISUAL</h1>
 			</div>
+
 			<div class="container">
 				<div id="options">
 					<ul id="filters" class="option-set" data-option-key="filter">
 						<ul class="row-1">
-							<li id="filters_shown" style="padding-left:12px;">Display: </li>
+							<!--<li id="filters_shown" style="padding-left:12px;">Display: </li>-->
+
 							<li class="thisLives filterall"><a class="selected" href="#filter" data-option-value="*" class="btn dark_btn">
-								All
-								</a>
+All
+</a>
 							</li>
-							<li><a href="#filter" data-option-value=".DSG"><span class="wsite-text">Graphic Design</span></a></li>
-							<li class="thisDies"><a href="#filter" data-option-value=".VID"><span class="wsite-text">Visual Identidy</span></a></li>
-							<li class="thisDies"><a href="#filter" data-option-value=".PHM"><span class="wsite-text">Photomanipulation</span></a></li>
-							<li class="thisDies thisMegaDies"><a href="#filter" data-option-value=".ITF"><span class="wsite-text">Interface</span></a></li>
-							<li class="thisDies thisMegaDies"><a href="#filter" data-option-value=".PRN"><span class="wsite-text">Print Media</span></a></li>
-							<li><a href="#filter" data-option-value=".ELY"><span class="wsite-text">Editorial / Layout</span></a></li>
+
+							<li><a href="#filter" data-option-value=".DSG"><span class="wsite-text">
+Graphic Design
+</span></a></li>
+
+							<li class="thisDies"><a href="#filter" data-option-value=".VID"><span class="wsite-text">
+Visual Identidy
+</span></a></li>
+
+							<li class="thisDies ">
+								<a class="disabledF" href="#filter" data-option-value=".PHM"><span class="wsite-text">
+Photomanipulation
+</span></a></li>
+
+							<li class="thisDies thisMegaDies ">
+								<a class="disabledF" href="#filter" data-option-value=".ITF"><span class="wsite-text">
+Interface
+</span>
+	</a></li>
+
+							<li class="thisDies thisMegaDies"><a class="disabledF" href="#filter" data-option-value=".PRN"><span class=" wsite-text">Print Media
+</span></a></li>
+
+							<li><a href="#filter" data-option-value=".ELY"><span class="wsite-text">
+Editorial / Layout
+</span></a></li>
+
 						</ul>
+
 						<ul class="row-4">
 							<li class="thisDies thisMegaDies wekoBB filterall"><a class="selected" href="#filter" data-option-value="*" class="btn dark_btn">
-								All
-								</a>
+All
+</a>
 							</li>
-							<li class="thisDies"><a href="#filter" data-option-value=".ILS"><span class="wsite-text">Illustration</span></a></li>
-							<li ><a href="#filter" data-option-value=".DGA"><span class="wsite-text">Digital Art</span></a></li>
-							<li class="thisDies thisMegaDies"><a href="#filter" data-option-value=".DGP"><span class="wsite-text">Digital Paint</span></a></li>
-							<li><a href="#filter" data-option-value=".TRD"><span class="wsite-text">Traditional Art</span></a></li>
-							<li><a href="#filter" data-option-value=".PXA"><span class="wsite-text">Pixel Art</span></a></li>
-							<li class="thisDies thisMegaDies"><a href="#filter" data-option-value=".CRD"><span class="wsite-text">Colouring/Render</span></a></li>
+
+							<li class="thisDies"><a href="#filter" data-option-value=".ILS"><span class="wsite-text">
+Illustration
+</span></a></li>
+
+							<li><a href="#filter" data-option-value=".DGA"><span class="wsite-text">
+Digital Art
+</span></a></li>
+
+							<li class="thisDies thisMegaDies"><a href="#filter" data-option-value=".DGP"><span class="wsite-text">
+Digital Paint
+</span></a></li>
+
+							<li><a href="#filter" data-option-value=".TRD"><span class="wsite-text">
+Traditional Art
+</span></a></li>
+
+							<li><a href="#filter" data-option-value=".PXA"><span class="wsite-text">
+Pixel Art
+</span></a></li>
+
+							<li class="thisDies thisMegaDies"><a href="#filter" data-option-value=".CRD"><span class="wsite-text">
+Colouring/Render
+</span></a></li>
+
 						</ul>
+
 						<ul class="row-3">
-							<li><a href="#filter" data-option-value=".ADR"><span class="wsite-text">Art Direction</span></a></li>
-							<li class="thisDies thisMegaDies"><a href="#filter" data-option-value=".CLB"><span class="wsite-text">Collaborations</span></a></li>
-							<li class="thisDies thisMegaDies"><a href="#filter" data-option-value=".CPT"><span class="wsite-text">Concept Art</span></a></li>
-							<!--<li><a href="#filter"data-option-value=".TCI"><span class="wsite-text">Technical Illust.</span></a></li>-->
-							<!--<li><a href="#filter"data-option-value=".TYP"><span class="wsite-text">Typography</span></a></li>-->
-							<li><a href="#filter" data-option-value=".LGO"><span class="wsite-text">Logotype</span></a></li>
-							<li><a href="#filter" data-option-value=".WEB"><span class="wsite-text">Web Design</span></a></li>
-							<li class="thisDies"><a href="#filter" data-option-value=".SKT"><span class="wsite-text">Sketchbook</span></a></li>
+							<li><a href="#filter" data-option-value=".ADR"><span class="wsite-text">
+Art Direction
+</span></a></li>
+
+							<li class="thisDies thisMegaDies"><a href="#filter" data-option-value=".CLB"><span class="wsite-text">
+Collaborations
+</span></a></li>
+
+							<li class="thisDies thisMegaDies"><a href="#filter" data-option-value=".CPT"><span class="wsite-text">
+Concept Art
+</span></a></li>
+
+							<!--<li><a href="#filter"data-option-value=".TCI"><span class="wsite-text">
+Technical Illust.
+</span></a></li>
+-->
+							<!--<li><a href="#filter"data-option-value=".TYP"><span class="wsite-text">
+Typography
+</span></a></li>
+-->
+							<li>
+								<a href="#filter" data-option-value=".LGO">
+									<span class="wsite-text">
+Logotype
+</span></a>
+							</li>
+
+							<li>
+								<a class="disabledF" href="#filter" data-option-value=".WEB">
+									<span class="wsite-text">
+Web Design
+</span></a>
+							</li>
+
+							<li class="thisDies"><a href="#filter" data-option-value=".SKT"><span class="wsite-text">
+Sketchbook
+</span></a></li>
+
 						</ul>
+
 					</ul>
+
 					<h2 id="current-title1">
-						All
-					</h2>
+All
+</h2>
 				</div>
+
 			</div>
-			<style>
+
+			<style >
 
 			</style>
 			<div id="filterbck">
 				<div id="feed-gallery" style="  position: relative; width:100%; !important; " class="projectsa isotope">
 				</div>
+
 				<!-- end projects -->
 			</div>
+
 			<!-- end filterbck -->
 		</div>
+
 		<!-- end portfolio -->
-
-
 		<!--AUDIO -->
 		<div id="audio">
 			<div class="button-capsule">
@@ -208,47 +274,47 @@
 			</div>
 		</div>
 		<!--ABOUT -->
-		<div id="about" >
+		<div id="about">
 			<button id="bkb" class="button-back-2"></button>
-			<img class="mugshot" src="assets/self.png">
-			<div dir="rtl" class="txtbox abot"><div class="aboute" dir="ltr">
-				<h2 class="subtit">ABOUT</h2>
-				<p class="white">
-					
-					
-					Greetings! I'm Flicky, Lucas Flicky. Visual Design student at Federal  University of Rio Grande do Sul. Composer/Arranger and Co-Founder of <a class="aboutlnk" href="http://novastrike.com">Novastrike Soundscape</a>, freelancer graphic designer/illustrator, hobbyist programmer, and crank spinner in the freetimes.
-You probably know me for my awesome visual pieces, or maybe my awesome sound works, if not, let me introduce myself better.
-				</p><p class="white">
-I'm specialised in many things within the distinct areas I follow, my fields of expertise are creative and technical execution duties, high software proficiency is my flagship.
-As most of professionals of my two areas, I'm a early learner, and quite passionate in what I do. I like experimenting with things around, and every time I have an opportunity to do so, I will. 
-</p><p class="white">
-As an illustrator, one of my first influences was Kazuki Takahashi for his bold and sharp lined drawing style, this dating from 2006 approximately, when I still were just a kid with a pen, but that characteristics drew my attention since then. Nowdays i can't even pick my influences very well, I could say I'm pursuing some stylistic polyvalence, yet I have my own aesthetic preferences and may use it to develop a very original style.
-</p><p class="white">
-As a musician, my influences may be very clear for those who know them. I have major influence from the genius chiptune composer Yuzo Koshiro, as well as some spices from composers as Spencer Nilsen and Trevor Morris. In general, the rule of experimenting counts here too, i like mixing up styles, rhythms, riffs... pure musical alchemy!
-</p><p class="white">
-As a designer, I really don't have people as influences, but in actual design and artistic movements and trends, I tend to like stuff if they look good, and that's what I try to achieve, obviously, always with the experimentation feature running.
-</p><p class="white">
-So far I've been working mostly as a freelancer than a in-house professional, but the office/studio routine isn't an issue at all for me. I've previously worked at a of <a class="aboutlnk" href="http://www.archimedia.com.br">Computer Graphics for Architecture Studio</a> as Graphic Designer, and a local  <a class="aboutlnk" href="http://www.editoraage.com.br/">Publishing House</a> as not just Designer but also their in-house Illustrator. 
-					</p><p class="white">Currently I'm working as an in-house at a Brazillian <a class="aboutlnk" href="http://redeglobo.globo.com/rs/rbstvrs/">TV Broadcasting Channel</a> as a general purpose and UX Designer, using the Design's problem-solving and process-optimization techniques to minimize bureaucracy and paperload within the Television's structure. As well as working with graphic assets used on internal communication &amp; Workshops.
-</p><p class="white">
-If you're interested in anything I could provide for you or your business,  <a class="aboutlnk" href="#/contact">get in touch</a> !
-					
-					
-					
-					
-				</p>
+			<img class="mugshot" src="images/gallery/self.png">
+			<div dir="rtl" class="txtbox abot">
+				<div class="aboute" dir="ltr">
+					<h2 class="subtit">ABOUT</h2>
+					<p class="white">
+						Greetings! I'm Flicky, Lucas Flicky. Visual Design student at Federal University of Rio Grande do Sul. Composer/Arranger and Co-Founder of <a class="aboutlnk" href="http://novastrike.com">Novastrike Soundscape</a>, freelancer graphic designer/illustrator, hobbyist programmer, and crank spinner in the freetimes. You probably know me for my awesome visual pieces, or maybe my awesome sound works, if not, let me introduce myself better.
+					</p>
+					<p class="white">
+						I'm specialised in many things within the distinct areas I follow, my fields of expertise are creative and technical execution duties, high software proficiency is my flagship. As most of professionals of my two areas, I'm a early learner, and quite passionate in what I do. I like experimenting with things around, and every time I have an opportunity to do so, I will.
+					</p>
+					<p class="white">
+						As an illustrator, one of my first influences was Kazuki Takahashi for his bold and sharp lined drawing style, this dating from 2006 approximately, when I still were just a kid with a pen, but that characteristics drew my attention since then. Nowdays i can't even pick my influences very well, I could say I'm pursuing some stylistic polyvalence, yet I have my own aesthetic preferences and may use it to develop a very original style.
+					</p>
+					<p class="white">
+						As a musician, my influences may be very clear for those who know them. I have major influence from the genius chiptune composer Yuzo Koshiro, as well as some spices from composers as Spencer Nilsen and Trevor Morris. In general, the rule of experimenting counts here too, i like mixing up styles, rhythms, riffs... pure musical alchemy!
+					</p>
+					<p class="white">
+						As a designer, I really don't have people as influences, but in actual design and artistic movements and trends, I tend to like stuff if they look good, and that's what I try to achieve, obviously, always with the experimentation feature running.
+					</p>
+					<p class="white">
+						So far I've been working mostly as a freelancer than a in-house professional, but the office/studio routine isn't an issue at all for me. I've previously worked at a of <a class="aboutlnk" href="http://www.archimedia.com.br">Computer Graphics for Architecture Studio</a> as Graphic Designer, and a local <a class="aboutlnk" href="http://www.editoraage.com.br/">Publishing House</a> as not just Designer but also their in-house Illustrator.
+					</p>
+					<p class="white">Currently I'm working as an in-house at a Brazillian <a class="aboutlnk" href="http://redeglobo.globo.com/rs/rbstvrs/">TV Broadcasting Channel</a> as a general purpose and UX Designer, using the Design's problem-solving and process-optimization techniques to minimize bureaucracy and paperload within the Television's structure. As well as working with graphic assets used on internal communication &amp; Workshops.
+					</p>
+					<p class="white">
+						If you're interested in anything I could provide for you or your business, <a class="aboutlnk" href="#/contact">get in touch</a> !
+					</p>
+				</div>
 			</div>
-		</div></div>
+		</div>
 		<!--CONTACT -->
 		<div id="contactw">
 			<button id="bk" class="button-back-2 up"></button>
-			<div class="contabox hidbox" >
+			<div class="contabox hidbox">
 				<table class="minblack">
 					<tr>
 						<td class="major">
 							<h2 class="subtit">CONTACT</h2>
 							<p class="white conta">
-
 								Looking for some top-tier Photoshop expert for processing a bunch of resources? An awesome design job for your business or for a project of your own? Conceptual art pieces to bring your ideas into life?
 								<br> Or you're after some soundscape-wise pump-up in your game/animation project?
 								<br>
@@ -257,16 +323,10 @@ If you're interested in anything I could provide for you or your business,  <a c
 								<br>Well, then toss me a message and tell me more about it.
 								<br> I'd love to know more about what are you planning out there!
 								<br>
-								<br>Don't trust this little box guy on the left? You can get in touch directly via email or phone.
+								<br>Don't trust this little box guy on the right? You can get in touch directly via email or phone.
 								<br>
 								<br><strong><font size="4">contato@lucasflicky.com</font></strong>
 								<br><font size="1">+55 </font>51 <strong>8586-3223</strong>
-
-
-
-
-
-
 							</p>
 						</td>
 						<td>
@@ -282,56 +342,50 @@ If you're interested in anything I could provide for you or your business,  <a c
 															<label for="name">
 																<svg viewBox="0 0 50 50">
 																	<g>
-																		<path d="M 30.656 27.8955 C 33.6634 25.6072 35.6701 21.5619 35.6701 16.9388 C 35.6701 9.7928 30.8924 4 24.9971 4 C 19.1034 4 14.3241 9.7928 14.3241 16.9388 C 14.3241 21.5627 16.3308 25.6085 19.3411 27.8968 C 11.8935 30.312 6.5017 37.3629 6.5 45.6882 C 6.5017 48.0695 8.4122 50 10.7693 50 L 39.2307 50 C 41.5874 50 43.4983 48.0695 43.5 45.6882 C 43.4983 37.3612 38.1052 30.3095 30.656 27.8955 ZM 32.0515 12.6081 C 26.954 12.3622 22.839 10.8489 20.7751 8.4781 C 21.9939 7.4689 23.442 6.8752 24.9971 6.8752 C 28.1061 6.8752 30.7896 9.2243 32.0515 12.6081 ZM 17.1701 16.9388 C 17.1701 14.5612 17.8179 12.3773 18.8953 10.6533 C 21.6675 13.6044 26.6244 15.3648 32.7349 15.5068 C 32.788 15.9756 32.8241 16.4515 32.8241 16.9388 C 32.8241 22.4877 29.3137 27.0023 24.9971 27.0023 C 20.6822 27.0023 17.1701 22.4877 17.1701 16.9388 ZM 39.2307 47.1244 L 10.7693 47.1244 C 9.9855 47.1244 9.3477 46.4792 9.3461 45.689 C 9.3477 36.9699 16.3698 29.8779 25 29.8779 C 33.6302 29.8779 40.6523 36.9699 40.6539 45.6865 C 40.6539 46.4792 40.0157 47.1244 39.2307 47.1244 Z"></path>
+																		<path xmlns="http://www.w3.org/2000/svg" fill="#231F20" d="M30.66,27.9c3-2.29,5.01-6.34,5.01-10.96v-0.25l0.68-2.16c0.37-1.19-0.26-2.3-1.49-2.55  C33.25,7.29,29.44,4,25,4c-4.45,0-8.26,3.29-9.87,7.98c-1.22,0.26-1.85,1.36-1.48,2.55l0.67,2.14v0.27c0,4.62,2.01,8.67,5.02,10.96  C11.89,30.31,6.5,37.36,6.5,45.69c0,2.38,1.91,4.31,4.27,4.31h28.46c2.36,0,4.27-1.93,4.27-4.31C43.5,37.36,38.1,30.31,30.66,27.9z   M35.02,14.85l-1.01,3.2c-0.15,0.48-0.71,0.84-1.35,0.93c-0.1,0.01-0.2,0.02-0.3,0.02h-3.5c-0.75,0-1.48-0.4-1.65-0.95l-1.01-3.2  c-0.32-1.04,0.36-2,1.57-2h5.68C34.66,12.85,35.34,13.81,35.02,14.85z M18.9,10.65l1.87-2.17c1.22-1.01,2.67-1.6,4.23-1.6  c2.89,0,5.41,2.02,6.77,5.04H18.22C18.42,11.47,18.65,11.05,18.9,10.65z M15.99,18.05l-1.01-3.2c-0.33-1.04,0.36-2,1.57-2h5.68  c1.21,0,1.89,0.96,1.56,2l-1,3.2C22.62,18.6,21.88,19,21.14,19h-3.5c-0.1,0-0.21-0.01-0.31-0.03C16.7,18.89,16.14,18.52,15.99,18.05  z M17.52,19.93h4.14c0.98,0,1.93-0.53,2.15-1.24L25,14.94l1.19,3.75c0.22,0.71,1.17,1.24,2.15,1.24h4.13  c-0.45,1.9-1.35,3.55-2.53,4.79v-1.91c0-1.09-0.94-1.98-2.09-1.98h-5.7c-1.15,0-2.09,0.89-2.09,1.98v1.92  C18.87,23.49,17.99,21.84,17.52,19.93z M25.04,24.9c-0.63,0-1.14,0.51-1.14,1.14v0.44c0,0.15,0.03,0.3,0.09,0.43  c-1.12-0.18-2.16-0.67-3.07-1.39v-2.54c0-0.9,0.77-1.64,1.73-1.64h4.7c0.96,0,1.73,0.74,1.73,1.64v2.54  c-0.89,0.7-1.89,1.18-2.97,1.36c0.05-0.12,0.08-0.26,0.08-0.4v-0.44C26.19,25.41,25.67,24.9,25.04,24.9z M39.23,47.12H10.77  c-0.78,0-1.42-0.64-1.42-1.43c0-8.72,7.02-15.81,15.65-15.81s15.65,7.09,15.65,15.81C40.65,46.48,40.02,47.12,39.23,47.12z"/>
 																	</g>
 																</svg>
-																<span>Name*</span>
+																<span>Name<span class="redstar">*</span></span>
 															</label>
 														</div>
 														<div class="formInput">
 															<input value="" autocomplete="off" id="email" name="email" required="">
 															<label for="email">
 																<svg viewBox="0 0 50 50">
-																	<g>
-																		<path d="M 27.6808 13.5693 L 14.8319 13.5693 L 14.8319 4.9978 L 27.6808 4.9978 L 27.6808 13.5693 ZM 17.6865 10.712 L 24.8252 10.712 L 24.8252 7.8552 L 17.6865 7.8552 L 17.6865 10.712 Z"></path>
-																		<path d="M 16.2594 24.9975 C 15.4703 24.9975 14.8319 24.3573 14.8319 23.5686 L 14.8319 12.1404 C 14.8319 11.3517 15.4703 10.712 16.2594 10.712 C 17.0481 10.712 17.6865 11.3517 17.6865 12.1404 L 17.6865 23.5686 C 17.6865 24.3573 17.0481 24.9975 16.2594 24.9975 Z"></path>
-																		<path d="M 26.2533 50.7118 C 25.4646 50.7118 24.8252 50.0721 24.8252 49.2829 L 24.8252 36.4258 C 24.8252 35.6376 25.4646 34.9969 26.2533 34.9969 C 27.0415 34.9969 27.6808 35.6376 27.6808 36.4258 L 27.6808 49.2829 C 27.6808 50.0721 27.0415 50.7118 26.2533 50.7118 Z"></path>
-																		<path d="M 9.1207 34.9969 L 4.1426 34.9969 L 2.0098 20.7123 L 9.1207 20.7123 C 9.9094 20.7123 10.5483 21.3515 10.5483 22.1407 C 10.5483 22.9299 9.9094 23.5686 9.1207 23.5686 L 5.3232 23.5686 L 6.6038 32.1401 L 9.1207 32.1401 C 9.9094 32.1401 10.5483 32.7798 10.5483 33.569 C 10.5483 34.3581 9.9094 34.9969 9.1207 34.9969 Z"></path>
-																		<path d="M 47.669 37.8547 L 7.6932 37.8547 L 7.6932 16.4256 L 39.1022 16.4256 C 43.8265 16.4256 47.669 20.2713 47.669 24.9975 L 47.669 37.8547 ZM 10.5483 34.9969 L 44.8129 34.9969 L 44.8129 24.9975 C 44.8129 21.8472 42.2511 19.2834 39.1022 19.2834 L 10.5483 19.2834 L 10.5483 34.9969 Z"></path>
-																	</g>
+																	<path xmlns="http://www.w3.org/2000/svg" fill="#010101" d="M13.762,37.094c-2.164-0.603-13.324-3.73-13.324-3.73L45.09,0.794L35.56,41.56l-9.324-2.174  C24.716,41.238,16.697,51,16.697,51S14.228,39.316,13.762,37.094z M19.741,42.401c1.356-1.648,2.927-3.559,3.961-4.816  c0,0-2.185-0.55-2.707-0.682C20.865,37.471,19.741,42.401,19.741,42.401z M17.921,41.54l1.481-6.58l9.639-13.357L16.698,35.722  C16.698,35.722,17.606,40.036,17.921,41.54z M33.196,37.834c0.81-3.444,4.703-20.064,6.507-27.791l-17.86,25.071l3.392,0.877  l0.035-0.008C25.269,35.982,30.992,37.316,33.196,37.834z M7.431,32.104c2.454,0.68,6.405,1.782,7.999,2.23L34.954,12.02  C26.261,18.358,11.647,29.02,7.431,32.104z"/>
 																</svg>
-																<span>Email*</span>
+																<span>Email<span class="redstar">*</span></span>
 															</label>
 														</div>
 														<!--<div class="formInput">
-															<input value="" autocomplete="off" id="telephone" name="phone">
-															<label for="telephone">
-																<svg viewBox="0 0 50 50">
-																	<g>
-																		<g>
-																			<g>
-																				<path d="M 6.8287 26.024 L 6.8287 26.024 C 5.244 26.024 4.2904 25.1934 3.7696 24.497 C 2.7008 23.0642 1.0107 17.5009 5.328 13.1825 C 10.3003 8.2068 20.0139 7.464 25.362 7.464 C 30.7237 7.464 40.4457 8.2068 45.417 13.1825 C 49.501 17.268 48.2028 22.8547 46.9729 24.497 C 46.4536 25.1924 45.5 26.024 43.9158 26.024 C 43.3623 26.024 42.8704 25.9273 42.475 25.8492 L 42.3023 25.816 C 41.7361 25.71 40.7756 25.4082 39.7595 25.0874 C 39.0518 24.8647 38.2495 24.6122 37.9362 24.5478 C 36.1684 24.182 33.6442 22.6149 33.942 19.7962 C 34.0161 19.0807 33.8375 18.4928 33.3934 17.9986 C 32.7365 17.269 30.8223 16.0452 25.3747 16.0452 C 19.9119 16.0452 17.9905 17.2744 17.3316 18.0064 C 16.886 18.5011 16.7064 19.0866 16.7806 19.7971 C 17.0886 22.7194 14.9865 24.2386 13.498 24.5473 C 13.1636 24.6156 12.2637 24.853 11.393 25.0815 C 10.2104 25.3921 8.9879 25.7134 8.4403 25.8165 L 8.269 25.8502 C 7.8741 25.9273 7.3832 26.024 6.8287 26.024 ZM 25.3718 10.3193 C 17.0129 10.3193 10.4462 12.0984 7.3451 15.2013 C 4.1752 18.3731 5.7238 22.3351 6.0557 22.7878 C 6.2655 23.0681 6.4686 23.1682 6.8287 23.1682 L 6.8287 23.1682 C 7.105 23.1682 7.4173 23.1071 7.7184 23.0476 L 7.9127 23.0105 C 8.3622 22.9265 9.6409 22.59 10.6678 22.3199 C 11.6575 22.0596 12.5126 21.8355 12.9201 21.751 C 13.0392 21.7261 14.087 21.4683 13.9426 20.0955 C 13.7835 18.5768 14.2222 17.1943 15.211 16.0955 C 16.9709 14.1392 20.2946 13.1893 25.3718 13.1893 C 30.4426 13.1893 33.7594 14.1377 35.5135 16.0882 C 36.5023 17.187 36.9396 18.5724 36.7795 20.0955 C 36.6487 21.3305 38.4964 21.7476 38.515 21.7515 C 38.9698 21.8453 39.7322 22.0855 40.6156 22.3639 C 41.4238 22.6183 42.4292 22.9348 42.8284 23.0095 L 43.0256 23.0476 C 43.3272 23.1071 43.6395 23.1682 43.9158 23.1682 C 44.2798 23.1682 44.4751 23.0715 44.6888 22.7853 C 45.0227 22.3322 46.5708 18.3741 43.3984 15.2013 C 40.2983 12.0984 33.7282 10.3193 25.3718 10.3193 Z"></path>
-																			</g>
-																				<path d="M 43.9216 50.2958 L 6.8224 50.2958 L 6.8224 40.3013 C 6.8224 30.8547 14.5038 23.1687 23.9447 23.1687 L 26.7988 23.1687 C 36.2407 23.1687 43.9216 30.8547 43.9216 40.3013 L 43.9216 50.2958 ZM 9.676 47.4399 L 41.0665 47.4399 L 41.0665 40.3013 C 41.0665 32.4292 34.6672 26.024 26.7988 26.024 L 23.9447 26.024 C 16.0773 26.024 9.676 32.4292 9.676 40.3013 L 9.676 47.4399 Z"></path>
-																				<path d="M 21.0916 26.2838 C 20.3033 26.2838 19.6645 25.6436 19.6645 24.8554 L 19.6645 20.3133 C 19.6645 19.5251 20.3033 18.8854 21.0916 18.8854 C 21.8793 18.8854 22.5176 19.5251 22.5176 20.3133 L 22.5176 24.8554 C 22.5176 25.6436 21.8793 26.2838 21.0916 26.2838 Z"></path>
-																				<path d="M 29.652 26.2838 C 28.8643 26.2838 28.2249 25.6436 28.2249 24.8554 L 28.2249 20.3133 C 28.2249 19.5251 28.8643 18.8854 29.652 18.8854 C 30.4407 18.8854 31.079 19.5251 31.079 20.3133 L 31.079 24.8554 C 31.079 25.6436 30.4407 26.2838 29.652 26.2838 Z"></path>
-																			<g>
-																				<path d="M 26.098 33.1441 L 24.6709 33.1441 C 23.8832 33.1441 23.2439 32.5044 23.2439 31.7152 C 23.2439 30.927 23.8832 30.2883 24.6709 30.2883 L 26.098 30.2883 C 26.8857 30.2883 27.5251 30.927 27.5251 31.7152 C 27.5251 32.5044 26.8857 33.1441 26.098 33.1441 Z"></path>
-																				<path d="M 33.2323 33.1441 L 31.8053 33.1441 C 31.0175 33.1441 30.3782 32.5044 30.3782 31.7152 C 30.3782 30.927 31.0175 30.2883 31.8053 30.2883 L 33.2323 30.2883 C 34.0201 30.2883 34.6594 30.927 34.6594 31.7152 C 34.6594 32.5044 34.0201 33.1441 33.2323 33.1441 Z"></path>
-																				<path d="M 18.9637 33.1441 L 17.5366 33.1441 C 16.7489 33.1441 16.11 32.5044 16.11 31.7152 C 16.11 30.927 16.7489 30.2883 17.5366 30.2883 L 18.9637 30.2883 C 19.7514 30.2883 20.3907 30.927 20.3907 31.7152 C 20.3907 32.5044 19.7514 33.1441 18.9637 33.1441 Z"></path>
-																				<path d="M 26.098 38.8539 L 24.6709 38.8539 C 23.8832 38.8539 23.2439 38.2151 23.2439 37.4259 C 23.2439 36.6387 23.8832 35.999 24.6709 35.999 L 26.098 35.999 C 26.8857 35.999 27.5251 36.6387 27.5251 37.4259 C 27.5251 38.2151 26.8857 38.8539 26.098 38.8539 Z"></path>
-																				<path d="M 33.2323 38.8539 L 31.8053 38.8539 C 31.0175 38.8539 30.3782 38.2151 30.3782 37.4259 C 30.3782 36.6387 31.0175 35.999 31.8053 35.999 L 33.2323 35.999 C 34.0201 35.999 34.6594 36.6387 34.6594 37.4259 C 34.6594 38.2151 34.0201 38.8539 33.2323 38.8539 Z"></path>
-																				<path d="M 18.9637 38.8539 L 17.5366 38.8539 C 16.7489 38.8539 16.11 38.2151 16.11 37.4259 C 16.11 36.6387 16.7489 35.999 17.5366 35.999 L 18.9637 35.999 C 19.7514 35.999 20.3907 36.6387 20.3907 37.4259 C 20.3907 38.2151 19.7514 38.8539 18.9637 38.8539 Z"></path>
-																				<path d="M 26.098 44.5655 L 24.6709 44.5655 C 23.8832 44.5655 23.2439 43.9258 23.2439 43.1376 C 23.2439 42.3494 23.8832 41.7097 24.6709 41.7097 L 26.098 41.7097 C 26.8857 41.7097 27.5251 42.3494 27.5251 43.1376 C 27.5251 43.9258 26.8857 44.5655 26.098 44.5655 Z"></path>
-																				<path d="M 33.2323 44.5655 L 31.8053 44.5655 C 31.0175 44.5655 30.3782 43.9258 30.3782 43.1376 C 30.3782 42.3494 31.0175 41.7097 31.8053 41.7097 L 33.2323 41.7097 C 34.0201 41.7097 34.6594 42.3494 34.6594 43.1376 C 34.6594 43.9258 34.0201 44.5655 33.2323 44.5655 Z"></path>
-																				<path d="M 18.9637 44.5655 L 17.5366 44.5655 C 16.7489 44.5655 16.11 43.9258 16.11 43.1376 C 16.11 42.3494 16.7489 41.7097 17.5366 41.7097 L 18.9637 41.7097 C 19.7514 41.7097 20.3907 42.3494 20.3907 43.1376 C 20.3907 43.9258 19.7514 44.5655 18.9637 44.5655 Z"></path>
-																			</g>
-																		</g>
-																	</g>
-																</svg>
-																<span>Contact Number</span>
-															</label>
-															</div>-->
+			<input value="" autocomplete="off" id="telephone" name="phone">
+			<label for="telephone">
+				<svg viewBox="0 0 50 50">
+					<g>
+						<g>
+							<g>
+								<path d="M 6.8287 26.024 L 6.8287 26.024 C 5.244 26.024 4.2904 25.1934 3.7696 24.497 C 2.7008 23.0642 1.0107 17.5009 5.328 13.1825 C 10.3003 8.2068 20.0139 7.464 25.362 7.464 C 30.7237 7.464 40.4457 8.2068 45.417 13.1825 C 49.501 17.268 48.2028 22.8547 46.9729 24.497 C 46.4536 25.1924 45.5 26.024 43.9158 26.024 C 43.3623 26.024 42.8704 25.9273 42.475 25.8492 L 42.3023 25.816 C 41.7361 25.71 40.7756 25.4082 39.7595 25.0874 C 39.0518 24.8647 38.2495 24.6122 37.9362 24.5478 C 36.1684 24.182 33.6442 22.6149 33.942 19.7962 C 34.0161 19.0807 33.8375 18.4928 33.3934 17.9986 C 32.7365 17.269 30.8223 16.0452 25.3747 16.0452 C 19.9119 16.0452 17.9905 17.2744 17.3316 18.0064 C 16.886 18.5011 16.7064 19.0866 16.7806 19.7971 C 17.0886 22.7194 14.9865 24.2386 13.498 24.5473 C 13.1636 24.6156 12.2637 24.853 11.393 25.0815 C 10.2104 25.3921 8.9879 25.7134 8.4403 25.8165 L 8.269 25.8502 C 7.8741 25.9273 7.3832 26.024 6.8287 26.024 ZM 25.3718 10.3193 C 17.0129 10.3193 10.4462 12.0984 7.3451 15.2013 C 4.1752 18.3731 5.7238 22.3351 6.0557 22.7878 C 6.2655 23.0681 6.4686 23.1682 6.8287 23.1682 L 6.8287 23.1682 C 7.105 23.1682 7.4173 23.1071 7.7184 23.0476 L 7.9127 23.0105 C 8.3622 22.9265 9.6409 22.59 10.6678 22.3199 C 11.6575 22.0596 12.5126 21.8355 12.9201 21.751 C 13.0392 21.7261 14.087 21.4683 13.9426 20.0955 C 13.7835 18.5768 14.2222 17.1943 15.211 16.0955 C 16.9709 14.1392 20.2946 13.1893 25.3718 13.1893 C 30.4426 13.1893 33.7594 14.1377 35.5135 16.0882 C 36.5023 17.187 36.9396 18.5724 36.7795 20.0955 C 36.6487 21.3305 38.4964 21.7476 38.515 21.7515 C 38.9698 21.8453 39.7322 22.0855 40.6156 22.3639 C 41.4238 22.6183 42.4292 22.9348 42.8284 23.0095 L 43.0256 23.0476 C 43.3272 23.1071 43.6395 23.1682 43.9158 23.1682 C 44.2798 23.1682 44.4751 23.0715 44.6888 22.7853 C 45.0227 22.3322 46.5708 18.3741 43.3984 15.2013 C 40.2983 12.0984 33.7282 10.3193 25.3718 10.3193 Z"></path>
+							</g>
+								<path d="M 43.9216 50.2958 L 6.8224 50.2958 L 6.8224 40.3013 C 6.8224 30.8547 14.5038 23.1687 23.9447 23.1687 L 26.7988 23.1687 C 36.2407 23.1687 43.9216 30.8547 43.9216 40.3013 L 43.9216 50.2958 ZM 9.676 47.4399 L 41.0665 47.4399 L 41.0665 40.3013 C 41.0665 32.4292 34.6672 26.024 26.7988 26.024 L 23.9447 26.024 C 16.0773 26.024 9.676 32.4292 9.676 40.3013 L 9.676 47.4399 Z"></path>
+								<path d="M 21.0916 26.2838 C 20.3033 26.2838 19.6645 25.6436 19.6645 24.8554 L 19.6645 20.3133 C 19.6645 19.5251 20.3033 18.8854 21.0916 18.8854 C 21.8793 18.8854 22.5176 19.5251 22.5176 20.3133 L 22.5176 24.8554 C 22.5176 25.6436 21.8793 26.2838 21.0916 26.2838 Z"></path>
+								<path d="M 29.652 26.2838 C 28.8643 26.2838 28.2249 25.6436 28.2249 24.8554 L 28.2249 20.3133 C 28.2249 19.5251 28.8643 18.8854 29.652 18.8854 C 30.4407 18.8854 31.079 19.5251 31.079 20.3133 L 31.079 24.8554 C 31.079 25.6436 30.4407 26.2838 29.652 26.2838 Z"></path>
+							<g>
+								<path d="M 26.098 33.1441 L 24.6709 33.1441 C 23.8832 33.1441 23.2439 32.5044 23.2439 31.7152 C 23.2439 30.927 23.8832 30.2883 24.6709 30.2883 L 26.098 30.2883 C 26.8857 30.2883 27.5251 30.927 27.5251 31.7152 C 27.5251 32.5044 26.8857 33.1441 26.098 33.1441 Z"></path>
+								<path d="M 33.2323 33.1441 L 31.8053 33.1441 C 31.0175 33.1441 30.3782 32.5044 30.3782 31.7152 C 30.3782 30.927 31.0175 30.2883 31.8053 30.2883 L 33.2323 30.2883 C 34.0201 30.2883 34.6594 30.927 34.6594 31.7152 C 34.6594 32.5044 34.0201 33.1441 33.2323 33.1441 Z"></path>
+								<path d="M 18.9637 33.1441 L 17.5366 33.1441 C 16.7489 33.1441 16.11 32.5044 16.11 31.7152 C 16.11 30.927 16.7489 30.2883 17.5366 30.2883 L 18.9637 30.2883 C 19.7514 30.2883 20.3907 30.927 20.3907 31.7152 C 20.3907 32.5044 19.7514 33.1441 18.9637 33.1441 Z"></path>
+								<path d="M 26.098 38.8539 L 24.6709 38.8539 C 23.8832 38.8539 23.2439 38.2151 23.2439 37.4259 C 23.2439 36.6387 23.8832 35.999 24.6709 35.999 L 26.098 35.999 C 26.8857 35.999 27.5251 36.6387 27.5251 37.4259 C 27.5251 38.2151 26.8857 38.8539 26.098 38.8539 Z"></path>
+								<path d="M 33.2323 38.8539 L 31.8053 38.8539 C 31.0175 38.8539 30.3782 38.2151 30.3782 37.4259 C 30.3782 36.6387 31.0175 35.999 31.8053 35.999 L 33.2323 35.999 C 34.0201 35.999 34.6594 36.6387 34.6594 37.4259 C 34.6594 38.2151 34.0201 38.8539 33.2323 38.8539 Z"></path>
+								<path d="M 18.9637 38.8539 L 17.5366 38.8539 C 16.7489 38.8539 16.11 38.2151 16.11 37.4259 C 16.11 36.6387 16.7489 35.999 17.5366 35.999 L 18.9637 35.999 C 19.7514 35.999 20.3907 36.6387 20.3907 37.4259 C 20.3907 38.2151 19.7514 38.8539 18.9637 38.8539 Z"></path>
+								<path d="M 26.098 44.5655 L 24.6709 44.5655 C 23.8832 44.5655 23.2439 43.9258 23.2439 43.1376 C 23.2439 42.3494 23.8832 41.7097 24.6709 41.7097 L 26.098 41.7097 C 26.8857 41.7097 27.5251 42.3494 27.5251 43.1376 C 27.5251 43.9258 26.8857 44.5655 26.098 44.5655 Z"></path>
+								<path d="M 33.2323 44.5655 L 31.8053 44.5655 C 31.0175 44.5655 30.3782 43.9258 30.3782 43.1376 C 30.3782 42.3494 31.0175 41.7097 31.8053 41.7097 L 33.2323 41.7097 C 34.0201 41.7097 34.6594 42.3494 34.6594 43.1376 C 34.6594 43.9258 34.0201 44.5655 33.2323 44.5655 Z"></path>
+								<path d="M 18.9637 44.5655 L 17.5366 44.5655 C 16.7489 44.5655 16.11 43.9258 16.11 43.1376 C 16.11 42.3494 16.7489 41.7097 17.5366 41.7097 L 18.9637 41.7097 C 19.7514 41.7097 20.3907 42.3494 20.3907 43.1376 C 20.3907 43.9258 19.7514 44.5655 18.9637 44.5655 Z"></path>
+							</g>
+						</g>
+					</g>
+				</svg>
+				<span>Contact Number</span>
+			</label>
+			</div>-->
 														<div class="formInput ">
 															<input value="" autocomplete="off" id="colour" name="colour">
 															<label for="colour">
@@ -368,7 +422,7 @@ If you're interested in anything I could provide for you or your business,  <a c
 																		</g>
 																	</g>
 																</svg>
-																<span>Your Message*</span>
+																<span>Your Message<span class="redstar">*</span></span>
 															</label>
 															<button class="btn">SEND</button>
 														</div>
@@ -398,19 +452,13 @@ If you're interested in anything I could provide for you or your business,  <a c
 			</div>
 		</div>
 		<!--END -->
-
 		<!--<script async  src="js/projects.js"></script >-->
-
 		<script>
 			var redmoon = false;
 			var bluemoon = false;
 			var projota = false;
-
 			window.onkeydown = function (key) {
-
-
 				if (key.which === 37) {
-
 					if (!redmoon && !bluemoon) {
 						$('#red').click();
 						redmoon = true;
@@ -419,9 +467,7 @@ If you're interested in anything I could provide for you or your business,  <a c
 						bluemoon = false;
 						$('#bkblu').click();
 					}
-
 				} else if (key.which === 39) {
-
 					if (!bluemoon && !redmoon) {
 						$('#blue').click();
 						bluemoon = true;
@@ -429,539 +475,526 @@ If you're interested in anything I could provide for you or your business,  <a c
 						redmoon = false;
 						$('#bkred').click();
 					}
-				} 
-
+				}
 			}
 		</script>
 		<!-- 	CSS Last Calls 		-->
 		<link rel="stylesheet" type="text/css" href="css/filter-center-n.css" async>
-		<link rel="stylesheet" type="text/css" href="css/fancybox.css" expires="800808058845645609" >
+		<link rel="stylesheet" type="text/css" href="css/fancybox.css" expires="800808058845645609">
 		<link rel="stylesheet" type="text/css" href="css/table.css" async>
 		<!--						-->
-
 	</div>
-	<div id="yesmob" class="scrolleitor">
+	<div id="yesmob">
+		<div id="topba">
 
+			<span class="logo">LUCASFLICKY.com</span>
+			<span class="sublogo">Digital Graphic Artist - Sound Designer - Aviation Dork</span>
 
+			<ul class="mobile-men">
 
+				<li onclick="fadetogle(GALE)">
+					Gallery
+				</li>
+				<li onclick="fadetogle(SOND)">
+					Sounds
+				</li>
+				<li onclick="fadetogle(PROJ)">
+					Projects
+				</li>
+				<li onclick="fadetogle(ABOT)">
+					About
+				</li>
+				<li onclick="fadetogle(KONTA)">
+					Contact
+				</li>
+			</ul>
 
-
-
-		<span class="logo">LUCASFLICKY</span><span class="sublogo">Digital Graphic Artist - Sound Designer - Aviation Dork</span>
-		<!--<ul class="wsite-menu-default">
-
-			<li class="nav-110">
-				<a id="memenu" oncewashref class="wsite-menu-item">
-					MENU ►
-					</a>
-			</li>
-		</ul>
-		<div id="memeno">
-
-			<div>
-
-
-				<dl class="mobile-menu">
-					<a style="font-family:Arial; font-size:22;float:left; position:absolute; top:15px; left:15px" href="#" class="wsite-menu-item">
-				X
-			</a>
-					</li>
-
-
-					<li>
-
-
-						<li>
-							<a id="home2" href="#lan5ding" class="wsite-menu-item">
-				Home
-			</a>
-						</li>
-						<li>
-							<a id="goproj2" href="#" class="wsite-menu-item">
-				Projects
-			</a>
-						</li>
-
-						<li>
-							<a href="http://www.lucasflicky.com/blog.html" class="wsite-menu-item">
-				Blog
-			</a>
-						</li>
-
-
-						<li>
-							<a id="aboutgo2" class="wsite-menu-item">
-				About
-			</a>
-						</li>
-
-						<li>
-							<a id="contactgo2" class="wsite-menu-item">
-				Contact
-			</a>
-						</li>
-						<li>
-							<a id="visaud2" href="#visaud" class="wsite-menu-item">
-
-							</a>
-						</li>
-				</dl>
-
+		</div>
+		<div id="mobwrap" class="mobwrap scrolleitor">
+			<div id="header">
+				Hey there small-screener! Don't worry, I've slimmed down the site so you don't blow up your phone bill.
+				<div onclick="$(theX).fadeOut()" class="thex">X</div>
 			</div>
 
-		</div>
-	-->
-	
-		<div id="header">
-			<h2>Hey there small-screener, don't worry, I've slimmed down the site so you don't blow up your phone bill.</h2>
-		</div>
-		<div class="mobwrap">
-			<div id="mob-red" class="btnmob red"> VISUAL </div>
-			<div id="mob-blue" class="btnmob blue"> AUDIO </div>
-
-	<ul class="cd-accordion-menu animated">		
-			
-			
-				<li class="has-children">
-			<input type="checkbox" name ="group-0" id="group-0" checked>
-			<label for="group-0">Visual</label>
-
-      		<ul>
-      			
-      			
-      			
-      			<li><div class="praj">
-				
-				
-				
-	
-			
-			
-			<div>
-					<ul>
-					<li>Digital Illustration</li>
-					<li>Traditional Illustration</li>
-					<li>Graphic Design</li>
-					<li>Sketchbook</li>
-					</ul>
-				<div>
-					
-				<div id="feed-galleryB">
-
-					<div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/turtle.png"> <img class="galM mCS_img_loaded" src="./assets/turtle.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/tharbalesh.png"> <img class="galM mCS_img_loaded" src="./assets/tharbalesh.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/ameplant.png"> <img class="galM mCS_img_loaded" src="./assets/ameplant.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/photomanind.png"> <img class="galM mCS_img_loaded" src="./assets/photomanind.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/landpaint.png"> <img class="galM mCS_img_loaded" src="./assets/landpaint.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/dragon.png"> <img class="galM mCS_img_loaded" src="./assets/dragon.png">
-</a>
-</div>
-</div> <div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/backface.png"> <img class="galM mCS_img_loaded" src="./assets/backface.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/bear.png"> <img class="galM mCS_img_loaded" src="./assets/bear.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/card1.png"> <img class="galM mCS_img_loaded" src="./assets/card1.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/card2.png"> <img class="galM mCS_img_loaded" src="./assets/card2.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/etotoky.png"> <img class="galM mCS_img_loaded" src="./assets/etotoky.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/fus.png"> <img class="galM mCS_img_loaded" src="./assets/fus.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/fada.png"> <img class="galM mCS_img_loaded" src="./assets/fada.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/prime1.png"> <img class="galM mCS_img_loaded" src="./assets/prime1.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/prime2.png"> <img class="galM mCS_img_loaded" src="./assets/prime2.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/reoli.png"> <img class="galM mCS_img_loaded" src="./assets/reoli.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/silenytelog.png"> <img class="galM mCS_img_loaded" src="./assets/silenytelog.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/primelog.png"> <img class="galM mCS_img_loaded" src="./assets/primelog.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/pandora.png"> <img class="galM mCS_img_loaded" src="./assets/pandora.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/molib.png"> <img class="galM mCS_img_loaded" src="./assets/molib.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/lich.png"> <img class="galM mCS_img_loaded" src="./assets/lich.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/elfs.png"> <img class="galM mCS_img_loaded" src="./assets/elfs.png">
-</a>
-</div>
-</div> <div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/agathaghost.png"> <img class="galM mCS_img_loaded" src="./assets/agathaghost.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/hero.png"> <img class="galM mCS_img_loaded" src="./assets/hero.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/mythoslogo.png"> <img class="galM mCS_img_loaded" src="./assets/mythoslogo.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/nipes.png"> <img class="galM mCS_img_loaded" src="./assets/nipes.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/vkps.png"> <img class="galM mCS_img_loaded" src="./assets/vkps.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/zant.png"> <img class="galM mCS_img_loaded" src="./assets/zant.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/vibrava.png"> <img class="galM mCS_img_loaded" src="./assets/vibrava.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/train.png"> <img class="galM mCS_img_loaded" src="./assets/train.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/tavpix.png"> <img class="galM mCS_img_loaded" src="./assets/tavpix.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/sktgirl.png"> <img class="galM mCS_img_loaded" src="./assets/sktgirl.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/silentun.png"> <img class="galM mCS_img_loaded" src="./assets/silentun.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/pxayou.png"> <img class="galM mCS_img_loaded" src="./assets/pxayou.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/morigan.png"> <img class="galM mCS_img_loaded" src="./assets/morigan.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/midna.png"> <img class="galM mCS_img_loaded" src="./assets/midna.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/artemiskt.png"> <img class="galM mCS_img_loaded" src="./assets/artemiskt.png">
-</a>
-</div>
-</div> <div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/card3.png"> <img class="galM mCS_img_loaded" src="./assets/card3.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/chair.png"> <img class="galM mCS_img_loaded" src="./assets/chair.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/heidi.png"> <img class="galM mCS_img_loaded" src="./assets/heidi.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/infograp.png"> <img class="galM mCS_img_loaded" src="./assets/infograp.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/lara.png"> <img class="galM mCS_img_loaded" src="./assets/lara.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/lith2k.png"> <img class="galM mCS_img_loaded" src="./assets/lith2k.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/mazhoren.png"> <img class="galM mCS_img_loaded" src="./assets/mazhoren.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/nattrad.png"> <img class="galM mCS_img_loaded" src="./assets/nattrad.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/oilocean.png"> <img class="galM mCS_img_loaded" src="./assets/oilocean.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/pixfuq.png"> <img class="galM mCS_img_loaded" src="./assets/pixfuq.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/pixelnat.png"> <img class="galM mCS_img_loaded" src="./assets/pixelnat.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/vkps2.png"> <img class="galM mCS_img_loaded" src="./assets/vkps2.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/sykes.png"> <img class="galM mCS_img_loaded" src="./assets/sykes.png">
-</a>
-</div>
-</div> <div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/fabsaur.png"> <img class="galM mCS_img_loaded" src="./assets/fabsaur.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/godot.png"> <img class="galM mCS_img_loaded" src="./assets/godot.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/self.png"> <img class="galM mCS_img_loaded" src="./assets/self.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/tharma2k.png"> <img class="galM mCS_img_loaded" src="./assets/tharma2k.png">
-</a>
-</a>
-</div>
-</div> <div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/animegirl.png"> <img class="galM mCS_img_loaded" src="./assets/animegirl.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/bcm.png"> <img class="galM mCS_img_loaded" src="./assets/bcm.png">
-</a>
-</div>
-</div><div class="galleryMOB">
-<div class="imgframe">
-<a href="./assets/origs/stud1.png"> <img class="galM mCS_img_loaded" src="./assets/stud1.png">
-</a>
-</div>
-</div></div>
-
-
-					<!-- end filterbck -->
+			<div style="display: none;" id="/gallery" class="mob-sections">
+				<label for="group-0">Gallery</label>
+				<div class="praj">
+					<div>
+						<ul>
+							<li>Digital Illustration</li>
+							<li>Traditional Illustration</li>
+							<li>Graphic Design</li>
+							<li>Sketchbook</li>
+						</ul>
+						<div>
+							<div id="feed-galleryB">
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a  href="./images/gallery/fullsize/turtle.png"> <img class="galM mCS_img_loaded" src="./images/gallery/turtle.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/tharbalesh.png"> <img class="galM mCS_img_loaded" src="./images/gallery/tharbalesh.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/ameplant.png"> <img class="galM mCS_img_loaded" src="./images/gallery/ameplant.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/photomanind.png"> <img class="galM mCS_img_loaded" src="./images/gallery/photomanind.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/landpaint.png"> <img class="galM mCS_img_loaded" src="./images/gallery/landpaint.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/dragon.png"> <img class="galM mCS_img_loaded" src="./images/gallery/dragon.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/backface.png"> <img class="galM mCS_img_loaded" src="./images/gallery/backface.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/bear.png"> <img class="galM mCS_img_loaded" src="./images/gallery/bear.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/card1.png"> <img class="galM mCS_img_loaded" src="./images/gallery/card1.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/card2.png"> <img class="galM mCS_img_loaded" src="./images/gallery/card2.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/etotoky.png"> <img class="galM mCS_img_loaded" src="./images/gallery/etotoky.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/fus.png"> <img class="galM mCS_img_loaded" src="./images/gallery/fus.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/fada.png"> <img class="galM mCS_img_loaded" src="./images/gallery/fada.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/prime1.png"> <img class="galM mCS_img_loaded" src="./images/gallery/prime1.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/prime2.png"> <img class="galM mCS_img_loaded" src="./images/gallery/prime2.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/reoli.png"> <img class="galM mCS_img_loaded" src="./images/gallery/reoli.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/silenytelog.png"> <img class="galM mCS_img_loaded" src="./images/gallery/silenytelog.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/primelog.png"> <img class="galM mCS_img_loaded" src="./images/gallery/primelog.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/pandora.png"> <img class="galM mCS_img_loaded" src="./images/gallery/pandora.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/molib.png"> <img class="galM mCS_img_loaded" src="./images/gallery/molib.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/lich.png"> <img class="galM mCS_img_loaded" src="./images/gallery/lich.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/elfs.png"> <img class="galM mCS_img_loaded" src="./images/gallery/elfs.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/agathaghost.png"> <img class="galM mCS_img_loaded" src="./images/gallery/agathaghost.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/hero.png"> <img class="galM mCS_img_loaded" src="./images/gallery/hero.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/mythoslogo.png"> <img class="galM mCS_img_loaded" src="./images/gallery/mythoslogo.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/nipes.png"> <img class="galM mCS_img_loaded" src="./images/gallery/nipes.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/vkps.png"> <img class="galM mCS_img_loaded" src="./images/gallery/vkps.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/zant.png"> <img class="galM mCS_img_loaded" src="./images/gallery/zant.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/vibrava.png"> <img class="galM mCS_img_loaded" src="./images/gallery/vibrava.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/train.png"> <img class="galM mCS_img_loaded" src="./images/gallery/train.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/tavpix.png"> <img class="galM mCS_img_loaded" src="./images/gallery/tavpix.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/sktgirl.png"> <img class="galM mCS_img_loaded" src="./images/gallery/sktgirl.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/silentun.png"> <img class="galM mCS_img_loaded" src="./images/gallery/silentun.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/pxayou.png"> <img class="galM mCS_img_loaded" src="./images/gallery/pxayou.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/morigan.png"> <img class="galM mCS_img_loaded" src="./images/gallery/morigan.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/midna.png"> <img class="galM mCS_img_loaded" src="./images/gallery/midna.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/artemiskt.png"> <img class="galM mCS_img_loaded" src="./images/gallery/artemiskt.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/card3.png"> <img class="galM mCS_img_loaded" src="./images/gallery/card3.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/chair.png"> <img class="galM mCS_img_loaded" src="./images/gallery/chair.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/heidi.png"> <img class="galM mCS_img_loaded" src="./images/gallery/heidi.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/infograp.png"> <img class="galM mCS_img_loaded" src="./images/gallery/infograp.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/lara.png"> <img class="galM mCS_img_loaded" src="./images/gallery/lara.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/lith2k.png"> <img class="galM mCS_img_loaded" src="./images/gallery/lith2k.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/mazhoren.png"> <img class="galM mCS_img_loaded" src="./images/gallery/mazhoren.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/nattrad.png"> <img class="galM mCS_img_loaded" src="./images/gallery/nattrad.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/oilocean.png"> <img class="galM mCS_img_loaded" src="./images/gallery/oilocean.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/pixfuq.png"> <img class="galM mCS_img_loaded" src="./images/gallery/pixfuq.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/pixelnat.png"> <img class="galM mCS_img_loaded" src="./images/gallery/pixelnat.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/vkps2.png"> <img class="galM mCS_img_loaded" src="./images/gallery/vkps2.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/sykes.png"> <img class="galM mCS_img_loaded" src="./images/gallery/sykes.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/fabsaur.png"> <img class="galM mCS_img_loaded" src="./images/gallery/fabsaur.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/godot.png"> <img class="galM mCS_img_loaded" src="./images/gallery/godot.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/self.png"> <img class="galM mCS_img_loaded" src="./images/gallery/self.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/tharma2k.png"> <img class="galM mCS_img_loaded" src="./images/gallery/tharma2k.png">
+										</a>
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/animegirl.png"> <img class="galM mCS_img_loaded" src="./images/gallery/animegirl.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/bcm.png"> <img class="galM mCS_img_loaded" src="./images/gallery/bcm.png">
+										</a>
+									</div>
+								</div>
+								<div class="galleryMOB">
+									<div class="imgframe">
+										<a href="./images/gallery/fullsize/stud1.png"> <img class="galM mCS_img_loaded" src="./images/gallery/stud1.png">
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- end filterbck -->
+						</div>
+					</div>
 				</div>
-				
-				</div></li>
-				
-      		</ul>
-		</li>
-						
-
-		<li class="has-children">
-			<input type="checkbox" name ="group-1" id="group-1" checked>
-			<label for="group-1">Projects</label>
-
-      		<ul>
-      			
-      			
-      			
-      			<li><div id="spoonfed" class="praj">
-				
-				
-				
-				</div></li>
-				<li><a href="#0">Image</a></li>
-      		</ul>
-		</li>
-		
-		
-		<li class="has-children">
-			<input type="checkbox" name ="group-2" id="group-2" checked>
-			<label for="group-2">About</label>
-
-      		<ul>
-      			
-      			
-      			
-      			<li><div class="praj">
-				<p class="white">
-					
-					
-					Greetings! I'm Flicky, Lucas Flicky. Visual Design student at Federal  University of Rio Grande do Sul. Composer/Arranger and Co-Founder of <a class="aboutlnk" href="http://novastrike.com">Novastrike Soundscape</a>, freelancer graphic designer/illustrator, hobbyist programmer, and crank spinner in the freetimes.
-You probably know me for my awesome visual pieces, or maybe my awesome sound works, if not, let me introduce myself better.
-				</p><p class="white">
-I'm specialised in many things within the distinct areas I follow, my fields of expertise are creative and technical execution duties, high software proficiency is my flagship.
-As most of professionals of my two areas, I'm a early learner, and quite passionate in what I do. I like experimenting with things around, and every time I have an opportunity to do so, I will. 
-</p><p class="white">
-As an illustrator, one of my first influences was Kazuki Takahashi for his bold and sharp lined drawing style, this dating from 2006 approximately, when I still were just a kid with a pen, but that characteristics drew my attention since then. Nowdays i can't even pick my influences very well, I could say I'm pursuing some stylistic polyvalence, yet I have my own aesthetic preferences and may use it to develop a very original style.
-</p><p class="white">
-As a musician, my influences may be very clear for those who know them. I have major influence from the genius chiptune composer Yuzo Koshiro, as well as some spices from composers as Spencer Nilsen and Trevor Morris. In general, the rule of experimenting counts here too, i like mixing up styles, rhythms, riffs... pure musical alchemy!
-</p><p class="white">
-As a designer, I really don't have people as influences, but in actual design and artistic movements and trends, I tend to like stuff if they look good, and that's what I try to achieve, obviously, always with the experimentation feature running.
-</p><p class="white">
-So far I've been working mostly as a freelancer than a in-house professional, but the office/studio routine isn't an issue at all for me. I've previously worked at a of <a class="aboutlnk" href="http://www.archimedia.com.br">Computer Graphics for Architecture Studio</a> as Graphic Designer, and a local  <a class="aboutlnk" href="http://www.editoraage.com.br/">Publishing House</a> as not just Designer but also their in-house Illustrator. 
-					</p><p class="white">Currently I'm working as an in-house at a Brazillian <a class="aboutlnk" href="http://redeglobo.globo.com/rs/rbstvrs/">TV Broadcasting Channel</a> as a general purpose and UX Designer, using the Design's problem-solving and process-optimization techniques to minimize bureaucracy and paperload within the Television's structure. As well as working with graphic assets used on internal communication &amp; Workshops.
-</p><p class="white">
-If you're interested in anything I could provide for you or your business,  <a class="aboutlnk" href="#/contact">get in touch</a> !
-					
-					
-					
-					
-				</p>
-				
-				</div></li>
-				<li><a href="#0">Image</a></li>
-      		</ul>
-		</li>
-			<li class="has-children">
-			<input type="checkbox" name ="group-3" id="group-3" checked>
-			<label for="group-3">Contact</label>
-
-      		<ul>
-      			      			
-      			<li><div class="praj">asdasfdasfasf</div></li>
-				<li><a href="#0">Con</a></li>
-      		</ul>
-		</li>
-		
-		
-	</ul> <!-- cd-accordion-menu -->
-				
-				
-				
-				<!-- end portfolio -->
 			</div>
-			<!-- end portfolio -->
+			<div style="display: none;" id="/sounds" class="mob-sections">
+				<label for="group-4">Sounds</label>
 
+				<div class="praj">
+					<iframe width="100%" height="100%" scrolling="yes" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/4509090&amp;color=db1919&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+				</div>
+			</div>
 
+			<div style="display: none;" id="/projects" class="mob-sections">
+				<label for="group-1">Projects Involved</label>
 
+				<div id="spoonfed" class="praj"></div>
+			</div>
+			<div style="display: none;" id="/about" class="mob-sections">
+				<label for="group-2">About</label>
+				<div class="praj">
+					<p class="white">
+						Greetings! I'm Flicky, Lucas Flicky. Visual Design student at Federal University of Rio Grande do Sul. Composer/Arranger and Co-Founder of <a class="aboutlnk" href="http://novastrike.com">Novastrike Soundscape</a>, freelancer graphic designer/illustrator, hobbyist programmer, and crank spinner in the freetimes. You probably know me for my awesome visual pieces, or maybe my awesome sound works, if not, let me introduce myself better.
+					</p>
+					<p class="white">
+						I'm specialised in many things within the distinct areas I follow, my fields of expertise are creative and technical execution duties, high software proficiency is my flagship. As most of professionals of my two areas, I'm a early learner, and quite passionate in what I do. I like experimenting with things around, and every time I have an opportunity to do so, I will.
+					</p>
+					<p class="white">
+						As an illustrator, one of my first influences was Kazuki Takahashi for his bold and sharp lined drawing style, this dating from 2006 approximately, when I still were just a kid with a pen, but that characteristics drew my attention since then. Nowdays i can't even pick my influences very well, I could say I'm pursuing some stylistic polyvalence, yet I have my own aesthetic preferences and may use it to develop a very original style.
+					</p>
+					<p class="white">
+						As a musician, my influences may be very clear for those who know them. I have major influence from the genius chiptune composer Yuzo Koshiro, as well as some spices from composers as Spencer Nilsen and Trevor Morris. In general, the rule of experimenting counts here too, i like mixing up styles, rhythms, riffs... pure musical alchemy!
+					</p>
+					<p class="white">
+						As a designer, I really don't have people as influences, but in actual design and artistic movements and trends, I tend to like stuff if they look good, and that's what I try to achieve, obviously, always with the experimentation feature running.
+					</p>
+					<p class="white">
+						So far I've been working mostly as a freelancer than a in-house professional, but the office/studio routine isn't an issue at all for me. I've previously worked at a of <a class="aboutlnk" href="http://www.archimedia.com.br">Computer Graphics for Architecture Studio</a> as Graphic Designer, and a local <a class="aboutlnk" href="http://www.editoraage.com.br/">Publishing House</a> as not just Designer but also their in-house Illustrator.
+					</p>
+					<p class="white">Currently I'm working as an in-house at a Brazillian <a class="aboutlnk" href="http://redeglobo.globo.com/rs/rbstvrs/">TV Broadcasting Channel</a> as a general purpose and UX Designer, using the Design's problem-solving and process-optimization techniques to minimize bureaucracy and paperload within the Television's structure. As well as working with graphic assets used on internal communication &amp; Workshops.
+					</p>
+					<p class="white">
+						If you're interested in anything I could provide for you or your business, <a class="aboutlnk" href="#/contact">get in touch</a> !
+					</p>
+				</div>
+			</div>
+			<div style="display: none;" id="/contact" class="mob-sections">
+				<label for="group-3">Contact</label>
+
+				<div class="praj">
+
+					<p class="white conta">
+						Looking for some top-tier Photoshop expert for processing a bunch of resources? An awesome design job for your business or for a project of your own? Conceptual art pieces to bring your ideas into life?
+						<br> Or you're after some soundscape-wise pump-up in your game/animation project?
+						<br>
+						<br>Or maybe even all of them?
+						<br>
+						<br>Well, then toss me a message and tell me more about it.
+						<br> I'd love to know more about what are you planning out there!
+						<br>
+						<br>Don't trust this little box guy below? You can get in touch directly via email or phone.
+						<br>
+						<br><strong><font size="4">contato@lucasflicky.com</font></strong>
+						<br><font size="1">+55 </font>51 <strong>8586-3223</strong>
+					</p>
+				</div>
+			</div>
 		</div>
+		<!-- mob-sections -->
+		<!-- end portfolio -->
+	</div>
+	<!-- end portfolio -->
+	<script>
+		var GALE = document.getElementById("/gallery");
+		var SOND = document.getElementById("/sounds");
+		var KONTA = document.getElementById("/contact");
+		var ABOT = document.getElementById("/about");
+		var PROJ = document.getElementById("/projects");
+		var theX = document.getElementById("header");
+		var dozer = [GALE, SOND, KONTA, ABOT, PROJ]
+
+		function fadetogle(X) {
+
+			$(dozer).fadeOut();
+			$(X).fadeIn();
+		}
+	</script>
+	</div>
 	</div>
 </body>
 <script src="js/main.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/jquery_002.js"></script>
 <script async src="js/filterScript1.js"></script>
-
 <script async src="js/snip.js"></script>
 <script src="js/touchSwipe.js"></script>
 <script src="js/comingSoon.js"></script>
-<script> 
-	(function($){
-        $(window).load(function(){
-            $(".txtbox").mCustomScrollbar({theme:"inset",position:"left"});
-            $("#filterbck").mCustomScrollbar({theme:"inset"});
-			$(".scrolleitor").mCustomScrollbar({theme:"inset"});
-			$(".praj").mCustomScrollbar({theme:"inset"});
-           // $(".abot").mCustomScrollbar({axis:"yx"});
-			
-        });
-    })(jQuery);
-	
-		$(document).ready(function ($) {
+<script>
+	(function ($) {
+		$(window).load(function () {
+			$(".txtbox").mCustomScrollbar({
+				theme: "inset",
+				position: "left"
+			});
+			$("#filterbck").mCustomScrollbar({
+				theme: "inset"
+			});
+			$(".scrolleitor").mCustomScrollbar({
+				theme: "inset"
+			});
 
-			grabUrl();
-			setTimeout(
-				function () {
-
-					$('#preloader').fadeOut('slow', function () {
-						$(this).remove();
-					});
-				}, 5000 // 5s
-			);
+			// $(".abot").mCustomScrollbar({axis:"yx"});
 		});
-		
-	
-	
+	})(jQuery);
+	$(document).ready(function ($) {
+		grabUrl();
+		setTimeout(
+			function () {
+				$('#preloader').fadeOut('slow', function () {
+					$(this).remove();
+				});
+			}, 5000 // 5s
+		);
+	});
 </script>
-
 <html>

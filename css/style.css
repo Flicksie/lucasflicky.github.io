@@ -1,28 +1,48 @@
 
-.cd-accordion-menu {
-  width: 99%;
- // margin-left:-3em;
-  /*! max-width: 600px; */
+.mob-sections {
+  width: 100%;
 
-
-  list-style: none;
 }
-.cd-accordion-menu ul {
+.mob-sections ul {
   /* by default hide all sub menus */
   display: none;
     list-style: none;
+
   
 }
 
-.tablera{table-layout: fixed; width: 100%;background:black; border-radius: 15px ;overflow:hidden;}
+.mobile-men  {
+position:absolute;
+width:100%;
+top:25px;
+right:0;
+  z-index:99999;
+}
+.mobile-men li a {color:white}
+.mobile-men li{
+display: inline-block;
+padding: 0 14px;
+background:#Eb3232;
+font-family: Oswald;
+font-weight: 400;
+width:calc(20% + -34px);
+text-transform: uppercase;
+line-height:18px;
+  cursor:pointer;
+}
+.mobile-men li:hover{background:#A03232;}
+.mobile-men li:active{background:#EB6464; transition: 5ms}
+
+.tablera{table-layout: fixed; margin:5px 0; width: 100%;background:black; border-radius: 2px 2px 18px 2px ;overflow:hidden;}
 
 .taitoru{
 text-align:left;
 text-indent:5%;
-background:#Dd2525;
+background:#Cd3535;
 color: white;
 font-size:0.8em;
-  border-radius: 12px 12px  5px 5px ;
+  border-radius: 2px 2px  1px 1px ;
+  
 }
 .taitoIc{
 width:50px;
@@ -44,7 +64,7 @@ text-align:center;
 
 color:white;
 background:#Ad3535;
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 2px 15px 0;
 }
 .taitoBut:hover{
 background:#Fd3535;
@@ -58,16 +78,23 @@ cursor:pointer;
 color:white;
   font-size:0.8em;
 }
-
-
-.cd-accordion-menu label, .cd-accordion-menu {
-  position: relative;
-  display: block;
-  padding: 8px 0px 8px 10px;
- // background: #4d5158 ;
-  font-size: 1rem;
-  color: #ffffff;
+.mobwrap{
+  padding-top:60px;
+  height:90%;
+  
 }
+#topba{
+  width:100%;
+  position: fixed;
+  background:black;
+  padding:8px;
+  height:45px;
+  
+  z-index:99999;
+  
+}
+
+
 
 .praj{ 
   position: relative;
@@ -75,37 +102,49 @@ color:white;
   padding: 8px 8px 8px 10px;
   background: #4d5158 ;
   color: #ffffff;
-  margin-left:-2em;
-  width:100%;
+  width:calc(100% + -2em);
   font-size: 0.8rem;
+  margin:0 1em;
   overflow: hidden;
-}
-
-
-
-.cd-accordion-menu , .praj {
    box-shadow: inset 1px 3px 5px rgba(0,0,0,0.8);
   border-radius: 0 0 10px 10px;
-}
-.cd-accordion-menu label{
-   border-radius: 10px 0px 0 10px;
-    box-shadow: 0 1px 2px 3px rgba(0,0,0,0.3);
-  background: #C43938 ;
-    font-size: 1.6rem;
-}
-.cd-accordion-menu label:hover {
-  background: #8d1118 ;
+  height:calc(10%);
 }
 
-.cd-accordion-menu label {
+
+.thex{
   cursor: pointer;
+  color:red;
+  font-style: initial;
+  font-size: 20;
+  position: absolute;
+  right:0;
+  top:10px;
 }
-.cd-accordion-menu input[type=checkbox] {
+
+  .thex:hover{color:orange}
+
+.mob-sections label{
+   border-radius: 2px 2px 1px 1px;
+    box-shadow: 0 1px 2px 3px rgba(0,0,0,0.3);
+   background: #C43938 ;
+    font-size: 1.5rem;
+  width:100%
+
+    position: relative;
+  display: block;
+  padding: 2px ;
+  margin-left:12px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.mob-sections input[type=checkbox] {
   /* hide native checkbox */
   position: absolute;
   opacity: 0;
 }
-.cd-accordion-menu li {
+.mob-sections li {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

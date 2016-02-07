@@ -67,15 +67,16 @@ height: 140px;
 #filters li {
     display:inline-block;
 		margin-top:2px;
-  //  margin-right: 10px;
-	width:125px;
-	//float:left;
+
+
 }
 .filterall{ text-align: center;width:50px !important;;}
 /* the filter options */
+
+
 #filters li a {
 
-font-family: inherit;
+font-family: Calibri;
 
 line-height: 18px;
 color: #a55;
@@ -97,6 +98,8 @@ font-size: 14px;
 	transition: all 500ms ease;
 	 border-radius: 0 20px;
 	  color: #eee; 
+    font-weight: 900;
+
 }
 
 

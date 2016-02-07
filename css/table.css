@@ -74,11 +74,11 @@ img.badgeicon{
     margin-bottom: 10px;
   }
   .tg td {
-    font-family: Oswald, sans-serif;
+    font-family: Calibri;
     color: white;
     font-size: 16px;
       font-weight: 100;
-    letter-spacing: .05em;
+    letter-spacing: .02em;
     padding: 10px 5px;
     border-style: none;
     border-width: 0px;
@@ -170,6 +170,7 @@ text-decoration: none;
   color: white;
   width:100%;
   padding: 3em;
+  font-family: Oswald;
 }
 .disabled{
   background: #333 !important;

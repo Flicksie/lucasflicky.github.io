@@ -6,10 +6,27 @@
 			width: 78%;
 			padding: 3em;
 			}
+.redstar {
+	color: #E44 !important;
+}
+
 .filled{
 	width:100%;
-	
+
 }			
+.disabledF{
+	
+	pointer-events: none;
+	background:rgba(80,80,80,.5) !important;
+	color:#966 !important;
+	
+	
+	
+}	
+p{
+	text-indent: 1em;
+	font-family: Calibri;
+}
 			
 .txtbox{
   
@@ -86,7 +103,7 @@ opacity:0;
  a img { border: 0; }
  a { text-decoration: none; color:#f63636; cursor: pointer;}
  a:hover { text-decoration: none; color:#f68686; }
-.major{width:40%}
+.major{width:40%;vertical-align:baseline;}
 
 body{
 background:#1b1b1b;
@@ -96,7 +113,7 @@ overflow-x:hidden;
 overflow-y:hidden;
 }
 .col{column-count:3;}
-
+.row{width:100%}
 
 h1{font-family:Oswald;font-size:50;font-weight:400;}
 
@@ -267,6 +284,8 @@ opacity: 0;
 
 }
 
+.wekoBB{display: none !important;}
+
 .blockontent{border:solid black 5px}
 
 .header-red{
@@ -287,10 +306,10 @@ z-index:1;
 
 @keyframes anime
 {
-0% {background: url("../assets/arrw.png") no-repeat scroll 150% -189px transparent;opacity:0}
-40% {background: url("../assets/arrw.png") no-repeat scroll 60% -189px transparent;opacity:.15}
+0% {background: url("../images/arrw.png") no-repeat scroll 150% -189px transparent;opacity:0}
+40% {background: url("../images/arrw.png") no-repeat scroll 60% -189px transparent;opacity:.15}
 70% {opacity: .05}  
-100% {background: url("../assets/arrw.png") no-repeat scroll -0% -189px transparent;opacity:0}
+100% {background: url("../images/arrw.png") no-repeat scroll -0% -189px transparent;opacity:0}
 }
 
 #redanim{
@@ -299,7 +318,7 @@ z-index:10;
 bottom: 0px;
 margin-bottom:3%;
 left:11%;
-background: url("../assets/arrw.png") no-repeat scroll 10% -189px transparent;
+background: url("../images/arrw.png") no-repeat scroll 10% -189px transparent;
 border: none;
 height: 63px;
 width: 25%;
@@ -312,10 +331,10 @@ animation: anime 1s linear infinite;
 
 @keyframes animeb
 {
-0% {background: url("../assets/arrw.png") no-repeat scroll -0% -126px transparent;opacity:0}
-40% {background: url("../assets/arrw.png") no-repeat scroll 60% -126px transparent;opacity:.05}
+0% {background: url("../images/arrw.png") no-repeat scroll -0% -126px transparent;opacity:0}
+40% {background: url("../images/arrw.png") no-repeat scroll 60% -126px transparent;opacity:.05}
 70% {opacity: .03}  
-100% {background: url("../assets/arrw.png") no-repeat scroll 100% -126px transparent;opacity:0}
+100% {background: url("../images/arrw.png") no-repeat scroll 100% -126px transparent;opacity:0}
 }
 
 #bluanim{
@@ -324,7 +343,7 @@ z-index:10;
 bottom: 0px;
 margin-bottom:3%;
 right:14%;
-background: url("../assets/arrw.png") no-repeat scroll 10% -126px transparent;
+background: url("../images/arrw.png") no-repeat scroll 10% -126px transparent;
 border: none;
 height: 63px;
 width: 25%;
@@ -340,14 +359,14 @@ animation: animeb 1s linear infinite;
 position:fixed;
 z-index:10;
 bottom: 5%;
-background: url("../assets/arrw.png") no-repeat scroll 0px -63px transparent;
+background: url("../images/arrw.png") no-repeat scroll 0px -63px transparent;
 border: none;
 height: 63px;
 width: 63px;
 opacity:.2;
 transition: all 300ms;
 }
-.inv{background: url("../assets/arrw.png") no-repeat scroll 0px 0% transparent;}
+.inv{background: url("../images/arrw.png") no-repeat scroll 0px 0% transparent;}
 .button-back:hover, .button-back-2:hover {opacity: .5;}
 
 .button-capsule{bottom:5%; \\overflow:hidden;pointer-events:auto;}
@@ -396,7 +415,7 @@ position:fixed;
 background:#161616;
 width:70%;
 padding:50px;
-height:100%;
+height:90%;
 right:-100%;
 z-index:1000;
 
@@ -410,7 +429,7 @@ box-shadow: 15px -30px 35px 55px rgba(0,0,0,0.4);
 	font-weight:300;
 		font-size:14;
 }
-.txtbox, .contabox{overflow:hidden; background: #202020; height: 80%;margin:0 15px; padding: 45px 0 15px 35px  ;border-radius:25px}
+.txtbox, .contabox{overflow:hidden; background: #202020; height: 80%;margin:30px 15px; padding: 45px 0 15px 35px  ;border-radius:25px}
 .flk-contact{margin:0  -20 50 20}
 #contactw{
 position:fixed;
@@ -427,7 +446,7 @@ z-index:1000;
 .button-back-2{
 margin: 0 0 0 50px ;
 cursor:pointer;
-background: url("../assets/arrw.png") no-repeat scroll 0px -63.5px  transparent;
+background: url("../images/arrw.png") no-repeat scroll 0px -63.5px  transparent;
  transform: scale(.6,.6);
 border: none;
 height: 63px;
