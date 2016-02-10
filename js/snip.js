@@ -383,7 +383,7 @@ var gallery = [
 function newPic(category,path,imgname,rank,optName,i,projName){
 
 optName=optName|| "Picture";
-path=path ||'assets/' || 'portf/'; //"files/theme/gallery/";
+path=path ||'images/gallery/' || 'portf/'; //"files/theme/gallery/";
 category=category || "Misc";
 projName = projName || "Untitled";
 i = i || "weko";
@@ -404,8 +404,8 @@ isotope-item' \
 <div> \
 <div 	class='wsite-image'> \
  \
-<a class='w-fancybox' rel='lightbox[galleryfeed]' title='"+ optName +"' \
-href='./" + path + imgname + ".png' \
+<a class='w-fancybox' rel='lightbox[galleryfeed]'  \
+href='./" + path + "fullsize/" + imgname + ".png' \
 onclick='if (!lightboxLoaded) return false'> \
 <img 													src='./" + path + imgname + ".png' \
  alt='" + optName + "' style='width:100%;max-width:800px'> \
@@ -416,7 +416,7 @@ onclick='if (!lightboxLoaded) return false'> \
 "
 
 };
-
+//title='"+ optName +"'
 
 function printProj(name,category,displayPic,icon,describ,role,link){
 name = name			 	|| "Nome do Projeto"
@@ -528,14 +528,14 @@ randomFeed(gallery[i][3]);
 function newPicMO(category,path,imgname,rank,optName,i,projName){
 
 optName=optName|| "Picture";
-path=path ||'assets/'; //"files/theme/gallery/";
+path=path ||'images/gallery/'; //"files/theme/gallery/";
 category=category || "Misc";
 projName = projName || "Untitled";
 
 
 return `<div class="galleryMOB">
 <div class="imgframe">
-<a href="./` + path +'origs/'+ imgname + `.png"> <img class="galM" src="./` + path + imgname + `.png">
+<a href="./` + path +'fullsize/'+ imgname + `.png"> <img class="galM" src="./` + path + imgname + `.png">
 </img></a>
 </div>
 </div>`
@@ -585,16 +585,7 @@ feed();
 
 var projects =	[
 
-					[
-						"Toren", 
-						"Music",
-						"toren.png",
-						"audio",
-						"Toren, the first adventure game from Brazilian indie developer Swordtales. You are Moonchild, destined to climb the tower (known as Toren) on a hauntingly solitary journey to find your purpose.",
-						"Soundtrack",
-						"http://toren-game.com"
-						
-					],
+					
 					[
 						"Silenyte",
 						"Personal",
@@ -621,6 +612,15 @@ var projects =	[
 						"Pedagogic DIgital Game developed within a research project, supported by Secretary of Distance Learning - UFRGS.",
 						"Soundtrack",
 						"http://pt.slideshare.net/CnthiaKulpa/jogo-digital-pedaggico-te-3-d-tetris"
+					],[
+						"Toren", 
+						"Music",
+						"toren.png",
+						"audio",
+						"Toren, the first adventure game from Brazilian indie developer Swordtales. You are Moonchild, destined to climb the tower (known as Toren) on a hauntingly solitary journey to find your purpose.",
+						"Soundtrack",
+						"http://toren-game.com"
+						
 					],
 					[
 						"Thuat",
