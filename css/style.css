@@ -1,6 +1,6 @@
 
 .cd-accordion-menu {
-  width: 99%;
+  width: 100%;
  // margin-left:-3em;
   /*! max-width: 600px; */
 
@@ -14,7 +14,7 @@
   
 }
 
-.tablera{table-layout: fixed; width: 100%;background:black; border-radius: 15px ;overflow:hidden;}
+.tablera{table-layout: fixed;margin:4px 0px ; width: 100%;background:black; border-radius: 5px 5px 13px 5px ;overflow:hidden;}
 
 .taitoru{
 text-align:left;
@@ -22,7 +22,7 @@ text-indent:5%;
 background:#Dd2525;
 color: white;
 font-size:0.8em;
-  border-radius: 12px 12px  5px 5px ;
+  border-radius: 3px 3px  1px 1px ;
 }
 .taitoIc{
 width:50px;
@@ -44,7 +44,7 @@ text-align:center;
 
 color:white;
 background:#Ad3535;
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 2px 10px 0;
 }
 .taitoBut:hover{
 background:#Fd3535;
@@ -72,23 +72,27 @@ color:white;
 .praj{ 
   position: relative;
   display: block;
-  padding: 8px 8px 8px 10px;
+  padding: 2px 8px 8px 10px;
   background: #4d5158 ;
   color: #ffffff;
   margin-left:-2em;
+   box-shadow: inset 1px 3px 5px rgba(0,0,0,0.8);
   width:100%;
   font-size: 0.8rem;
   overflow: hidden;
+  text-align: left;
+  
 }
 
-
+p{text-indent: 8px;}
 
 .cd-accordion-menu , .praj {
-   box-shadow: inset 1px 3px 5px rgba(0,0,0,0.8);
+  
   border-radius: 0 0 10px 10px;
 }
 .cd-accordion-menu label{
-   border-radius: 10px 0px 0 10px;
+   border-radius: 2px 2px 2px 2px;
+  width:calc(100% + -20px);
     box-shadow: 0 1px 2px 3px rgba(0,0,0,0.3);
   background: #C43938 ;
     font-size: 1.6rem;

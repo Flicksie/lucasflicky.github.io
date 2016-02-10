@@ -255,7 +255,7 @@ a[class^="lifeFeedLoadMore"] {
 /*** FORM INPUTS ***/
 
 .flk-contact input {
-    background: rgba(0, 0, 0, 0) repeating-linear-gradient(-45deg, #fff, #fff 2px, #eee 2px, #eee 4px) repeat scroll 0 0;
+    //background: rgba(0, 0, 0, 0) repeating-linear-gradient(-45deg, #fff, #fff 2px, #eee 2px, #eee 4px) repeat scroll 0 0;
     border: 3px solid #333;
     display: block;
     font-family: "Oswald",sans-serif;
@@ -281,7 +281,7 @@ a[class^="lifeFeedLoadMore"] {
 .flk-contact .formInput {  margin: .5em 0 0 0; }
 
 .flk-contact textarea {
-    background: rgba(0, 0, 0, 0) repeating-linear-gradient(-45deg, #fff, #fff 2px, #eee 2px, #eee 4px) repeat scroll 0 0;
+   // background: rgba(0, 0, 0, 0) repeating-linear-gradient(-45deg, #fff, #fff 2px, #eee 2px, #eee 4px) repeat scroll 0 0;
     border: 3px solid #333;
     display: block;
     font-family: "Oswald",sans-serif;
@@ -314,8 +314,8 @@ a[class^="lifeFeedLoadMore"] {
 
 .flk-contact .error {
     border: 3px solid #F1544C;
-    margin: 0 1.3em 3em 0;
-    padding:1.5em;
+  //  margin: 0 1.3em 3em 0;
+   background:#F1A4AC !important;;
     position: relative;
 
     -webkit-transition: all 450ms ease;
@@ -323,6 +323,9 @@ a[class^="lifeFeedLoadMore"] {
         -ms-transition: all 450ms ease;
          -o-transition: all 450ms ease;
             transition: all 450ms ease;
+}
+.red{
+    color:red;
 }
 
 .flk-contact .error svg {

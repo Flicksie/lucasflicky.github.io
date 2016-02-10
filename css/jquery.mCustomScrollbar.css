@@ -31,7 +31,7 @@ CONTENTS:
 		position: relative;
 		overflow: hidden;
 		height: 99%;
-		max-width: 102%;
+		width: 100%;
 		outline: none;
 		direction: ltr;
 	}
