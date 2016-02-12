@@ -12,6 +12,7 @@ function setlang(lang) {
 	case 'pt-br':
 		siteLang = 'pt-br';
 		$('#notice').removeClass('active');
+		setTimeout(" $('#notice').hide(); ", 800);
 		$('.ptbr').removeClass('disav');
 		$('.enuk').addClass('disav');
 		$('.multilang, .en-uk').fadeOut(360, function () {
@@ -21,12 +22,14 @@ function setlang(lang) {
 
 
 
-
 		break;
 
 	case 'en-uk':
 		siteLang = 'en-uk';
-		location.hash.substring(2) == 'blog' ? $('#notice').addClass('active') : false;
+		if (location.hash.substring(2) == 'blog' ){
+			$('#notice').show();
+			setTimeout(" $('#notice').addClass('active'); ", 800);
+		}
 		$('.enuk').removeClass('disav');
 		$('.ptbr').addClass('disav');
 		$('.multilang, .pt-br').fadeOut(360, function () {
@@ -97,17 +100,21 @@ $('#visaud').on('click', function (e) {
 	resetPage('soft');
 	allPassive();
 	$('.nav-0').addClass('ativo');
+	$('#Projects').fadeOut();
 });
 $('#visaud2').on('click', function (e) {
 	resetPage('soft');
 	allPassive();
 	$('.nav-0').addClass('ativo');
+	$('#Projects').fadeOut();
 });
 $('#home').on('click', function (e) {
 	go_home();
+	$('#Projects').fadeOut();
 });
 $('#home2').on('click', function (e) {
 	go_home();
+	$('#Projects').fadeOut();
 });
 $('.menuitem').on('click', function (e) {
 	$(this).addClass('ativo');
@@ -203,6 +210,7 @@ $('#bkbpj').on('click', function (e) {
 	$(document.body).animate({
 		scrollTop: '0'
 	}, 500);
+	$('#Projects').hide();
 	location.hash = "";
 });
 
@@ -257,8 +265,8 @@ function firstAlt() {
 	siteLang != 'en-uk' ? visa = ["style='display:none'", "style='display:inherit'"] : visa = ["style='display:inherit'", "style='display:none'"];
 
 	document.getElementById('headline-intro').innerHTML = `
-<span class='en-uk' ` + visa[0] + `> Wanna see something else?</span>
-<span class='pt-br' ` + visa[1] + `> Quer ver mais alguma coisa?</span>
+<span class='en-uk' lang='en-gb' ` + visa[0] + `> Wanna see something else?</span>
+<span class='pt-br' lang='pt-br' ` + visa[1] + `> Quer ver mais alguma coisa?</span>
 `;
 
 
@@ -276,8 +284,8 @@ function alternates() {
 	case 2:
 		document.getElementById('headline-intro').innerHTML =
 			`
-<span class='en-uk' ` + visa[0] + `> Missed something?</span>
-<span class='pt-br' ` + visa[1] + `> Esqueceu algo?</span>
+<span class='en-uk' lang='en-gb' ` + visa[0] + `> Missed something?</span>
+<span class='pt-br' lang='pt-br' ` + visa[1] + `> Esqueceu algo?</span>
 `;
 		break;
 
@@ -287,16 +295,16 @@ function alternates() {
 	case 3:
 		document.getElementById('headline-intro').innerHTML =
 			`
-<span class='en-uk' ` + visa[0] + `> Still Browsing?</span>
-<span class='pt-br' ` + visa[1] + `> Ainda por aí?</span>
+<span class='en-uk' lang='en-gb' ` + visa[0] + `> Still Browsing?</span>
+<span class='pt-br' lang='pt-br' ` + visa[1] + `> Ainda por aí?</span>
 `;
 		break;
 
 	case 4:
 		document.getElementById('headline-intro').innerHTML =
 			`
-<span class='en-uk' ` + visa[0] + `> If you can understand Brazilian Portuguese how about checking the <a href='http://blog.lucasflicky.com'>Blog</a> out? </span>
-<span class='pt-br' ` + visa[1] + `> Você que fala português, que tal uma olhada no <a href='http://blog.lucasflicky.com'>Blog</a> ? </span>
+<span class='en-uk' lang='en-gb' ` + visa[0] + `> If you can understand Brazilian Portuguese how about checking the <a href='http://blog.lucasflicky.com'>Blog</a> out? </span>
+<span class='pt-br' lang='pt-br' ` + visa[1] + `> Você que fala português, que tal uma olhada no <a href='http://blog.lucasflicky.com'>Blog</a> ? </span>
 			
 `;
 		break;
@@ -304,95 +312,95 @@ function alternates() {
 	case 5:
 		document.getElementById('headline-intro').innerHTML =
 			`
-<span class='en-uk' ` + visa[0] + `> Need Help? Toss me a message at the <a onclick=\"goTo(\'#contactw\');\">Contact Form</a></span>
-<span class='pt-br' ` + visa[1] + `> Precisa de ajuda? Manda uma mensagem no <a onclick=\"goTo(\'#contactw\');\">Form de Contato</a></span>
+<span class='en-uk' lang='en-gb' ` + visa[0] + `> Need Help? Toss me a message at the <a onclick=\"goTo(\'#contactw\');\">Contact Form</a></span>
+<span class='pt-br' lang='pt-br' ` + visa[1] + `> Precisa de ajuda? Manda uma mensagem no <a onclick=\"goTo(\'#contactw\');\">Form de Contato</a></span>
 `;
 		break;
 
 	case 7:
 		document.getElementById('headline-intro').innerHTML =
 			`
-<span class='en-uk' ` + visa[0] + `>  Are you lost? </span>
-<span class='pt-br' ` + visa[1] + `>  Está perdido? </span>
+<span class='en-uk' lang='en-gb' ` + visa[0] + `>  Are you lost? </span>
+<span class='pt-br' lang='pt-br' ` + visa[1] + `>  Está perdido? </span>
 `;
 		break;
 
 	case 10:
 		document.getElementById('headline-intro').innerHTML =
 			`
-<span class='en-uk' ` + visa[0] + `> I wonder what is keeping you around for this long...</span>
-<span class='pt-br' ` + visa[1] + `> Me pergunto o que te segura aqui por tanto tempo...</span>
+<span class='en-uk' lang='en-gb' ` + visa[0] + `> I wonder what is keeping you around for this long...</span>
+<span class='pt-br' lang='pt-br' ` + visa[1] + `> Me pergunto o que te segura aqui por tanto tempo...</span>
 `;
 		break;
 
 	case 11:
 		document.getElementById('headline-intro').innerHTML =
 			`
-<span class='en-uk' ` + visa[0] + `> You know, you've came to the home screen kinda, 10 times already</span>
-<span class='pt-br' ` + visa[1] + `> Sabe, essa é a décima vez que você passa pela Home</span>
+<span class='en-uk' lang='en-gb' ` + visa[0] + `> You know, you've came to the home screen kinda, 10 times already</span>
+<span class='pt-br' lang='pt-br' ` + visa[1] + `> Sabe, essa é a décima vez que você passa pela Home</span>
 `;
 		break;
 
 	case 12:
 		document.getElementById('headline-intro').innerHTML =
 			`
-<span class='en-uk' ` + visa[0] + `> Maybe you're having fun with the homepage sliding animation?</span>
-<span class='pt-br' ` + visa[1] + `> Talvez você esteja brincando com o slide da página inicial?</span>
+<span class='en-uk' lang='en-gb' ` + visa[0] + `> Maybe you're having fun with the homepage sliding animation?</span>
+<span class='pt-br' lang='pt-br' ` + visa[1] + `> Talvez você esteja brincando com o slide da página inicial?</span>
 `;
 		break;
 
 	case 13:
 		document.getElementById('headline-intro').innerHTML =
 			`
-<span class='en-uk' ` + visa[0] + `> I see, but we're missing the point here.</span>
-<span class='pt-br' ` + visa[1] + `> Pois é, mas não acha que estamos nos distraindo aqui?</span>
+<span class='en-uk' lang='en-gb' ` + visa[0] + `> I see, but we're missing the point here.</span>
+<span class='pt-br' lang='pt-br' ` + visa[1] + `> Pois é, mas não acha que estamos nos distraindo aqui?</span>
 `;
 		break;
 
 	case 14:
 		document.getElementById('headline-intro').innerHTML =
 			`
-<span class='en-uk' ` + visa[0] + `> I think that at the <a href='http://blog.lucasflicky.com'>Blog</a> you would spend this time more usefully...</span>
-<span class='pt-br' ` + visa[1] + `> Acho que no <a href='http://blog.lucasflicky.com'>Blog</a> esse tempo seria gasto de forma mais útil...</span>
+<span class='en-uk' lang='en-gb' ` + visa[0] + `> I think that at the <a href='http://blog.lucasflicky.com'>Blog</a> you would spend this time more usefully...</span>
+<span class='pt-br' lang='pt-br' ` + visa[1] + `> Acho que no <a href='http://blog.lucasflicky.com'>Blog</a> esse tempo seria gasto de forma mais útil...</span>
 `;
 		break;
 
 	case 15:
 		document.getElementById('headline-intro').innerHTML =
 			`
-<span class='en-uk' ` + visa[0] + `> ...or not...</span>
-<span class='pt-br' ` + visa[1] + `> ...ou não...</span>
+<span class='en-uk' lang='en-gb' ` + visa[0] + `> ...or not...</span>
+<span class='pt-br' lang='pt-br' ` + visa[1] + `> ...ou não...</span>
 `;
 		break;
 
 	case 16:
 		document.getElementById('headline-intro').innerHTML =
 			`
-<span class='en-uk' ` + visa[0] + `> Did I ever mention you can schedule a personal meeting if you prefer?</span>
-<span class='pt-br' ` + visa[1] + `> Já mencionei que você pode agendar uma reunião pessoalmente se você preferir?</span>
+<span class='en-uk' lang='en-gb' ` + visa[0] + `> Did I ever mention you can schedule a personal meeting if you prefer?</span>
+<span class='pt-br' lang='pt-br' ` + visa[1] + `> Já mencionei que você pode agendar uma reunião pessoalmente se você preferir?</span>
 `;
 		break;
 
 	case 17:
 		document.getElementById('headline-intro').innerHTML =
 			`
-<span class='en-uk' ` + visa[0] + `> Well, this is, if you are willing to come to Porto Alegre - Brazil, in order to do so</span>
-<span class='pt-br' ` + visa[1] + `> Bom, isto é, se você puder vir à Porto Alegre - RS, para que isso seja possível.</span>
+<span class='en-uk' lang='en-gb' ` + visa[0] + `> Well, this is, if you are willing to come to Porto Alegre - Brazil, in order to do so</span>
+<span class='pt-br' lang='pt-br' ` + visa[1] + `> Bom, isto é, se você puder vir à Porto Alegre - RS, para que isso seja possível.</span>
 `;
 		break;
 
 	case 18:
 		document.getElementById('headline-intro').innerHTML =
 			`
-<span class='en-uk' ` + visa[0] + `>  </span>
-<span class='pt-br' ` + visa[1] + `>  </span>
+<span class='en-uk' lang='en-gb' ` + visa[0] + `>  </span>
+<span class='pt-br' lang='pt-br' ` + visa[1] + `>  </span>
 `;
 		break;
 	default:
 		document.getElementById('headline-intro').innerHTML =
 			`
-<span class='en-uk' ` + visa[0] + `> What are you looking for?</span>
-<span class='pt-br' ` + visa[1] + `> O que você procura?</span>
+<span class='en-uk' lang='en-gb' ` + visa[0] + `> What are you looking for?</span>
+<span class='pt-br' lang='pt-br' ` + visa[1] + `> O que você procura?</span>
 `;
 		break;
 	};
@@ -458,9 +466,11 @@ function goToL(target) {
 };
 
 function goToP() {
+		$('#Projects').show();
 	$('#Projects').animate({
 		bottom: '0%'
 	}, 1000);
+
 };
 
 function callBlue() {
@@ -477,7 +487,8 @@ function callRed() {
 
 function callBlog() {
 	$('#shadows').fadeOut();
-	$('#notice').addClass('active');
+	setTimeout(" $('#notice').addClass('active'); ", 800);;
+	$('#notice').show();
 	$('#wrapshit').fadeOut();
 	$('#blogframe').fadeIn();
 	active = ".nav-3";
@@ -637,7 +648,8 @@ function go_home() {
 };
 
 function go_projects() {
-	$('#shadows').fadeIn();
+	$('#Projects').show();
+	$('#shadows').fadeIn();	
 	allPassive();
 	resetPage('soft');
 	$('#Projects').animate({
@@ -788,9 +800,9 @@ function returneRed() {
 
 function dismissBlog() {
 	$('#notice').removeClass('active');
+	setTimeout(" $('#notice').hide(); ", 800);
 	$('#wrapshit').fadeIn();
 	$('#blogframe').fadeOut();
-
 };
 
 // RESET //--------------
@@ -805,8 +817,9 @@ function resetPage(type) {
 		dismissRed();
 		dismissBlue();
 		dismissBlog();
-
+		
 	};
+	console.log(this);
 	$(document.body).animate({
 		scrollTop: '0'
 	}, 500);
