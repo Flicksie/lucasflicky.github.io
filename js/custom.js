@@ -596,7 +596,7 @@ function gotopg(input) {
 		
 	case "thanks":
 		$('#thanks').fadeIn();
-				console.log ("teste OK");
+						location.hash = "";
 			setTimeout(function () {
 				$('#thanks').fadeOut();
 			}, 2000);
