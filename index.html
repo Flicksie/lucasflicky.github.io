@@ -32,16 +32,23 @@
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script src="js/hash.js"></script>
 		<script>
+		
+			
 			function grabUrl() {
 				var currentPage = location.hash.substring(2);
 				currentPage ? gotopg(currentPage) : false;
 				
 			};
-			location.hash.substring(2) == "thanks" ? $('#thanks').fadeIn() : false;
+			
 			
 			$(window).hashchange(function () { //	window.onhashchange = function () {
 				grabUrl()
 			}); //};
+			
+		
+			
+			
+			
 		</script>
 		<link rel="stylesheet" type="text/css" href="css/main_style.css">
 		<link rel="stylesheet" type="text/css" href="css/comingSoon.css">
@@ -53,7 +60,7 @@
 		<div id="notmob">
 
 
-			<div id="thanks" style="opacity:0">
+			<div id="thanks" style="display:none">
 			
 			<h3 class="en-uk">THANKS</h3>
 			<p class="en-uk" > Your message has been sent!</p>
@@ -444,7 +451,7 @@
 									<div class="wrapper">
 										<div class="row">
 											<div class="col form">
-												<form method="POST" action="http://formspree.io/contato@lucasflicky.com" >
+												<form id ="contform" method="POST" >
 												<input type="hidden" name="_next" value="http://lucasflicky.com/#/thanks" />
 													<div class="row">
 														<div class="col">
@@ -1102,15 +1109,40 @@
 			$(document).ready(function ($) {	
 				setTimeout(function () {
 					$('#preloader').fadeOut('slow', function () {$(this).remove();});
-							setTimeout(function () {
-							$('#thanks').fadeOut('slow');
-						}, 4000);
 				}, 3000);
 			
 				console.log('Document Ready to Go!')
 			});
 		
 		console.log('HTML Last Line')
+		
+		
+		
+			
+var $contactForm = $('#contform');
+$contactForm.submit(function(e) {
+	e.preventDefault();
+	$.ajax({
+		url: '//formspree.io/contato@lucasflicky.com',
+		method: 'POST',
+		data: $(this).serialize(),
+		dataType: 'json',
+		success: function(data) {
+				$('#thanks').fadeIn();
+				setTimeout(function () {
+						$('#thanks').fadeOut();
+				}, 3000);
+				alert('yes');
+		},
+		error: function(err) {
+		
+				alert('ERROR');
+		}
+	});
+});
+			
+		
+		
 	</script>
 		 </body>
 <html>
