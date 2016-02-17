@@ -593,6 +593,14 @@ function gotopg(input) {
 		$(blog).addClass('ativo');
 
 		break;
+		
+	case "thanks":
+		$('#thanks').fadeIn();
+		location.hash = "";
+		
+		
+
+		break;
 
 
 	default:

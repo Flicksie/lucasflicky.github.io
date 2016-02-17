@@ -1,8 +1,35 @@
+#thanks{
+	
+	position:absolute;
+	z-index: 9999;
+	background: #212121;
+	height:20%;
+	width:40%;
+  margin: 25% 30% ;
+	color:white;
+	border-radius: 5px;
+	box-shadow:0 5px  15px rgba(0,0,0,.3);
+	
+}
+
+#thanks p{
+margin:30px 30px;
+	font-size: 18; 
+	vertical-align: baseline;
+}
+
+#thanks h3{
+	padding: 10px 30px;
+	border-radius: 3px 3px 0 0 ;
+	margin: 0;
+	font-size: 20;
+background: #C04042;
+}
 .prelod div#preloader {
 			position: fixed;
 			left: 0;
 			top: 0;
-			z-index: 9999;
+			z-index: 9995;
 			width: 100%;
 			height: 100%;
 			display: block;
@@ -464,7 +491,7 @@ img.landicon {
 
 .header-red {
 	position: absolute;
-	height: 10.5em;
+
 	width: 100%;
 	background: #a83335;
 	z-index: 1;
@@ -472,7 +499,7 @@ img.landicon {
 
 .header-blue {
 	position: absolute;
-	height: 10.5em;
+
 	width: 100%;
 	background: #2c3968;
 	z-index: 1;

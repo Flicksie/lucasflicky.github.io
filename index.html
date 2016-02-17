@@ -50,7 +50,17 @@
 		<div id="notmob">
 
 
-
+			<div id="thanks" style="display:none">
+			
+			<h3 class="en-uk">THANKS</h3>
+			<p class="en-uk" > Your message has been sent!</p>
+			
+			<h3 class="pt-br">OBRIGADO</h3>
+			<p class="pt-br" > Sua mensagem foi enviada!</p>
+			
+			</div>
+			
+			
 
 			<div id="preloader"></div>
 			<div id="notice" style="display:none">Sorry, the Blog is only available in Portuguese, you still can try Machine Translation via Bing or Google by using <a href="http://blog.lucasflicky.com">this url</a>. 
@@ -432,7 +442,7 @@
 										<div class="row">
 											<div class="col form">
 												<form method="POST" action="http://formspree.io/contato@lucasflicky.com" >
-												<input type="hidden" name="_next" value="http://lucasflicky.com" />
+												<input type="hidden" name="_next" value="http://lucasflicky.com/#/thanks" />
 													<div class="row">
 														<div class="col">
 															<div class="formInput">
@@ -1089,6 +1099,9 @@
 			$(document).ready(function ($) {	
 				setTimeout(function () {
 					$('#preloader').fadeOut('slow', function () {$(this).remove();});
+						setTimeout(function () {
+							$('#thanks').fadeOut('slow', function () {$(this).remove();});
+						}, 300);
 				}, 3000);
 				console.log('Document Ready to Go!')
 			});
