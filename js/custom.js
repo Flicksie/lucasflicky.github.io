@@ -595,8 +595,9 @@ function gotopg(input) {
 		break;
 		
 	case "thanks":
-		$('#thanks').fadeIn();
-		location.hash = "";
+		$('#thanks').show();
+	
+		console.log ("teste OK");
 		
 		
 
@@ -614,7 +615,7 @@ function gotopg(input) {
 		break;
 
 
-
+	location.hash = "";
 
 	};
 };
