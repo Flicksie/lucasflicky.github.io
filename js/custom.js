@@ -593,16 +593,7 @@ function gotopg(input) {
 		$(blog).addClass('ativo');
 
 		break;
-		
-	case "thanks":
-		$('#thanks').show();
 	
-		console.log ("teste OK");
-		
-		
-
-		break;
-
 
 	default:
 

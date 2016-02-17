@@ -35,7 +35,10 @@
 			function grabUrl() {
 				var currentPage = location.hash.substring(2);
 				currentPage ? gotopg(currentPage) : false;
+				
 			};
+			location.hash.substring(2) == "thanks" ? $('#thanks').fadeIn() : false;
+			
 			$(window).hashchange(function () { //	window.onhashchange = function () {
 				grabUrl()
 			}); //};
@@ -50,7 +53,7 @@
 		<div id="notmob">
 
 
-			<div id="thanks" style="display:none">
+			<div id="thanks" style="opacity:0">
 			
 			<h3 class="en-uk">THANKS</h3>
 			<p class="en-uk" > Your message has been sent!</p>
@@ -1099,10 +1102,11 @@
 			$(document).ready(function ($) {	
 				setTimeout(function () {
 					$('#preloader').fadeOut('slow', function () {$(this).remove();});
-						setTimeout(function () {
+							setTimeout(function () {
 							$('#thanks').fadeOut('slow');
-						}, 300);
+						}, 4000);
 				}, 3000);
+			
 				console.log('Document Ready to Go!')
 			});
 		
