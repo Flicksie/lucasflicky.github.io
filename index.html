@@ -452,7 +452,7 @@
 										<div class="row">
 											<div class="col form">
 												<form id ="contform" method="POST" >
-												<input type="hidden" name="_next" value="http://lucasflicky.com/#/thanks" />
+												
 													<div class="row">
 														<div class="col">
 															<div class="formInput">
@@ -1123,7 +1123,7 @@ var $contactForm = $('#contform');
 $contactForm.submit(function(e) {
 	e.preventDefault();
 	$.ajax({
-		url: '//formspree.io/contato@lucasflicky.com',
+		url: 'http://formspree.io/contato@lucasflicky.com',
 		method: 'POST',
 		data: $(this).serialize(),
 		dataType: 'json',
