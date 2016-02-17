@@ -451,7 +451,7 @@
 									<div class="wrapper">
 										<div class="row">
 											<div class="col form">
-												<form id ="contform" method="POST" >
+												<form id ="contform" method="POST" action="http://formspree.io/contato@lucasflicky.com" >
 												
 													<div class="row">
 														<div class="col">
@@ -1125,7 +1125,6 @@ $contactForm.submit(function(e) {
 	$.ajax({
 		url: 'http://formspree.io/contato@lucasflicky.com',
 		method: 'POST',
-		data: $(this).serialize(),
 		dataType: 'json',
 		success: function(data) {
 				$('#thanks').fadeIn();
