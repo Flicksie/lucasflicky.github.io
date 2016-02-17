@@ -1121,6 +1121,7 @@
 			
 var $contactForm = $('#contform');
 $contactForm.submit(function(e) {
+	e.preventDefault();
 	$.ajax({
 		url: 'http://formspree.io/contato@lucasflicky.com',
 		method: 'POST',
@@ -1132,7 +1133,6 @@ $contactForm.submit(function(e) {
 				}, 3000);
 				alert('yes');
 		}
-	
 	});
 });
 			
