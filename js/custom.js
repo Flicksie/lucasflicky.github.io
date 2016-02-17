@@ -615,7 +615,7 @@ function gotopg(input) {
 		break;
 
 
-	location.hash = "";
+
 
 	};
 };
