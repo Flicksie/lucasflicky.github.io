@@ -599,7 +599,7 @@ function gotopg(input) {
 				console.log ("teste OK");
 			setTimeout(function () {
 				$('#thanks').fadeOut();
-			}, 4000);
+			}, 2000);
 		break;
 
 
