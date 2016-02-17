@@ -452,6 +452,9 @@
 										<div class="row">
 											<div class="col form">
 												<form id ="contform" method="POST" action="http://formspree.io/contato@lucasflicky.com" >
+												<input type="hidden" name="_next" value="#/thanks" />
+												<input type="hidden" name="_subject" value="LucasFlicky.com Contact!" />
+												<input type="text" name="_gotcha" style="display:none" />
 												
 													<div class="row">
 														<div class="col">
@@ -1118,24 +1121,7 @@
 		
 		
 		
-			
-var $contactForm = $('#contform');
-$contactForm.submit(function(e) {
-	e.preventDefault();
-	$.ajax({
-		url: 'http://formspree.io/contato@lucasflicky.com',
-		method: 'POST',
-		dataType: 'json',
-		success: function(data) {
-				$('#thanks').fadeIn();
-				setTimeout(function () {
-						$('#thanks').fadeOut();
-				}, 3000);
-				alert('yes');
-		}
-	});
-});
-			
+
 		
 		
 	</script>

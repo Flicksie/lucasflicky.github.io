@@ -593,7 +593,15 @@ function gotopg(input) {
 		$(blog).addClass('ativo');
 
 		break;
-	
+		
+	case "thanks":
+		$('#thanks').fadeIn();
+				console.log ("teste OK");
+			setTimeout(function () {
+				$('#thanks').fadeOut();
+			}, 4000);
+		break;
+
 
 	default:
 
