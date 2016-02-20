@@ -13,7 +13,7 @@
 
 		<!-- OPEN GRAPHICS & FACEBOOK -->
 				<meta property="fb:admins" content="1489576273">
-				<meta property="fb:app_id" content="584648231560076"> 
+				<meta property="fb:app_id" content="584648231560076">
 				<meta property="og:image" content="/images/og/og-1.png">
 				<meta property="og:image" content="/images/og/og-2.png">
 				<meta property="og:image" content="/images/og/og-3.png">
@@ -21,7 +21,7 @@
 				<meta property="og:description" content="Personal website, Blog, andGraphic Design &amp; Sound Production Portfolio">
 
 		<meta http-equiv="Cache-Control" content="public,store,max-age=8008080588456456091" />
-		
+
 		<meta http-equiv="Pragma" content="cache" />
 		<meta http-equiv="Expires" content="800808058845645609" />
 
@@ -32,21 +32,21 @@
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script src="js/hash.js"></script>
 		<script>
-		
-			
+
+
 			function grabUrl() {
 				var currentPage = location.hash.substring(2);
 				currentPage ? gotopg(currentPage) : false;
-				
+
 			};
-			
-			
+
+
 			$(window).hashchange(function () { //	window.onhashchange = function () {
 				grabUrl()
 			}); //};
-		
-			
-			
+
+
+
 		</script>
 		<link rel="stylesheet" type="text/css" href="css/main_style.css">
 		<link rel="stylesheet" type="text/css" href="css/comingSoon.css">
@@ -59,19 +59,19 @@
 
 
 			<div id="thanks" style="display:none">
-			
+
 			<h3 class="en-uk">THANKS</h3>
 			<p class="en-uk" > Your message has been sent!</p>
-			
+
 			<h3 class="pt-br">OBRIGADO</h3>
 			<p class="pt-br" > Sua mensagem foi enviada!</p>
-			
+
 			</div>
-			
-			
+
+
 
 			<div id="preloader"></div>
-			<div id="notice" style="display:none">Sorry, the Blog is only available in Portuguese, you still can try Machine Translation via Bing or Google by using <a href="http://blog.lucasflicky.com">this url</a>. 
+			<div id="notice" style="display:none">Sorry, the Blog is only available in Portuguese, you still can try Machine Translation via Bing or Google by using <a href="http://blog.lucasflicky.com">this url</a>.
 				<div onclick="$('#notice').addClass('dismissed')" class="xpX">X</div>
 			</div>
 			<!--NAV -->
@@ -355,7 +355,7 @@
 			<div id="mighty-starlite" style="display:none">
 				<div onclick="$('#shadows, #mighty-starlite').fadeOut()" class="xpX">X</div>
 				<div id="star-receiver"></div>
-				
+
 				<table class="tab-list big">
 					<colgroup>
 						<col style="width: 180px">
@@ -370,8 +370,8 @@
 					<tr><td class='namegy'>Client / Instituition: </td><td id="starclient" >   </td></tr>
 					<tr class='detgy'><td class='namegy'>Details: </td><td id="startail" >   </td></tr>
 				</table>
-				
-			
+
+
 			</div>
 			<!--ABOUT -->
 			<div id="about">
@@ -405,7 +405,7 @@
 						<p class="white">
 							So far I've been working mostly as a freelancer than a in-house professional, but the office/studio routine isn't an issue at all for me. I've previously worked at a of <a id="amelnk"   class="aboutlnk" href="http://www.archimedia.com.br">Computer Graphics for Architecture Studio</a> as Graphic Designer, and a local <a id="agelnk"  class="aboutlnk" href="http://www.editoraage.com.br/">Publishing House</a> as not just Designer but also their in-house Illustrator.
 						</p>
-						<p class="white">Currently I'm working as an in-house at a Brazillian 
+						<p class="white">Currently I'm working as an in-house at a Brazillian
 							<a id="rbslnk" class="aboutlnk" href="http://redeglobo.globo.com/rs/rbstvrs/"> TV Broadcasting Channel </a> as a general purpose and UX Designer, using the Design's problem-solving and process-optimization techniques to minimize bureaucracy and paperload within the Television's structure. As well as working with graphic assets used on internal communication &amp; Workshops.
 						</p>
 
@@ -449,11 +449,11 @@
 									<div class="wrapper">
 										<div class="row">
 											<div class="col form">
-												<form id ="contform" method="POST" action="http://formspree.io/contato@lucasflicky.com" >
+												<form id ="contform" method="POST">
 												<!--<input type="hidden" name="_next" value="#/thanks" />-->
 												<input type="hidden" name="_subject" value="LucasFlicky.com Contact!" />
 												<input type="text" name="_gotcha" style="display:none" />
-												
+
 													<div class="row">
 														<div class="col">
 															<div class="formInput">
@@ -1107,21 +1107,21 @@
 
 			});
 		})(jQuery);
-			$(document).ready(function ($) {	
+			$(document).ready(function ($) {
 				setTimeout(function () {
 					$('#preloader').fadeOut('slow', function () {$(this).remove();});
 				}, 3000);
-			
+
 				console.log('Document Ready to Go!')
 			});
-		
+
 		console.log('HTML Last Line')
-		
-		
-			
-		
+
+
+
+
 			var form = document.getElementById('contform');
-				form.onsubmit = function(){	
+				form.onsubmit = function(){
 					var values = {};
 					var formInputs = this.querySelectorAll("input");
 					for(var i=0; i < formInputs.length; i++){
@@ -1131,8 +1131,8 @@
 					values[message.name] = message.value;
 
 					$.ajax({
-						url: "//formspree.io/contato@lucasflicky.com", 
-						method: "POST",
+						url: "//formspree.io/contato@lucasflicky.com",
+						type: "POST",
 						data: values,
 						success:function(r){alert('OK')},
 						dataType: "json"
@@ -1140,8 +1140,8 @@
 					return false;
 				}
 
-		
-		
+
+
 	</script>
 		 </body>
 <html>
