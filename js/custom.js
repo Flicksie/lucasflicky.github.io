@@ -1,4 +1,14 @@
-var siteLang = 'en-uk';
+
+var siteLang;
+if(!localStorage.locale){
+ 	siteLang = 'en-uk';
+	localStorage.setItem('locale', siteLang);
+}else {
+	siteLang = localStorage.locale;
+}
+
+setlang(siteLang);
+
 var backForth = 0;
 var active = ".nav-1";
 
@@ -7,6 +17,7 @@ var active = ".nav-1";
 
 function setlang(lang) {
 
+	localStorage.setItem('locale', lang);
 
 	switch (lang) {
 	case 'pt-br':
@@ -18,10 +29,6 @@ function setlang(lang) {
 		$('.multilang, .en-uk').fadeOut(360, function () {
 			$('.pt-br, .multilang').fadeIn();
 		});
-
-
-
-
 		break;
 
 	case 'en-uk':
@@ -35,11 +42,7 @@ function setlang(lang) {
 		$('.multilang, .pt-br').fadeOut(360, function () {
 			$('.en-uk, .multilang').fadeIn();
 		});
-
 		break;
-
-
-
 	}
 };
 
