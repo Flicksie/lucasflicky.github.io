@@ -44,9 +44,7 @@
 			$(window).hashchange(function () { //	window.onhashchange = function () {
 				grabUrl()
 			}); //};
-			
 		
-			
 			
 			
 		</script>
@@ -452,7 +450,7 @@
 										<div class="row">
 											<div class="col form">
 												<form id ="contform" method="POST" action="http://formspree.io/contato@lucasflicky.com" >
-												<input type="hidden" name="_next" value="#/thanks" />
+												<!--<input type="hidden" name="_next" value="#/thanks" />-->
 												<input type="hidden" name="_subject" value="LucasFlicky.com Contact!" />
 												<input type="text" name="_gotcha" style="display:none" />
 												
@@ -1120,7 +1118,27 @@
 		console.log('HTML Last Line')
 		
 		
+			
 		
+			var form = document.getElementById('contform');
+				form.onsubmit = function(){	
+					var values = {};
+					var formInputs = this.querySelectorAll("input");
+					for(var i=0; i < formInputs.length; i++){
+						values[formInputs[i].name] = formInputs[i].value;
+					}
+					var message = this.querySelector("textarea");
+					values[message.name] = message.value;
+
+					$.ajax({
+						url: "//formspree.io/contato@lucasflicky.com", 
+						method: "POST",
+						data: values,
+						success:function(r){alert('OK')},
+						dataType: "json"
+					});
+					return false;
+				}
 
 		
 		
