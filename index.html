@@ -30,6 +30,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
 
 		<script type="text/javascript" src="js/jquery.js"></script>
+		<script src="/js/img_loader.min.js" charset="utf-8"></script>
 		<script src="js/hash.js"></script>
 		<script>
 
@@ -607,7 +608,7 @@
 		<!-- NOTMOB -->
 
 		<div id="blogframe" style="display:none">
-			<iframe src="http://blog.lucasflicky.com"></iframe>
+			<!-- <iframe src="http://blog.lucasflicky.com"></iframe> -->
 		</div>
 		<div id="yesmob">
 			<div id="topba">
@@ -1088,8 +1089,10 @@
 
 
 	<script src="js/custom.js"></script>
-	<script async src="js/filterScript1.js"></script>
-	<script async src="js/grimoire.js"></script>
+	<script src="js/filterScript1.js"></script>
+	<script src="js/grimoire.js"></script>
+	<script src="/js/preloader.js" charset="utf-8"></script>
+	<script src="/js/formajax.js" charset="utf-8"></script>
 	<script>
 		(function ($) {
 			$(window).load(function () {
@@ -1107,41 +1110,13 @@
 
 			});
 		})(jQuery);
-			$(document).ready(function ($) {
-				setTimeout(function () {
-					$('#preloader').fadeOut('slow', function () {$(this).remove();});
-				}, 3000);
 
-				console.log('Document Ready to Go!')
-			});
+		$(document).ready(function () {
+			console.log('Document Ready to Go!')
+		});
 
-		console.log('HTML Last Line')
-
-
-
-
-			var form = document.getElementById('contform');
-				form.onsubmit = function(){
-					var values = {};
-					var formInputs = this.querySelectorAll("input");
-					for(var i=0; i < formInputs.length; i++){
-						values[formInputs[i].name] = formInputs[i].value;
-					}
-					var message = this.querySelector("textarea");
-					values[message.name] = message.value;
-
-					$.ajax({
-						url: "//formspree.io/contato@lucasflicky.com",
-						type: "POST",
-						data: values,
-						success:function(r){alert('OK')},
-						dataType: "json"
-					});
-					return false;
-				}
-
-
+		console.log('HTML Last Line');
 
 	</script>
-		 </body>
+	</body>
 <html>

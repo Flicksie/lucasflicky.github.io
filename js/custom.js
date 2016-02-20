@@ -305,7 +305,7 @@ function alternates() {
 			`
 <span class='en-uk' lang='en-gb' ` + visa[0] + `> If you can understand Brazilian Portuguese how about checking the <a href='http://blog.lucasflicky.com'>Blog</a> out? </span>
 <span class='pt-br' lang='pt-br' ` + visa[1] + `> Você que fala português, que tal uma olhada no <a href='http://blog.lucasflicky.com'>Blog</a> ? </span>
-			
+
 `;
 		break;
 
@@ -490,9 +490,10 @@ function callBlog() {
 	setTimeout(" $('#notice').addClass('active'); ", 800);;
 	$('#notice').show();
 	$('#wrapshit').fadeOut();
+	$('#blogframe').html('<iframe src="http://blog.lucasflicky.com"></iframe>');
 	$('#blogframe').fadeIn();
 	active = ".nav-3";
-	resetPage('soft')
+	resetPage('soft');
 	allPassive();
 };
 
@@ -503,7 +504,7 @@ function gotopg(input) {
 		blog = ".nav-3",
 		about = ".nav-6",
 		contact = ".nav-7";
-	
+
 
 	switch (input) {
 	case "about":
@@ -593,7 +594,7 @@ function gotopg(input) {
 		$(blog).addClass('ativo');
 
 		break;
-		
+
 	case "thanks":
 		$('#thanks').fadeIn();
 						location.hash = "";
@@ -657,7 +658,7 @@ function go_home() {
 
 function go_projects() {
 	$('#Projects').show();
-	$('#shadows').fadeIn();	
+	$('#shadows').fadeIn();
 	allPassive();
 	resetPage('soft');
 	$('#Projects').animate({
@@ -825,7 +826,7 @@ function resetPage(type) {
 		dismissRed();
 		dismissBlue();
 		dismissBlog();
-		
+
 	};
 	console.log(this);
 	$(document.body).animate({
@@ -902,7 +903,7 @@ function printProj(name, category, displayPic, icon, describ, role, link, copart
 		}
 	};
 
-	guylist != '' ? colle = `	
+	guylist != '' ? colle = `
 <table class="tab-list">
 <colgroup>
 <col style="width: 180px">
@@ -923,7 +924,7 @@ function printProj(name, category, displayPic, icon, describ, role, link, copart
 
 
 
-	return `<table  class="tg" style="table-layout: margin-bottom: 10px; fixed;"> 
+	return `<table  class="tg" style="table-layout: margin-bottom: 10px; fixed;">
 	<colgroup>
 		<col style="width: 50px">
 		<col style="width: 150px">
@@ -940,7 +941,7 @@ function printProj(name, category, displayPic, icon, describ, role, link, copart
 	<!-- TIER -->
 		<th align="left" class="tiername"><span class="tierlevel">` + category + `</th>
 	</tr>
-	
+
 	<tr>
 		<!-- PROFILE PIC -->
 		<td align="center" class="profilepic" colspan="2" rowspan="5"><a target="_blank" ><img class="profile" src="images/project/` + displayPic + `"></a></td><tr><td class="blankline"  colspan="3" ></td></tr>
@@ -952,16 +953,16 @@ function printProj(name, category, displayPic, icon, describ, role, link, copart
 		</td>
 	</tr>
 
-	
-	
+
+
 		<tr>
 			<td  colspan="2" rowspan="2">
 			` + colle + `
 			</td><td></td>
 		</tr>
-		
+
 		<tr>
-		
+
 		<td style="width:350px;height:45px!important;" colspan="1" rowspan="1" class="badges2 ` + state + `"> <a href="` + href + `">` + caption + ` </a></td>
 		</tr>
 </table>`
@@ -1002,7 +1003,7 @@ function printProjSimple(name, category, displayPic, icon, describ, role, link) 
 </colgroup>
   <tr>
     <th class="taitoru" colspan="3">` + name + `</th>
-   
+
   </tr>
   <tr>
     <td class="taitoIc"> <img class="tabP" src="images/project/` + displayPic + `"> </td>
@@ -1018,7 +1019,7 @@ function newPicMO(category, path, imgname, rank, optName, i, arrau) {
 		optName = optName || "Picture";
 		path = path || 'images/gallery/'; //"files/theme/gallery/";
 		category = category || "Misc";
-		
+
 
 		return `<div class="galleryMOB">
 <div class="imgframe">
@@ -1036,17 +1037,17 @@ function newPic(category, path, imgname, rank, optName, arrau) {
 	arrau = arrau || ['a','a','a','a','a']
 
 	imgname == 'infograp' ? speclass = "speclas='toolong'" : speclass = "speclas='normal'";
-	
-	return `<div id='feed-imageContainer' 
-style='float:center;position: absolute; left: 0px; top: 0px; transform: translate(0px, 0px) scale(0.001); opacity: 1;' 
+
+	return `<div id='feed-imageContainer'
+style='float:center;position: absolute; left: 0px; top: 0px; transform: translate(0px, 0px) scale(0.001); opacity: 1;'
 class='blockelement element ` + category + ` isotope-item isotope-item'>
 	<div style='position:absolute;z-index:0;width:100%;margin-top:25px;text-align:center;'>` + '' + `</div>
 	<div class='blockcontent'>
 		<div class='elements'>
 			<div>
 				<div class='gal-image'>
-					<a 
-onclick='starlite(this)' `+speclass+` 
+					<a
+onclick='starlite(this)' `+speclass+`
 picto='./` + path + `fullsize/` + imgname + `.png'
 staryear="`+arrau[5]+`"
 startool="`+arrau[1]+`"
@@ -1083,20 +1084,20 @@ function feed() {
 			var out = seq[u];
 			var outB = seqB[u];
 			if (Math.round(Math.random() * 100) % 3 > 0) {
-				//document.getElementById("feed-gallery").innerHTML 
-							 
+				//document.getElementById("feed-gallery").innerHTML
+
 				seq[u] += newPic(gallery[i][1], '', gallery[i][0], gallery[i][2], i,gallery[i][4]);
 				seqB[u] += newPicMO(gallery[i][1], '', gallery[i][0], gallery[i][2], i, gallery[i][4]);
 				//console.log(u+' ODD')
-									
+
 			} else {
-				//document.getElementById("feed-gallery").innerHTML 
+				//document.getElementById("feed-gallery").innerHTML
 				seq[u] = newPic(gallery[i][1], '', gallery[i][0], gallery[i][2], i, gallery[i][4]);
 				seqB[u] = newPicMO(gallery[i][1], '', gallery[i][0], gallery[i][2], i, gallery[i][4]);
 
 
 
-				//document.getElementById("feed-gallery").innerHTML 
+				//document.getElementById("feed-gallery").innerHTML
 				seq[u] += out;
 				seqB[u] += outB;
 
@@ -1125,13 +1126,13 @@ function feed() {
 	document.getElementById("feed-galleryB").innerHTML += seqB[4];
 	document.getElementById("feed-galleryB").innerHTML += seqB[3];
 	document.getElementById("feed-galleryB").innerHTML += seqB[2];
-	document.getElementById("feed-galleryB").innerHTML += seqB[1]; 
+	document.getElementById("feed-galleryB").innerHTML += seqB[1];
 	*/
 };
 
 
 
-/* 
+/*
 ------------------------------------------------------------------------------------------------------------------------
 	STARLITE
 ------------------------------------------------------------------------------------------------------------------------
@@ -1151,23 +1152,23 @@ function starlite(star){
 	 var starjet 	= $(star).attr('starjet');
 	 var startail 	= $(star).attr('startail');
 	 var starname 	= $(star).attr('starname');
-		
+
 	 $('#shadows').fadeIn();
 	 $('#mighty-starlite').fadeIn();
 
-	 
-	
+
+
 	 document.getElementById('star-receiver').innerHTML = "<div id='"+spell+"'><img class='litepic' src='"+asofe+"'/>";
 
-	
+
 	document.getElementById('starname').innerHTML =	 starname;
 	document.getElementById('staryear').innerHTML =	 staryear;
 	document.getElementById('startool').innerHTML =	 startool;
 	document.getElementById('starclient').innerHTML =	 starclient;
 	document.getElementById('starjet').innerHTML =	 starjet;
 	document.getElementById('startail').innerHTML =	 startail;
-		
-		
+
+
 						$("#toolong").mCustomScrollbar({theme: "inset"});
 						$("#normal").mCustomScrollbar({theme: "inset"});
 setTimeout(" $('.big, #mighty-starlite .xpX').fadeIn(); ", 500);
