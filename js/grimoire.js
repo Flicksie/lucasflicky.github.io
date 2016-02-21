@@ -948,7 +948,7 @@ var gallery = [
 	"",//assistant
 	],
 ],
-	
+
 	['ninja',
  'CPT GDS ',
 '',
@@ -1075,7 +1075,7 @@ var gallery = [
 	"",//assistant
 	],
 ],
-	
+
 	['silentasset',
  'TYP VID LGO DSG ADR',
 '',
@@ -1090,8 +1090,8 @@ var gallery = [
 	"",//assistant
 	],
 ]
-	
-	
+
+
 ];
 
 var projects = [
@@ -1167,18 +1167,5 @@ var projects = [
 
 
 				]
-
-
-
-for (var i in projects) {
-	document.getElementById('dumproj').innerHTML += printProj(projects[i][0], projects[i][1], projects[i][2], projects[i][3], projects[i][4], projects[i][5], projects[i][6], projects[i][7]);
-};
-
-for (var i in projects) {
-	document.getElementById('spoonfed').innerHTML += printProjSimple(projects[i][0], projects[i][1], projects[i][2], projects[i][3], projects[i][4], projects[i][5], projects[i][6]);
-
-};
-
-
 
 console.log('Grimoire.js End of File')

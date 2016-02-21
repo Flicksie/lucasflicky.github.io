@@ -831,7 +831,6 @@ function resetPage(type) {
 		dismissBlog();
 
 	};
-	console.log(this);
 	$(document.body).animate({
 		scrollTop: '0'
 	}, 500);
@@ -937,7 +936,7 @@ function printProj(name, category, displayPic, icon, describ, role, link, copart
 	<tr class="tabhead">
 	<!-- ICON -->
 		<th class="crest">
-			<img class="crestpic" title="` + category + `" src="images/icons/` + icon + `">
+			<img class="crestpic" title="` + category + `"> <!-- NOTE: essa imagem é mesmo necessária aqui? -->
 		</th>
 	<!-- NAME -->
 		<th align="left" class="name" colspan="3">` + name.toUpperCase() + `</th> <!-- Espacinho -->
