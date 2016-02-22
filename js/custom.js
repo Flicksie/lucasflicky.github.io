@@ -1144,36 +1144,68 @@ Don't Steal.
 
 */
 
+var attributes = {
+    'asofe':'picto',
+    'spell':'speclas',
+    'staryear':'staryear',
+    'startool':'startool',
+    'starclient':'starclient',
+    'starjet':'starjet',
+    'startail':'startail',
+    'starname':'starname'
+};
+
+function Starlite(_attributes){
+    var _values = {};
+    var _attrs = _attributes;
+
+    this.setAttributes = function (_el) {
+        var j = 0;
+        for (var i in _attrs) {
+            _values[Object.keys(_attrs)[j]] = $(_el).attr(_attrs[i]);
+            this[Object.keys(_attrs)[j]] = _values[Object.keys(_attrs)[j]];
+            j++;
+        }
+    }
+
+    this.getAttributes = function () {
+        return _values;
+    }
+}
+
+var galleryBox = {};
+
+galleryBox.star_receiver = document.getElementById('star-receiver');
+galleryBox.starname = document.getElementById('starname');
+galleryBox.staryear = document.getElementById('staryear');
+galleryBox.startool = document.getElementById('startool');
+galleryBox.starclient = document.getElementById('starclient');
+galleryBox.starjet = document.getElementById('starjet');
+galleryBox.startail = document.getElementById('startail');
 
 function starlite(star){
-	 var asofe 		= $(star).attr('picto');
-	 var spell 		= $(star).attr('speclas');
-	 var staryear 	= $(star).attr('staryear');
-	 var startool 	= $(star).attr('startool');
-	 var starclient 	= $(star).attr('starclient');
-	 var starjet 	= $(star).attr('starjet');
-	 var startail 	= $(star).attr('startail');
-	 var starname 	= $(star).attr('starname');
-
-	 $('#shadows').fadeIn();
-	 $('#mighty-starlite').fadeIn();
+    var els = new Starlite(attributes);
+    els.setAttributes(star);
 
 
+	galleryBox.star_receiver.innerHTML = "<div id='"+els.spell+"'><img class='litepic' src='"+els.asofe+"'/>";
+	galleryBox.starname.innerHTML = els.starname;
+	galleryBox.staryear.innerHTML = els.staryear;
+	galleryBox.startool.innerHTML = els.startool;
+	galleryBox.starclient.innerHTML = els.starclient;
+	galleryBox.starjet.innerHTML = els.starjet;
+	galleryBox.startail.innerHTML = els.startail;
 
-	 document.getElementById('star-receiver').innerHTML = "<div id='"+spell+"'><img class='litepic' src='"+asofe+"'/>";
+    $('#shadows').fadeIn();
+    $('#mighty-starlite').fadeIn();
 
+    $("#toolong").mCustomScrollbar({theme: "inset"});
+    $("#normal").mCustomScrollbar({theme: "inset"});
 
-	document.getElementById('starname').innerHTML =	 starname;
-	document.getElementById('staryear').innerHTML =	 staryear;
-	document.getElementById('startool').innerHTML =	 startool;
-	document.getElementById('starclient').innerHTML =	 starclient;
-	document.getElementById('starjet').innerHTML =	 starjet;
-	document.getElementById('startail').innerHTML =	 startail;
-
-
-						$("#toolong").mCustomScrollbar({theme: "inset"});
-						$("#normal").mCustomScrollbar({theme: "inset"});
-setTimeout(" $('.big, #mighty-starlite .xpX').fadeIn(); ", 500);
+    // isso não faz nada, certeza
+    // setTimeout(function () {
+    //     $('.big, #mighty-starlite .xpX').fadeIn();
+    // }, 1000);
 
 
 }
