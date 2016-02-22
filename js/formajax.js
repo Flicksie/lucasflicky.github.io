@@ -1,5 +1,36 @@
 var form = document.getElementById('contform');
 
+function sendSuccess(){
+	location.hash = "";
+			$('#shadows').fadeIn();
+			resetPage('soft');
+			allPassive();
+			$('#thanks').fadeIn();
+			setTimeout(function () {
+				$('#thanks').fadeOut();
+				$('#shadows').fadeOut('slow');
+			}, 4000);
+			$('#thanks').on('click', function (e) {
+				$('#shadows').fadeOut('slow');
+				$('#thanks').fadeOut();
+			});
+			$(".nav-1").addClass('ativo');
+};
+
+function sendFailure(){
+			$('#oops').fadeIn();
+			setTimeout(function () {
+				$('#oops').fadeOut();
+			}, 4000);
+			$('#oops').on('click', function (e) {
+				$('#oops').fadeOut();
+			});
+};
+
+
+
+
+
 form.onsubmit = function(){
     var values = {};
     var formInputs = this.querySelectorAll("input");
@@ -16,7 +47,10 @@ form.onsubmit = function(){
         type: "POST",
         data: values,
         success:function(response){
-            location.hash = "/thanks";
+            sendSuccess();
+        },
+		error:function(response){
+			sendFailure();
         },
         dataType: "json"
     });

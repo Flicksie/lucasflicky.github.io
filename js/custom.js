@@ -316,7 +316,7 @@ function alternates() {
 		document.getElementById('headline-intro').innerHTML =
 			`
 <span class='en-uk' lang='en-gb' ` + visa[0] + `> Need Help? Toss me a message at the <a onclick=\"goTo(\'#contactw\');\">Contact Form</a></span>
-<span class='pt-br' lang='pt-br' ` + visa[1] + `> Precisa de ajuda? Manda uma mensagem no <a onclick=\"goTo(\'#contactw\');\">Form de Contato</a></span>
+<span class='pt-br' lang='pt-br' ` + visa[1] + `> Precisa de ajuda? Me manda uma <a onclick=\"goTo(\'#contactw\');\">mensagem</a> e vamos resolver isso.</span>
 `;
 		break;
 
@@ -598,13 +598,6 @@ function gotopg(input) {
 
 		break;
 
-	case "thanks":
-		$('#thanks').fadeIn();
-						location.hash = "";
-			setTimeout(function () {
-				$('#thanks').fadeOut();
-			}, 2000);
-		break;
 
 
 	default:
