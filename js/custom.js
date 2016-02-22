@@ -306,8 +306,8 @@ function alternates() {
 	case 4:
 		document.getElementById('headline-intro').innerHTML =
 			`
-<span class='en-uk' lang='en-gb' ` + visa[0] + `> If you can understand Brazilian Portuguese how about checking the <a href='http://blog.lucasflicky.com'>Blog</a> out? </span>
-<span class='pt-br' lang='pt-br' ` + visa[1] + `> Você que fala português, que tal uma olhada no <a href='http://blog.lucasflicky.com'>Blog</a> ? </span>
+<span class='en-uk' lang='en-gb' ` + visa[0] + `> If you can understand Brazilian Portuguese how about checking the <a href='#/blog'>Blog</a> out? </span>
+<span class='pt-br' lang='pt-br' ` + visa[1] + `> Você que fala português, que tal uma olhada no <a href='#/blog'>Blog</a> ? </span>
 
 `;
 		break;
