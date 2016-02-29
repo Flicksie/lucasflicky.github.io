@@ -991,7 +991,7 @@ var gallery = [
 	"",//assistant
 	],
 ],
-	['gatha13',
+	/*['gatha13',
  'ILS DGA CPT SKT',
 '',
 3,
@@ -1074,7 +1074,7 @@ var gallery = [
 	"2013",//year
 	"",//assistant
 	],
-],
+],*/
 
 	['silentasset',
  'TYP VID LGO DSG ADR',
@@ -1088,6 +1088,33 @@ var gallery = [
 	`Some specie of 'Branding Manual' for Silenyte's Logo. <br>Official color palletes and typefaces specified, as well as no-interference area and headings level.<br> As any novel / franchise logotype, it has no real concept behind except for the rule of cool, it must draw attention for being just plain bizarre or with some overstylized typeface, the huge penumbral circle that forms the 'Y' has its references to the end of the story.`,//details
 	"2016",//year
 	"",//assistant
+	],
+	
+		['fairypam',
+ 'DGP ADR CLB CRD' ,
+'',
+3,
+	[
+	"Fairy Second Rendition",//name
+	"Adobe Photoshop",//tool
+	"Raphael Montero",//client
+	"Card Game",//project
+	"2016",//year
+	`Art Style modification to suit project's main art style<br> The original artwork by Pamela Grether (link soon), had the physionogmy, colour setup, background and illumination majorly tweaked as so it would fit the style of other works.<br>`,//details
+	"Pamela Grether",//assistant
+	],	
+	['minomont',
+ 'ADR ILS CRD CLB DGP DGA',
+'',
+4,
+	[
+	"Minotaur",//name
+	"Adobe Photoshop",//tool
+	"Raphael Montero",//client
+	"Card Game",//project
+	"2016",//year
+	`Part of a set of illustrations to be used on a card game.<br><br>Sketched by Pamela Grether`,//details
+	"Pamela Grether",//assistant
 	],
 ]
 
