@@ -1046,8 +1046,8 @@ var gallery = [
 	"2013",//year
 	"",//assistant
 	],
-],
-	['tharma13',
+],*/
+	/*['tharma13',
  'ILS DGA CPT SKT',
 '',
 2,
@@ -1060,8 +1060,8 @@ var gallery = [
 	"2013",//year
 	"",//assistant
 	],
-],
-	['arba13',
+],*/
+	/*['arba13',
  'ILS DGA CPT SKT',
 '',
 3,
