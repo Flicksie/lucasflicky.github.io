@@ -1093,7 +1093,7 @@ var gallery = [
 		['fairypam',
  'DGP ADR CLB CRD' ,
 '',
-3,
+4,
 	[
 	"Fairy Second Rendition",//name
 	"Adobe Photoshop",//tool
@@ -1107,7 +1107,7 @@ var gallery = [
 	['minomont',
  'ADR ILS CRD CLB DGP DGA',
 '',
-4,
+5,
 	[
 	"Minotaur",//name
 	"Adobe Photoshop",//tool
