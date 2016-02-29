@@ -1117,7 +1117,7 @@ var gallery = [
 	`Part of a set of illustrations to be used on a card game.<br><br>Sketched by Pamela Grether`,//details
 	"Pamela Grether",//assistant
 	]
-	]
+	
 ]
 
 
