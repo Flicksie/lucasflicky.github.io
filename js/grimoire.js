@@ -193,7 +193,7 @@ var gallery = [
 ['etotoky',
  'CRD CLB DGP FNA ILS DGA',
 '',
-5,
+4,
 	[
 	"Eto - Tokyo Ghoul",//name
 	"Adobe Photoshop",//tool
@@ -337,7 +337,7 @@ var gallery = [
 ['fada',
  'ILS DGA DGP',
 '',
-4,
+2,
 	[
 	"Fairy Demo",//name
 	"Adobe Photoshop",//tool
@@ -854,7 +854,7 @@ var gallery = [
 ['tharbalesh',
  'CPT SKT ILS TCI DGA',
 '',
-5,
+4,
 	[
 	"Tharbalesh",//name
 	"Adobe Photoshop",//tool
