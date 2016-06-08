@@ -1,5 +1,21 @@
 var gallery = [
 
+['mistress',
+ 'ILS DGA',
+'',
+5,
+			[
+				"Mistress Magique",//name
+				"Adobe Photoshop",//tool
+				"Renan Neto",//client
+				"Cover Art (Piece)",//project
+				"Spare character from Youtube Channel Cover Art Illustration",//details
+				"2016",//year
+				"",//assistant
+			],
+],
+
+
 ['agathaghost',
  'ILS DGA LAB',
 '',
