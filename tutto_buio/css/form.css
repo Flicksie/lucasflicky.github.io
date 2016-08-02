@@ -334,7 +334,7 @@
 @media only screen and (max-width : 767px) {
 
 
-.wrapper{ max-width:567px; }
+form .wrapper{ max-width:567px; }
 	.m-hide{
 		display: none;
 		visibility: hidden;
