@@ -1,4 +1,4 @@
- .row, .wrapper, .col{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+ .row, .col{/*! -moz-box-sizing: border-box; *//*! -webkit-box-sizing: border-box; *//*! box-sizing: border-box; */}
 
 .row .col{float: left;width: 100%;margin-left:1%;margin-right:1%;}
 .row:after, .row:before {content: '';display: block;clear: both;height: 0;}

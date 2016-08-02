@@ -17,9 +17,8 @@
 		<meta property="og:site_name" content="LucasFlicky.com">
 
 <link type="text/css" rel="stylesheet" href="css/style.css">
-  <link type="text/css" rel="stylesheet" href="css/slick.css">
+ <link type="text/css" rel="stylesheet" href="css/slick.css">
   <link type="text/css" rel="stylesheet" href="css/table.css">
-  <link type="text/css" rel="stylesheet" href="css/form.css">
     <script src="js/grimoire.js"></script>
 
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
@@ -51,7 +50,16 @@
 
 
     </script>
-
+     <script>
+                function leSequence(destiny){
+                    $('.sel').removeClass('sel');
+                    $(this).parent('li').addClass('sel');
+                    $('#loader').animate({opacity: '1'},800);
+                    $('#topper').animate({opacity: '0'},800);
+                    $('#topper').animate({opacity: '0'},800);
+                    setTimeout(function () {window.location.href = destiny+'.html'},2000)
+                }
+            </script>
 </head>
  <body>
 
@@ -61,6 +69,7 @@
  <div class="botoneira" id="red"></div>
  <div class="botoneira" id="blue"></div>
 </div>
+      <div id="loader"><img src="ripple.svg"></div>
 <div id="topper" style="color:#FFF;">
 
 
@@ -74,13 +83,13 @@
 <div class="wrapper">
 <div id="ribbon"></div>
 <nav>
-<ul>
-<li class="menuitem "><a  href="index.html">HOME</a></li>
-<li class="menuitem sel"><a  href="gallery.html">GALLERY</a></li>
-<li class="menuitem"><a  href="about.html">ABOUT</a></li>
-<li class="menuitem"><a href="license.html" >LABS</a></li>
-<li class="menuitem "><a href="contact.html">CONTACT</a></li>
-</ul>
+          <ul>
+                <li class="menuitem "><a  onclick="leSequence('index')">HOME</a></li>
+                <li class="menuitem sel"><a onclick="leSequence('gallery')">GALLERY</a></li>
+                <li class="menuitem"><a onclick="leSequence('about')">ABOUT</a></li>
+                <li class="menuitem"><a  onclick="leSequence('labs')">LABS</a></li>
+                <li class="menuitem"><a onclick="leSequence('contact')">CONTACT</a></li>
+            </ul>
 </nav>
 <div>
 

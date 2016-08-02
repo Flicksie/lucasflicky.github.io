@@ -50,6 +50,17 @@
 
 
     </script>
+
+         <script>
+                function leSequence(destiny){
+                    $('.sel').removeClass('sel');
+                    $(this).parent('li').addClass('sel');
+                    $('#loader').animate({opacity: '1'},800);
+                    $('#topper').animate({opacity: '0'},800);
+                    $('#topper').animate({opacity: '0'},800);
+                    setTimeout(function () {window.location.href = destiny+'.html'},2000)
+                }
+            </script>
 </head>
  <body>
 <div class="heading">
@@ -58,6 +69,8 @@
  <div class="botoneira" id="red"></div>
  <div class="botoneira" id="blue"></div>
 </div>
+
+      <div id="loader"><img src="ripple.svg"></div>
 <div id="topper" style="color:#FFF;">
 
     <div class="bgtrans"> <img src="images/gallery/fullsize/mistress.png"> </div>
@@ -180,19 +193,19 @@
              </td></tr>   </table>
 
 
-
+</div>
 
 
 <div class="wrapper">
 <div id="ribbon"></div>
 <nav>
-<ul>
-<li class="menuitem "><a  href="index.html">HOME</a></li>
-<li class="menuitem"><a  href="gallery.html">GALLERY</a></li>
-<li class="menuitem"><a  href="about.html">ABOUT</a></li>
-<li class="menuitem"><a href="license.html" >LABS</a></li>
-<li class="menuitem sel"><a href="contact.html">CONTACT</a></li>
-</ul>
+          <ul>
+                <li class="menuitem "><a  onclick="leSequence('index')">HOME</a></li>
+                <li class="menuitem"><a onclick="leSequence('gallery')">GALLERY</a></li>
+                <li class="menuitem"><a onclick="leSequence('about')">ABOUT</a></li>
+                <li class="menuitem"><a  onclick="leSequence('labs')">LABS</a></li>
+                <li class="menuitem sel"><a onclick="leSequence('contact')">CONTACT</a></li>
+            </ul>
 </nav>
 <div>
 
@@ -206,6 +219,7 @@
 </div>
 <script src="js/jquery.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/grimoire.js"></script>
 <script src="js/gearbox.js"></script>
 
 
