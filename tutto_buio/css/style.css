@@ -29,32 +29,6 @@ height: 70%;
   opacity: 0.3;
 
 }
-@media screen and (max-width: 850px){
-#carousel {
-  width: 140%;
- left:-20%;
-    }
-  .sub{
-    font-size:10 !important;
-   letter-spacing:-.5px;
-  }
-  .menuitem{
-    width: 80px !important;
-    height:35px !important;
-
-    font-size: 15 !important;
-  }
-}
-
-@media screen and (min-width: 850px){
-#carousel {
-  width: 120%;
-    left:-10%;
-
-    }
-
-
-}
 
 .wrapper{
   bottom:0px;
@@ -261,6 +235,7 @@ user-select: none;
 	border-radius: 5px;
     float:right;
       width:60%;
+  transition: all 300ms ease;
 }
 #topper{
 
@@ -302,6 +277,7 @@ user-select: none;
 .bgtrans img {
     transform: skewX(25deg);
     margin:-15% 0 0 -120%;
+  transition: all 300ms ease;
 }
 .bgtrans{
     opacity:.15;
@@ -311,6 +287,7 @@ user-select: none;
     overflow: hidden;
     transform: skewX(-25deg);
     left:calc(-100% * .562 / 16);
+  transition: all 300ms ease;
 
 
 }
@@ -377,3 +354,58 @@ user-select: none;
   padding: auto;
 }
 .central img{margin: auto;}
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+
+@media screen and (max-width: 850px){
+#carousel {
+  width: 140%;
+ left:-20%;
+    }
+  .sub{
+    font-size:10 !important;
+   letter-spacing:-.5px;
+  }
+  .menuitem{
+    width: 80px !important;
+    height:35px !important;
+
+    font-size: 15 ;
+  }
+  .contabox{
+    //top:-40px ;
+    min-width: 90% ;
+    margin:2em ;
+    padding:11px ;
+  }
+  .bgtrans{
+    width:80%;
+    //left: calc(100% * .562 / 6);
+  }
+  .bgtrans img{
+    margin: -15% 0 0 -60%;
+  }
+}
+
+@media screen and (min-width: 850px){
+#carousel {
+  width: 120%;
+    left:-10%;
+
+    }
+
+
+}
+
