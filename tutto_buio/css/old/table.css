@@ -1,0 +1,284 @@
+.role{
+font-size: 13;
+  color:#AAA
+
+}
+
+.blankline{
+	HEIGHT:12px;
+	background:#171717;
+}
+  table {
+
+    background: #1b1b1b; /*rgba(38, 43, 86, 0.68); */
+
+  }
+  img.profile {
+    border-radius: 10px;
+    /*
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 0.5s linear infinite;
+    @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+ */
+  }
+img.profile{
+    transition-duration:0.8s;
+    transition-property: transform;
+    overflow:hidden;
+width: 140px;
+  pointer-events: none;
+
+}
+
+
+img.badgeicon:hover{
+  cursor:zoom-in;
+
+  box-shadow: 0px 5px 1px #232340;
+  padding: 4px;
+}
+img.badgeicon{
+  -webkit-transition:0.2s ease-in-out;
+  -moz-transition:0.2s ease-in-out;
+  -o-transition:0.2s ease-in-out;
+  transition:0.2s ease-in-out
+
+
+}
+  img.crestpic {
+  }
+  .tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-width: 0px;
+    border-style: solid;
+    border-radius:15px 15px 15px 100px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+  }
+  .tg td {
+    font-family: Calibri;
+    color: white;
+    font-size: 16px;
+      font-weight: 100;
+    letter-spacing: .02em;
+    padding: 010px 5px;
+    border-style: none;
+    border-width: 0px;
+    overflow: hidden;
+    word-break: normal;
+  }
+  .tg th {
+    background: #4F2228;
+    font-family: Oswald, sans-serif;
+	  letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 4px;
+    border-style: none;
+    border-width: 0px;
+    overflow: hidden;
+    word-break: normal;
+
+  }
+  .tg .tg-e3zv {
+    vertical-align: bottom;
+    text-align: center;
+    max-height: 10px;
+    min-width: 60px;
+    width: 60px;
+    overflow: hidden;
+    border-radius: 20px 20px 0px 0px;
+    font-weight: bold;
+    color: #ccc;
+  }
+  .tabhead{
+    max-height:20px;
+  }
+  .tg .name {
+
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+  }
+  .tg .profilepic {
+    width: 100px;
+	  padding:24px;
+    border-radius:0 0 0 10px;
+	  background: #171717;
+  }
+  .tg .since {
+    max-height: 10px;
+    padding-right:18px;
+    width: 15%;
+    min-width: 60px;
+    overflow: hidden;
+    color: #aaa;
+  }
+  .tg .tg-031e {
+    height: 1px;
+    width: 60%;
+  }
+  .tg .badges {
+    vertical-align: top;
+    background: #1B1B1B;
+    border-radius: 15px 0px 0px 0px;
+    padding:1em;
+
+  }
+.tabfooter {
+    vertical-align: top;
+    background: #1B1B1B;
+    padding:1em;
+	width:90%;
+  }
+  .tg .badges2 {
+ text-align: center;
+    background: #8B1B1B;
+    height:42px;
+    font-size:20;
+    font-weight: 900;
+    text-transform: uppercase;
+    color:#ccc;
+      padding:.5em;
+      transition: all 200ms ease;
+    border-radius: 115px 0px 15px 0px;
+    width: 100px !important;
+   max-width: 100px !important;
+  }
+
+.tg .badges2:hover {
+   background: #B33;
+  cursor: pointer;
+
+
+}
+.tg .badges2 a {
+text-decoration: none;
+  color: white;
+  width:100%;
+  padding: 3em;
+  font-family: Oswald;
+}
+.disabled{
+  background: #333 !important;
+}
+.tg .disabled a {
+  color: #555 !important;
+  cursor: default;
+}
+
+.disabled{ pointer-events: none;}
+  .tg .crest {
+
+    border-radius: 5px 0px 0px 0px;
+  }
+  .tg .tiername {
+    Font-family:Calibri;
+    min-width: 248px;
+    text-align: right;
+	font-size:12px;
+	letter-spacing: 2px;
+    padding-right:30px;
+    border-radius: 0px 5px 0px 0px;
+    color: #fff;
+  }
+  .tg .tiericon {
+    min-width: 42px;
+    margin:-5px;
+    text-align: center;
+    background: #0c0f1d;
+    border-radius: 0px 15px 0px 0px;
+    color: #fff;
+  }
+  img.tierplus {
+    border-style:solid;
+    margin:-4px;
+    border-width:2px;
+    width:24px;
+    height:24px;
+    background:#FFF;
+    border-radius:105px;
+
+  }
+  img.tier {
+   border-style:solid;
+    margin:-4px;
+    border-width:2px;
+      align-content: center;
+    background:#FFF;
+    border-radius:105px;
+
+  }
+  img.subtier {
+    border-style:hidden;
+    margin:-10px;
+    width:24px;
+    height:24px;
+  }
+
+table.tg{
+  width:95%;
+}
+
+
+.detgy{height: 100 !important;vertical-align: top;}
+.big{position: absolute;right:0;width:47%;margin:30px !important;background: rgba(50,50,50,.3);border-radius: 10px;overflow: hidden;}
+.big th {padding:5px; font-family:Oswald !important;}
+.big .namegy{font-weight: 400 !important;}
+.big td{font-family: Calibri;}
+.detgy{height:100%}
+.tab-list {margin:5px}
+.tg td .tab-list th{font-size:12;padding:2px}
+.tg td .tab-list th,.big th {background:#111;color:#CCC;font-family:Calibri;letter-spacing: 0;text-align:left;text-indent:20px}
+.tg td .tab-list td,.big td{background:#202020;list-style: none;font-size:13;color:#999;padding:2px 8px}
+.tg td .namegy,.big .namegy{font-size:14;font-weight:900;color:#CCC}
+
+.tit{
+    display: none;
+	    position: fixed;
+        cursor: default;
+        font-family: Arial, sans-serif;
+        bottom: 0%;
+        right: -5px;
+        left: -5px;
+        width: 100%;
+        height: 30px;
+		padding-left:30px;
+        padding-top: 10px;
+		border-style:solid;
+		border-color:#225;
+		border-width:2px;
+        border-radius: 0px 100% 20px 0px;
+        color: #FFF;
+        background-color: rgba(10,10,30,0.5);
+        /*background-color: #113;*/
+        text-align: left;
+        z-index: 900;
+}
+.tit:hover{
+  background-color: #113;
+}
+#hidden{
+      position: fixed;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+        bottom: -5px;
+        right: -5px;
+        width: 100px;
+        height: 30px;
+        padding-top: 10px;
+    border-style:solid;
+    border-color: rgba(255,255,255,0.5);
+    border-width:2px;
+        border-radius: 500px 20px 20px 30px;
+        color: rgba(255,255,255,0.5);
+        background-color: rgba(10,10,30,0.5);
+        text-align: center;
+        z-index: 900;
+}
+#hidden:hover{
+  background-color: rgba(10,10,30,1);
+}

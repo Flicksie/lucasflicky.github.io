@@ -1,0 +1,125 @@
+<head>
+
+<title>Lucas Flicky - Multimedia Artist</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
+
+        <!-- Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#f64649">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#f64649">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<meta name="description" content="Personal website, Blog, Graphic Design &amp; Audio Production Portfolio">
+		<meta name="keywords" content="lucas, flicky, lucasflicky, red hood, lucas flicky, capuz vermelho, ilustrador, designer">
+		<meta property="og:site_name" content="LucasFlicky.com">
+
+<link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/slick.css">
+  <link type="text/css" rel="stylesheet" href="css/table.css">
+  <link type="text/css" rel="stylesheet" href="css/form.css">
+    <script src="js/grimoire.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+
+     <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+		"name" : "Lucas Flicky",
+      "url": "http://lucasflicky.com",
+      "image": "http://lucasflicky.com/images/gallery/self.png",
+	  "email":"contato@lucasflicky.com",
+	  "jobTitle":"Designer, Illustrator and Composer",
+
+
+  "memberOf": ["RBS TV", "Novastrike"],
+	  "alumniOf": "Universidade Federal do Rio Grande do Sul",
+	  "birthDate":"1994-02-27",
+	  "knows":"Vinicius Kleinsorgen",
+	  "nationality":"Brazil",
+
+
+  "sameAs" : [
+    "http://www.facebook.com/lucasflicky",
+    "http://www.linkedin.com/in/lucasflicky",
+    "http://plus.google.com/+LucasFlicky5x"
+  ]
+}
+
+
+    </script>
+
+</head>
+ <body>
+
+<div class="heading">
+    <span>LUCAS FLICKY </span>
+    <span class="sub">Illustrator - Visual Designer - Sound Designer - Aviation Enthusiast</span>
+ <div class="botoneira" id="red"></div>
+ <div class="botoneira" id="blue"></div>
+</div>
+<div id="topper" style="color:#FFF;">
+
+
+<div id="bygester2" class="slider-for"></div>
+<div id="bygester" class="slider-nav slick-slider"> </div>
+         <div id="zominput" class="slider-for"></div>
+
+
+
+     </div>
+<div class="wrapper">
+<div id="ribbon"></div>
+<nav>
+<ul>
+<li class="menuitem "><a  href="index.html">HOME</a></li>
+<li class="menuitem sel"><a  href="gallery.html">GALLERY</a></li>
+<li class="menuitem"><a  href="about.html">ABOUT</a></li>
+<li class="menuitem"><a href="license.html" >LABS</a></li>
+<li class="menuitem "><a href="contact.html">CONTACT</a></li>
+</ul>
+</nav>
+<div>
+
+    <div class="lang">
+    <img class=" ptbr disav" title="Display site in English (UK)" onclick="setlang('en-uk')" src="images/uk.png" >
+				<img class=" enuk " title="Mostrar o site em Português (BR)" onclick="setlang('pt-br')"  src="images/br.png">
+    </div>
+
+
+</div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/elevateZoom.min.js"></script>
+<script src="js/gearbox.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".zoomer").on("mouseover", function (e) {
+            $(this).addClass('loup')
+            $(".loup").elevateZoom({
+                zoomWindowPosition: "zominput"
+                , zoomWindowHeight: window.innerHeight * 0.45
+                , zoomWindowWidth: window.innerWidth * 0.48
+                , borderSize: 0
+                , easing: true
+                , scrollZoom: true
+            });
+        })
+        $("#bygester").on("click", function (e) {
+            $('.zoomer').removeClass('loup')
+            $(".zoomContainer").remove()
+        });
+    });
+
+
+
+
+
+     </script>
+
+    </body>
