@@ -60,8 +60,8 @@ $('.mulys').slick({
 });
 
 $('.slider-nav').slick({
-    slidesToShow: 7
-    , slidesToScroll: 1
+    slidesToShow: dockVal-2
+    , slidesToScroll: dockVal-2
     , asNavFor: '.slider-for'
     , centerMode: true
     , focusOnSelect: true
