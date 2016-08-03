@@ -35,27 +35,19 @@
 		<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
 
 		<script type="text/javascript" src="js/jquery.js"></script>
-		<script src="js/img_loader.min.js" charset="utf-8"></script>
+		<script src="/js/img_loader.min.js" charset="utf-8"></script>
 		<script src="js/grimoire.js"></script>
-		<script src="js/preloader.js" charset="utf-8"></script>
+		<script src="/js/preloader.js" charset="utf-8"></script>
 		<script src="js/hash.js"></script>
 
 		<script>
-
-
 			function grabUrl() {
 				var currentPage = location.hash.substring(2);
 				currentPage ? gotopg(currentPage) : false;
-
 			};
-
-
 			$(window).hashchange(function () { //	window.onhashchange = function () {
 				grabUrl()
 			}); //};
-
-
-
 		</script>
 		<link rel="stylesheet" type="text/css" href="css/main_style.css">
 		<link rel="stylesheet" type="text/css" href="css/comingSoon.css">
@@ -71,14 +63,12 @@
       "image": "http://lucasflicky.com/images/gallery/self.png",
 	  "email":"contato@lucasflicky.com",
 	  "jobTitle":"Designer, Illustrator and Composer",
-	
 
   "memberOf": ["RBS TV", "Novastrike"],
 	  "alumniOf": "Universidade Federal do Rio Grande do Sul",
 	  "birthDate":"1994-02-27",
 	  "knows":"Vinicius Kleinsorgen",
 	  "nationality":"Brazil",
-	  
 
   "sameAs" : [
     "http://www.facebook.com/lucasflicky",
@@ -86,8 +76,6 @@
     "http://plus.google.com/+LucasFlicky5x"
   ]
 }
-
-
     </script>
 	</head>
 
@@ -113,7 +101,6 @@
 				<p class="pt-br" > Algo deu errado! Tente enviar de novo.</p>
 
 			</div>
-
 
 
 
@@ -369,7 +356,6 @@
 					</div>
 
 					<style>
-
 					</style>
 					<div id="filterbck">
 						<div id="feed-gallery" style="  position: relative; height:100% !important;width:100%; !important; " class="projectsa isotope">
@@ -1140,9 +1126,7 @@
 			var PROJ = document.getElementById("/projects");
 			var theX = document.getElementById("header");
 			var dozer = [GALE, SOND, KONTA, ABOT, PROJ]
-
 			function fadetogle(X) {
-
 				$(dozer).fadeOut();
 				$(X).fadeIn();
 			}
@@ -1152,7 +1136,7 @@
 
 	<script src="js/custom.js"></script>
 	<script src="js/filterScript1.js"></script>
-	<script src="js/formajax.js" charset="utf-8"></script>
+	<script src="/js/formajax.js" charset="utf-8"></script>
 	<script>
 		(function ($) {
 			$(window).load(function () {
@@ -1165,17 +1149,13 @@
 				$(".scrolleitor").mCustomScrollbar({
 					theme: "inset"
 				});
-
 				feed();
-
 			});
 		})(jQuery);
-
 		for (var i in projects) {
 			document.getElementById('dumproj').innerHTML += printProj(projects[i][0], projects[i][1], projects[i][2], projects[i][3], projects[i][4], projects[i][5], projects[i][6], projects[i][7]);
 		    document.getElementById('spoonfed').innerHTML += printProjSimple(projects[i][0], projects[i][1], projects[i][2], projects[i][3], projects[i][4], projects[i][5], projects[i][6]);
 		};
-
 		
 		
 		
@@ -1184,7 +1164,6 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-39808831-2', 'auto');
   ga('send', 'pageview');
 		
