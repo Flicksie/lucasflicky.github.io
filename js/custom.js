@@ -1,7 +1,4 @@
-
 var siteLang;
-if (localStorage){
-
 if(!localStorage.locale){
  	siteLang = 'en-uk';
 	localStorage.setItem('locale', siteLang);
@@ -9,7 +6,6 @@ if(!localStorage.locale){
 	siteLang = localStorage.locale;
 }
 
-};
 setlang(siteLang);
 
 var backForth = 0;
@@ -20,7 +16,7 @@ var active = ".nav-1";
 
 function setlang(lang) {
 
-	if (localStorage){ localStorage.setItem('locale', lang); }
+	localStorage.setItem('locale', lang);
 
 	switch (lang) {
 	case 'pt-br':
@@ -311,7 +307,6 @@ function alternates() {
 			`
 <span class='en-uk' lang='en-gb' ` + visa[0] + `> If you can understand Brazilian Portuguese how about checking the <a href='#/blog'>Blog</a> out? </span>
 <span class='pt-br' lang='pt-br' ` + visa[1] + `> Você que fala português, que tal uma olhada no <a href='#/blog'>Blog</a> ? </span>
-
 `;
 		break;
 
@@ -942,28 +937,21 @@ function printProj(name, category, displayPic, icon, describ, role, link, copart
 	<!-- TIER -->
 		<th align="left" class="tiername"><span class="tierlevel">` + category + `</th>
 	</tr>
-
 	<tr>
 		<!-- PROFILE PIC -->
 		<td align="center" class="profilepic" colspan="2" rowspan="5"><a target="_blank" ><img class="profile" src="images/project/` + displayPic + `"></a></td><tr><td class="blankline"  colspan="3" ></td></tr>
-
 	</tr>
 	<tr>
 		<!-- DESCRIB -->
 		<td class="badges" colspan="3" rowspan="1">	 ` + describ + `<br><span class="role"> (` + role + `) </span>
 		</td>
 	</tr>
-
-
-
 		<tr>
 			<td  colspan="2" rowspan="2">
 			` + colle + `
 			</td><td></td>
 		</tr>
-
 		<tr>
-
 		<td style="width:350px;height:45px!important;" colspan="1" rowspan="1" class="badges2 ` + state + `"> <a href="` + href + `">` + caption + ` </a></td>
 		</tr>
 </table>`
@@ -995,7 +983,6 @@ function printProjSimple(name, category, displayPic, icon, describ, role, link) 
 
 
 	return `
-
 <table class="tablera">
 <colgroup>
 <col style="width: 50px">
@@ -1004,7 +991,6 @@ function printProjSimple(name, category, displayPic, icon, describ, role, link) 
 </colgroup>
   <tr>
     <th class="taitoru" colspan="3">` + name + `</th>
-
   </tr>
   <tr>
     <td class="taitoIc"> <img class="tabP" src="images/project/` + displayPic + `"> </td>
@@ -1056,13 +1042,9 @@ starclient="`+arrau[2]+`"
 starjet="`+arrau[3]+`"
 startail="`+arrau[4]+`"
 starname="`+arrau[0]+`"
-
 >
-
 						<img  src='./` + path + imgname + `.png' alt='` + optName + `'>
-
 					</a>
-
 				</div>
 			</div>
 		</div>
@@ -1140,7 +1122,6 @@ function feed() {
 Gambiarra suprema pegadora de Tags.
 Selo Flicky de gambiarra bizonha.
 Don't Steal.
-
 */
 
 var attributes = {
