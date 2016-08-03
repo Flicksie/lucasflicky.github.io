@@ -1192,3 +1192,6 @@ function starlite(star){
 
 
 console.log('Custom.js End of File')
+$('#preloader').fadeOut('slow', function () {
+				$(this).remove();
+			});
