@@ -5,7 +5,6 @@ body {
     margin: 0;
     height: 100%;
 }
-<<<<<<< HEAD
 .banner{
     position:absolute !important;
     width:40%;
@@ -39,9 +38,6 @@ body {
     font-size: 14;
     margin: 0 0 0 10;
 }
-=======
-
->>>>>>> origin/master
 #loader {
     text-align: center;
     width: 100%;
@@ -337,11 +333,7 @@ li a img {
 .bgtrans img {
     transform: skewX(25deg);
     margin: -15% 0 0 -120%;
-<<<<<<< HEAD
     transition: all 800ms ease;
-=======
-    transition: all 300ms ease;
->>>>>>> origin/master
 }
 
 .bgtrans {
@@ -352,11 +344,7 @@ li a img {
     overflow: hidden;
     transform: skewX(-25deg);
     left: calc(-100% * .562 / 16);
-<<<<<<< HEAD
     transition: all 800ms ease;
-=======
-    transition: all 300ms ease;
->>>>>>> origin/master
 }
 
 .classy {
@@ -377,7 +365,6 @@ li a img {
 }
 
 .slick-slide {
-<<<<<<< HEAD
     /*! opacity: .2; */
 }
 
@@ -396,17 +383,6 @@ li a img {
 
 #bygester {
     width: 46.5%;
-=======
-    opacity: .2;
-}
-
-.slick-center {
-    opacity: .8;
-}
-
-#bygester {
-    width: 50%;
->>>>>>> origin/master
     float: right;
 }
 
@@ -427,11 +403,7 @@ li a img {
     height: 45%;
     float: right;
     margin-right: 1em;
-<<<<<<< HEAD
     /*! margin-top: 1em; */
-=======
-    margin-top: 1em;
->>>>>>> origin/master
     border-radius: .5em;
 }
 
@@ -488,7 +460,6 @@ li a img {
         left: -10%;
     }
 }
-<<<<<<< HEAD
 
 
    .kak{
@@ -499,5 +470,3 @@ li a img {
         margin: -15% 0 0 -60%;
     }
 
-=======
->>>>>>> origin/master

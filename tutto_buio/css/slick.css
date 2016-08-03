@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @charset 'UTF-8';
 /* Slider */
 .slick-loading .slick-list
@@ -208,8 +207,6 @@
 }
 
 
-=======
->>>>>>> origin/master
 /* Slider */
 .slick-slider
 {
@@ -229,13 +226,9 @@
         touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
-<<<<<<< HEAD
 .slider-nav{
     right: 30px;
 }
-=======
-
->>>>>>> origin/master
 .slick-list
 {
     position: relative;
