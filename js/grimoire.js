@@ -1,5 +1,21 @@
 var gallery = [
 
+['mistress',
+ 'ILS DGA',
+'',
+5,
+			[
+				"Mistress Magique",//name
+				"Adobe Photoshop",//tool
+				"Renan Neto",//client
+				"Cover Art (Piece)",//project
+				"Spare character from Youtube Channel Cover Art Illustration",//details
+				"2016",//year
+				"",//assistant
+			],
+],
+
+
 ['agathaghost',
  'ILS DGA LAB',
 '',
@@ -193,7 +209,7 @@ var gallery = [
 ['etotoky',
  'CRD CLB DGP FNA ILS DGA',
 '',
-5,
+4,
 	[
 	"Eto - Tokyo Ghoul",//name
 	"Adobe Photoshop",//tool
@@ -337,7 +353,7 @@ var gallery = [
 ['fada',
  'ILS DGA DGP',
 '',
-4,
+2,
 	[
 	"Fairy Demo",//name
 	"Adobe Photoshop",//tool
@@ -854,7 +870,7 @@ var gallery = [
 ['tharbalesh',
  'CPT SKT ILS TCI DGA',
 '',
-5,
+4,
 	[
 	"Tharbalesh",//name
 	"Adobe Photoshop",//tool

@@ -666,7 +666,9 @@ function go_projects() {
 };
 
 function go_audio() {
+			$('#blue').fadeOut;
 	dismissBlog();
+
 	$('#shadows').fadeOut();
 	$('.button-capsule').css('pointer-events', 'auto');
 	$('#landing').css('pointer-events', 'none');
@@ -675,6 +677,7 @@ function go_audio() {
 		left: '-85%',
 		right: '85%'
 	}, 1);
+
 	$('#landblu').animate({
 		top: '10%',
 		right: '5%',
