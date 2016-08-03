@@ -73,9 +73,9 @@
 <div id="topper" style="color:#FFF;">
 
 
-<div id="bygester2" class="slider-for"></div>
-<div id="bygester" class="slider-nav slick-slider"> </div>
-         <div id="zominput" class="slider-for"></div>
+<div id="bygester2" class="slider-for FILT"></div>
+<div id="bygester" class="slider-nav slick-slider FILT"> </div>
+         <div id="zominput" class="slider-for FILT "></div>
 
 
 
@@ -91,6 +91,43 @@
                 <li class="menuitem"><a onclick="leSequence('contact')">CONTACT</a></li>
             </ul>
 </nav>
+<div class="filterfest">
+    <script>
+        function berkut(b,me){
+            if (b == 'ALL'){
+                $('.filterino').removeClass('selfil');
+                $('.filt').slick('slickUnfilter')
+                $(me).addClass('selfil');
+            }else {
+                $('.filterino').removeClass('selfil');
+                $('.filt').slick('slickUnfilter');
+                $('.filt').slick('slickFilter',b)
+                $(me).addClass('selfil');
+            }
+        }
+    </script>
+    <span class="filterino selfil" onclick="berkut('ALL',this)">ALL</span>
+
+	<span class="filterino " onclick="berkut('.WEB',this)">WEB</span>
+	<span class="filterino " onclick="berkut('.LGO',this)">LGO</span>
+	<span class="filterino " onclick="berkut('.SKT',this)">SKT</span>
+	<span class="filterino " onclick="berkut('.TCI',this)">TCI</span>
+	<span class="filterino " onclick="berkut('.CLB',this)">CLB</span>
+	<span class="filterino " onclick="berkut('.ADR',this)">ADR</span>
+	<span class="filterino " onclick="berkut('.CRD',this)">CRD</span>
+	<span class="filterino " onclick="berkut('.TYP',this)">TYP</span>
+	<span class="filterino " onclick="berkut('.PXA',this)">PXA</span>
+	<span class="filterino " onclick="berkut('.TRD',this)">TRD</span>
+	<span class="filterino " onclick="berkut('.DGP',this)">DGP</span>
+	<span class="filterino " onclick="berkut('.DGA',this)">DGA</span>
+	<span class="filterino " onclick="berkut('.ILS',this)">ILS</span>
+	<span class="filterino " onclick="berkut('.ELY',this)">ELY</span>
+	<span class="filterino " onclick="berkut('.ITF',this)">ITF</span>
+	<span class="filterino " onclick="berkut('.PHM',this)">PHM</span>
+	<span class="filterino " onclick="berkut('.DSG',this)">DSG</span>
+	<span class="filterino " onclick="berkut('.VID',this)">VID</span>
+
+</div>
 <div>
 
     <div class="lang">

@@ -16,6 +16,9 @@ function ImageLoader(){function e(e){return e instanceof Object&&!(e instanceof 
 
 
 $(document).ready(function () {
+       if (navigator.userAgent.indexOf('Edge') != -1||navigator.userAgent.indexOf('Safari') != -1){
+              $('.bgtrans').removeClass('kak')
+            }
     window.mobileAndTabletcheck = function () {
         // DETECT MOBILE AND TABLETS
         var check = false;
@@ -39,10 +42,10 @@ $(document).ready(function () {
     }
     //Galleries Feed
     for (var i in gallery) {
-        dumpo += newPicZ('elite (' + (i + 1) + ')');
+
         dumpoDVA += newPic(gallery[i][1], 'images/gallery/', gallery[i][0], gallery[i][3], gallery[i][2], gallery[i][4], 'classy');
         dumpoTROIS += newPic(gallery[i][1], 'images/gallery/fullsize/', gallery[i][0], gallery[i][3], gallery[i][2], gallery[i][4], 'central', 'zoomer');
-        dumpoCHETYRE += newInfo(gallery[i][4]);
+        dumpoCHETYRE += newInfo(gallery[i][4],gallery[i][1]);
     }
     //Galleries Print
     $('#digester').html(dumpo);
@@ -50,6 +53,18 @@ $(document).ready(function () {
     $('#bygester2').html(dumpoTROIS);
     $('#zominput').html(dumpoCHETYRE);
     //Slick Startup
+    $('.banner').slick({
+        infinite: true
+        , slidesToShow: 1
+        , slidesToScroll: 1
+        , autoplay: true
+        , autoplaySpeed: 1000
+        ,fade: true
+        , speed: 3550
+        , arrows: true
+        , dots: true
+
+    });
     $('.mulys').slick({
         infinite: true
         , slidesToShow: dockVal
@@ -70,13 +85,15 @@ $(document).ready(function () {
         , asNavFor: '.slider-nav'
     });
     $('.slider-nav').slick({
+
         slidesToShow: dockVal - 2
         , slidesToScroll: dockVal - 2
         , asNavFor: '.slider-for'
         , centerMode: true
         , focusOnSelect: true
-        , arrows: false
+        , arrows: true
     });
+
     //PRELOD
     (function preloader() {
         image = new ImageLoader();
@@ -91,8 +108,12 @@ $(document).ready(function () {
                 $('.mulys').animate({
                     opacity: '1'
                 }, 1200);
+
                 console.log("DONE");
             }, 300);
+            if (navigator.userAgent.indexOf('Edge') == -1||navigator.userAgent.indexOf('Safari') == -1){
+              setTimeout(function () { $('.bgtrans').removeClass('kak'); }, 1000);
+            }
         });
     })();
 });
@@ -173,9 +194,10 @@ $("input#colour").change(function () {
     }
 });
 
-function newInfo(array) {
+function newInfo(array,cats) {
     array = array || ['a', 'a', 'a', 'a', 'a'];
-    return `<div><table class="tab-list big">
+    cats = cats || "MISC"
+    return `<div class="`+cats+`"><table class="tab-list big">
 <colgroup>
 <col style="width: 180px">
 <col style="width: 380px">
@@ -201,7 +223,7 @@ function newPic(category, path, imgname, rank, optName, arrau, classy, zoomclass
     classy = classy || '';
     zoomclass = zoomclass || '';
     imgname == 'infograp' ? speclass = "speclas='toolong'" : speclass = "speclas='normal'";
-    return `<div class="` + classy + `">
+    return `<div class="` + classy + ' ' + category +`">
 
 <!--<a
 onclick='starlite(this)' ` + speclass + `
