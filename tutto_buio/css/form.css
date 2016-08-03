@@ -426,7 +426,7 @@ a[class^="lifeFeedLoadMore"] {
 .flk-contact p { margin: 1em 0 1.813em 0; }
 
 .flk-contact h3 { margin: 1.444em 0; }
-.flk-contact form { text-align: right; }
+//.flk-contact form { text-align: right; }
 
 .flk-contact ul {
     font-family: "Oswald",sans-serif;

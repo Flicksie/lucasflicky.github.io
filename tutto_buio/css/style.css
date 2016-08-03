@@ -5,7 +5,39 @@ body {
     margin: 0;
     height: 100%;
 }
+.banner{
+    position:absolute !important;
+    width:40%;
+    left:25px;
+    bottom:25%;
+    z-index:3000;
 
+}
+.filterfest{
+    position: relative;
+   color: red;
+
+    height: 100px;
+}
+.filterino{
+    height: 32px;
+    width: 80px;
+    position: relative;
+    display: inline-block;
+    background: blue;
+      color: red;
+}
+.banner h1{
+    color:#CCC;
+    margin: 0 0 0 10;
+
+}
+.banner p {
+    font-weight: 900;
+    color:#9A9a9a;
+    font-size: 14;
+    margin: 0 0 0 10;
+}
 #loader {
     text-align: center;
     width: 100%;
@@ -301,7 +333,7 @@ li a img {
 .bgtrans img {
     transform: skewX(25deg);
     margin: -15% 0 0 -120%;
-    transition: all 300ms ease;
+    transition: all 800ms ease;
 }
 
 .bgtrans {
@@ -312,7 +344,7 @@ li a img {
     overflow: hidden;
     transform: skewX(-25deg);
     left: calc(-100% * .562 / 16);
-    transition: all 300ms ease;
+    transition: all 800ms ease;
 }
 
 .classy {
@@ -333,15 +365,24 @@ li a img {
 }
 
 .slick-slide {
-    opacity: .2;
+    /*! opacity: .2; */
+}
+
+.slider-nav .slick-slide {
+    opacity: .4;
+}
+
+#carousel{
+    opacity:.3;
 }
 
 .slick-center {
-    opacity: .8;
+    opacity: 1 !important;
+
 }
 
 #bygester {
-    width: 50%;
+    width: 46.5%;
     float: right;
 }
 
@@ -362,7 +403,7 @@ li a img {
     height: 45%;
     float: right;
     margin-right: 1em;
-    margin-top: 1em;
+    /*! margin-top: 1em; */
     border-radius: .5em;
 }
 
@@ -419,3 +460,13 @@ li a img {
         left: -10%;
     }
 }
+
+
+   .kak{
+        width: 80%;
+
+    }
+    .kak img {
+        margin: -15% 0 0 -60%;
+    }
+
