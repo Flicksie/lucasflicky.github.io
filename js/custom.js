@@ -1,5 +1,7 @@
 
 var siteLang;
+if (localStorage){
+
 if(!localStorage.locale){
  	siteLang = 'en-uk';
 	localStorage.setItem('locale', siteLang);
@@ -7,6 +9,7 @@ if(!localStorage.locale){
 	siteLang = localStorage.locale;
 }
 
+};
 setlang(siteLang);
 
 var backForth = 0;
@@ -17,7 +20,7 @@ var active = ".nav-1";
 
 function setlang(lang) {
 
-	localStorage.setItem('locale', lang);
+	if (localStorage){ localStorage.setItem('locale', lang); }
 
 	switch (lang) {
 	case 'pt-br':
