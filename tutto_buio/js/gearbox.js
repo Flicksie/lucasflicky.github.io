@@ -60,7 +60,7 @@ $(document).ready(function () {
         , autoplay: true
         , autoplaySpeed: 1000
         ,fade: true
-        , speed: 1550
+        , speed: 3550
         , arrows: true
         , dots: true
 
