@@ -49,7 +49,7 @@ var gallery = [
 
 ],*/
 
-
+/*
 ['artemiskt',
  'SKT CPT',
 '',
@@ -67,7 +67,7 @@ var gallery = [
 
 
 ],
-
+*/
 
 ['backface',
  'DSG ITF PRN',
@@ -142,7 +142,7 @@ var gallery = [
 	"",//assistant
 	],],
 
-
+/*
 ['card3',
  'DSG ITF ELY PRN ADR',
 '',
@@ -189,7 +189,7 @@ var gallery = [
 
 ],
 
-
+*/
 ['elfs',
  'ADR ILS CRD CLB DGA',
 '',
@@ -221,7 +221,7 @@ var gallery = [
 	],
 ],
 
-
+/*
 ['fabsaur',
  'PRN ILS DSG DGA',
 '',
@@ -236,7 +236,7 @@ var gallery = [
 	"",//assistant
 	],
 ],
-
+*/
 
 ['fus',
  'CPT ILS DGA SKT',
@@ -253,7 +253,7 @@ var gallery = [
 	],
 ],
 
-
+/*
 ['godot',
  'TRD FNA SKT',
 '',
@@ -268,7 +268,7 @@ var gallery = [
 	"",//assistant
 	],
 ],
-
+*/
 
 ['heidi',
  'ILS CPT TRD SKT',
@@ -463,7 +463,7 @@ var gallery = [
 	"",//assistant
 	],
 ],
-
+/*
 
 ['morigan',
  'HBD CRD ILS FNA TRD',
@@ -479,7 +479,7 @@ var gallery = [
 	"",//assistant
 	],
 ],
-
+*/
 
 //['mythosfont', 'DSG TYP CLB',''],
 
@@ -727,7 +727,7 @@ var gallery = [
 	"",//assistant
 	],
 ],
-
+/*
 ['vkps2',
  'SKT TRD ILS',
 '',
@@ -756,7 +756,7 @@ var gallery = [
 	"",//assistant
 	],
 ],
-
+*/
 
 ['silentun',
  'CPT SKT',
@@ -812,7 +812,7 @@ var gallery = [
 '',
 1],*/
 
-
+/*
 ['stud1',
  'SKT',
 '',
@@ -827,10 +827,10 @@ var gallery = [
 	"",//assistant
 	],
 ],
-
+*/
 
 ['sykes',
- 'TRD SKT',
+ 'SKT',
 '',
 3,
 	[
@@ -994,7 +994,7 @@ var gallery = [
 	],
 ],
 	['artemis13',
- 'ILS DGA CPT SKT',
+ 'CPT SKT',
 '',
 3,
 	[

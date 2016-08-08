@@ -13,6 +13,9 @@ body {
     z-index:3000;
 
 }
+.things{
+    opacity: 0
+}
 .filterfest{
     position: relative;
    color: red;
@@ -21,7 +24,7 @@ body {
     z-index: -1;
 }
 .filterino{
-    width: 80px;
+    min-width: 80px;
     font-family: Oswald;
     position: relative;
     display: inline-block;
@@ -107,8 +110,11 @@ p {
     font-family: Oswald;
     font-weight: 900;
     font-size: 24;
-    padding: 12px 8px 20px 8px;
+   padding: 8px 8px 8px 8px;
     width: 100%;
+    background: black;
+    max-height: 50px;
+     min-height: 30px;
 }
 
 .sub {
@@ -368,23 +374,20 @@ li a img {
 .classy {
     background: red;
     overflow: hidden;
-    height: 128px;
+    height: 20%;
     margin: 8px;
-    // width:108px !important;
-    transform: skew(-20deg) ;
+    transform: skew(-15deg) ;
     text-align: center;
-    vertical-align: middle;
-    display: table-cell;
 
 }
 
 .classy img {
     position: relative;
-    transform: skew(20deg) scale(2,2);
-    width: 100%;
-    top:20%;
-    //left: -50%;
-   vertical-align: middle;
+    transform: skew(15deg);
+    height: 100%;
+
+left: -25%;
+
 }
 
 .slick-slide {
@@ -420,11 +423,12 @@ li a img {
     height: 100%;
 
 
+
 }
 #bygester2 img {
    max-height: 100%;
-    max-width: 95%;
-    //width: 100%;
+    max-width: 100%;
+
 
 
 }
@@ -502,3 +506,19 @@ li a img {
         margin: -15% 0 0 -60%;
     }
 
+.overlayoutlink{
+    position: absolute;
+    right:5%;
+    top:10px;
+    z-index: 9999;
+    text-align: center;
+   color:white !important;
+    cursor: pointer;
+
+}
+.overlayoutlink a span{
+    color:#AAA;
+}
+.overlayoutlink a span:hover{
+    color:#C22;
+}
