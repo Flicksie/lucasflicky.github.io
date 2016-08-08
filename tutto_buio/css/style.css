@@ -90,7 +90,8 @@ p {
     font-family: Oswald;
     font-weight: 900;
     font-size: 24;
-    padding: 12px 8px 20px 8px
+    padding: 12px 8px 20px 8px;
+    width: 100%;
 }
 
 .sub {
