@@ -293,3 +293,4 @@ $(window).on('load', function (e) {
         }, 800)
     }, 1000);
 })
+
