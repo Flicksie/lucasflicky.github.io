@@ -15,10 +15,39 @@ var gallery = [
 				"",//assistant
 			],
 ],
+
+    ['agtltv',
+ 'DGP DGA ILS CPA',
+'',
+5,
+			[
+				"Agata Lietva",//name
+				"Adobe Photoshop",//tool
+				"---",//client
+				"Silenyte",//project
+				"Character Painting",//details
+				"2016",//year
+				"",//assistant
+			],
+],
+        ['agtltv',
+ 'DGA CPT MDL3 CPA',
+'',
+5,
+			[
+				"Arcadian Lancer",//name
+				"Cinema 4D",//tool
+				"---",//client
+				"Silenyte",//project
+				"Fictional Aircraft",//details
+				"2017",//year
+				"",//assistant
+			],
+],
         ['px (2)',
  'PXA',
 '',
-5,
+4,
 			[
 				"Pixel Art Building A",//name
 				"Adobe Photoshop",//tool
@@ -32,7 +61,7 @@ var gallery = [
         ['px (3)',
  'PXA',
 '',
-5,
+4,
 			[
 				"Pixel Art Building A",//name
 				"Adobe Photoshop",//tool
