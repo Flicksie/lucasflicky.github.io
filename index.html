@@ -3,7 +3,8 @@
 		<title>Lucas Flicky - Multimedia Artist</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
-		
+    <meta name="p:domain_verify" content="8b859d5f020588aee3cecbe456bcc044"/>
+
         <!-- Chrome, Firefox OS and Opera -->
         <meta name="theme-color" content="#f64649">
         <!-- Windows Phone -->
@@ -11,7 +12,7 @@
         <!-- iOS Safari -->
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        
+
 		<meta name="description" content="Personal website, Blog, Graphic Design &amp; Audio Production Portfolio">
 		<meta name="keywords" content="lucas, flicky, lucasflicky, red hood, lucas flicky, capuz vermelho, ilustrador, designer">
 		<meta property="og:site_name" content="LucasFlicky.com">
@@ -39,23 +40,15 @@
 		<script src="js/grimoire.js"></script>
 		<script src="/js/preloader.js" charset="utf-8"></script>
 		<script src="js/hash.js"></script>
-		
+
 		<script>
-
-
 			function grabUrl() {
 				var currentPage = location.hash.substring(2);
 				currentPage ? gotopg(currentPage) : false;
-
 			};
-
-
 			$(window).hashchange(function () { //	window.onhashchange = function () {
 				grabUrl()
 			}); //};
-
-
-
 		</script>
 		<link rel="stylesheet" type="text/css" href="css/main_style.css">
 		<link rel="stylesheet" type="text/css" href="css/comingSoon.css">
@@ -71,14 +64,12 @@
       "image": "http://lucasflicky.com/images/gallery/self.png",
 	  "email":"contato@lucasflicky.com",
 	  "jobTitle":"Designer, Illustrator and Composer",
-	
 
   "memberOf": ["RBS TV", "Novastrike"],
 	  "alumniOf": "Universidade Federal do Rio Grande do Sul",
 	  "birthDate":"1994-02-27",
 	  "knows":"Vinicius Kleinsorgen",
 	  "nationality":"Brazil",
-	  
 
   "sameAs" : [
     "http://www.facebook.com/lucasflicky",
@@ -86,8 +77,6 @@
     "http://plus.google.com/+LucasFlicky5x"
   ]
 }
-
-
     </script>
 	</head>
 
@@ -368,7 +357,6 @@
 					</div>
 
 					<style>
-
 					</style>
 					<div id="filterbck">
 						<div id="feed-gallery" style="  position: relative; height:100% !important;width:100%; !important; " class="projectsa isotope">
@@ -437,7 +425,7 @@
 
 						<h2 class="subtit">ABOUT</h2>
 						<p class="white">
-							Greetings! I'm Flicky, <span itemprop="name">Lucas Flicky</span>. Visual Design student at <span itemprop="alumniOf">Federal University of Rio Grande do Sul</span>. Composer/Arranger and Co-Founder of <a id="nslnk"  itemprop="memberOf"  class="aboutlnk" href="http://novastrike.com">Novastrike Soundscape</a>, freelancer <span itemprop="jobTitle">Graphic Designer / Illustrator</span>, hobbyist programmer, and crank spinner in the freetimes. You probably know me for my awesome visual pieces, or maybe my awesome sound works, if not, let me introduce myself better.
+							Greetings! I'm Flicky, <span itemprop="name">Lucas Flicky</span>. Visual Design student at <span itemprop="alumniOf">Federal University of Rio Grande do Sul</span> based in <span itemprop="homeLocation">Porto Alegre</span>. Composer/Arranger and Co-Founder of <a id="nslnk"  itemprop="memberOf"  class="aboutlnk" href="http://novastrike.com">Novastrike Soundscape</a>, freelancer <span itemprop="jobTitle">Graphic Designer / Illustrator</span>, hobbyist programmer, and crank spinner in the freetimes. You probably know me for my awesome visual pieces, or maybe my awesome sound works, if not, let me introduce myself better.
 						</p>
 						<p class="white">
 							I'm specialised in many things within the distinct areas I follow, my fields of expertise are creative and technical execution duties, high software proficiency is my flagship. As most of professionals of my two areas, I'm a early learner, and quite passionate in what I do. I like experimenting with things around, and every time I have an opportunity to do so, I will.
@@ -1139,9 +1127,7 @@
 			var PROJ = document.getElementById("/projects");
 			var theX = document.getElementById("header");
 			var dozer = [GALE, SOND, KONTA, ABOT, PROJ]
-
 			function fadetogle(X) {
-
 				$(dozer).fadeOut();
 				$(X).fadeIn();
 			}
@@ -1164,17 +1150,13 @@
 				$(".scrolleitor").mCustomScrollbar({
 					theme: "inset"
 				});
-
 				feed();
-
 			});
 		})(jQuery);
-
 		for (var i in projects) {
 			document.getElementById('dumproj').innerHTML += printProj(projects[i][0], projects[i][1], projects[i][2], projects[i][3], projects[i][4], projects[i][5], projects[i][6], projects[i][7]);
 		    document.getElementById('spoonfed').innerHTML += printProjSimple(projects[i][0], projects[i][1], projects[i][2], projects[i][3], projects[i][4], projects[i][5], projects[i][6]);
 		};
-
 		
 		
 		
@@ -1183,7 +1165,6 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-39808831-2', 'auto');
   ga('send', 'pageview');
 		

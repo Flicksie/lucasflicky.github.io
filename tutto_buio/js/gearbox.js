@@ -43,7 +43,11 @@ $(document).ready(function () {
     //Galleries Feed
     for (var i in gallery) {
 
+<<<<<<< HEAD
         dumpoDVA += newPic(gallery[i][1], 'images/gallery/', gallery[i][0], gallery[i][3], gallery[i][2], gallery[i][4], 'classy');
+=======
+        dumpoDVA += newPic(gallery[i][1], 'images/gallery/carouselle/', gallery[i][0], gallery[i][3], gallery[i][2], gallery[i][4], 'classy');
+>>>>>>> origin/master
         dumpoTROIS += newPic(gallery[i][1], 'images/gallery/fullsize/', gallery[i][0], gallery[i][3], gallery[i][2], gallery[i][4], 'central', 'zoomer');
         dumpoCHETYRE += newInfo(gallery[i][4],gallery[i][1]);
     }
@@ -60,7 +64,11 @@ $(document).ready(function () {
         , autoplay: true
         , autoplaySpeed: 1000
         ,fade: true
+<<<<<<< HEAD
         , speed: 1550
+=======
+        , speed: 3550
+>>>>>>> origin/master
         , arrows: true
         , dots: true
 
@@ -217,12 +225,31 @@ function newInfo(array,cats) {
 
 function newPic(category, path, imgname, rank, optName, arrau, classy, zoomclass) {
     optName = optName || "Picture";
-    path = path || 'images/gallery/fullsize/' || 'portf/'; //"files/theme/gallery/";
+    path = path || 'images/gallery/half/' || 'portf/'; //"files/theme/gallery/";
     category = category || "Misc";
     arrau = arrau || ['a', 'a', 'a', 'a', 'a'];
     classy = classy || '';
     zoomclass = zoomclass || '';
     imgname == 'infograp' ? speclass = "speclas='toolong'" : speclass = "speclas='normal'";
+<<<<<<< HEAD
+=======
+    var path2 = "images/gallery/fullsize/";
+
+
+
+
+
+
+    if(classy!="classy"){
+        var outer = `<div class="overlayoutlink">
+
+ <a onclick="javascript:window.open('`+path2+imgname+`.png','Windows','width=800,height=600,toolbar=no,menubar=no,scrollbars=yes,resizable=yes,location=no,directories=no,status=no');return false" target="_blank">
+
+
+<span class="fa fa-external-link"></span></a></div>`
+    }else{var outer ="" }
+
+>>>>>>> origin/master
     return `<div class="` + classy + ' ' + category +`">
 
 <!--<a
@@ -236,8 +263,8 @@ startail="` + arrau[4] + `"
 starname="` + arrau[0] + `"
 
 >-->
-
-<img class="` + zoomclass + `" src='./` + path + imgname + `.png' data-zoom-image='` + path + imgname + `.png' alt='` + optName + `'>
+` +outer+`
+<img class="` + zoomclass + `" src='./` + path + imgname + `.png' data-zoom-image='` + path2 + imgname + `.png' alt='` + optName + `'>
 
 </a></div>
 
@@ -253,6 +280,7 @@ function newPicZ(imgname) {
 $(window).bind('beforeunload', function () {
     $("#topper").addClass('fadeout');
       $('#loader').animate({opacity: '0'},800);
+
 });
 var xhttp;
 if (window.XMLHttpRequest) {
@@ -270,8 +298,10 @@ $(window).on('load', function (e) {
         opacity: '0'
     }, 800);
     setTimeout(function () {
+        $('.things').animate({opacity: '1'},800);
         $('#topper').animate({
             opacity: '1'
         }, 800)
     }, 1000);
 })
+
