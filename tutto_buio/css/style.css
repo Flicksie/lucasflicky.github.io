@@ -13,6 +13,22 @@ body {
     z-index:3000;
 
 }
+<<<<<<< HEAD
+.filterfest{
+    position: relative;
+   color: red;
+
+    height: 100px;
+}
+.filterino{
+    height: 32px;
+    width: 80px;
+    position: relative;
+    display: inline-block;
+    background: blue;
+      color: red;
+}
+=======
 .things{
     opacity: 0
 }
@@ -47,6 +63,7 @@ body {
 }
 .selfil{pointer-events: none;}
 
+>>>>>>> origin/master
 .banner h1{
     color:#CCC;
     margin: 0 0 0 10;
@@ -506,6 +523,8 @@ left: -25%;
         margin: -15% 0 0 -60%;
     }
 
+<<<<<<< HEAD
+=======
 .overlayoutlink{
     position: absolute;
     right:5%;
@@ -522,3 +541,4 @@ left: -25%;
 .overlayoutlink a span:hover{
     color:#C22;
 }
+>>>>>>> origin/master

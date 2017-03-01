@@ -92,50 +92,15 @@
                 <li class="menuitem"><a onclick="leSequence('contact')">CONTACT</a></li>
             </ul>
 </nav>
-<div class="things     filterfest">
-    <script>
-        function berkut(b,me){
-            if (b == 'ALL'){
-                $('.filterino').removeClass('selfil');
-                $('.filt').slick('slickUnfilter')
-                $(me).addClass('selfil');
-            }else {
-                $('.filterino').removeClass('selfil');
-                $('.filt').slick('slickUnfilter');
-                $('.filt').slick('slickFilter',b)
-                $(me).addClass('selfil');
-            }
-        }
-    </script>
-    <span class="filterino selfil" onclick="berkut('ALL',this)">ALL</span>
 
-    <span class="filterino " onclick="berkut('.ILS',this)">Illustration</span>
-	<span class="filterino " onclick="berkut('.DSG',this)">Graphic Design</span>
+<div class="filterfest">
+    <script>function berkut(b){ $('.filt').slick('slickUnfilter'); $('.filt').slick('slickFilter',b)}</script>
+    <span class="filterino" onclick="berkut('.DSG')">DSG</span>
+    <span class="filterino" onclick="berkut('.ILS')">ILS</span>
+    <span class="filterino" onclick="berkut('.SKT')">SKT</span>
+    <span class="filterino" onclick="berkut('.LGO')">LGO</span>
 
 
-	<span class="filterino " onclick="berkut('.DGP',this)">Painting</span>
-	<span class="filterino " onclick="berkut('.VID',this)">Visual Identidy</span>
-    <span class="filterino " onclick="berkut('.ELY',this)">Print/Layout</span>
-
-	<span class="filterino " onclick="berkut('.DGA',this)">Digital Artwork</span>
-	<span class="filterino " onclick="berkut('.TRD',this)">Traditional Artwork</span>
-	<span class="filterino " onclick="berkut('.PXA',this)">Pixel Art</span>
-	<span class="filterino " onclick="berkut('.PHM',this)">Photomanipulation</span>
-    <span class="filterino " onclick="berkut('.CPT',this)">Conceptual</span>
-	<span class="filterino " onclick="berkut('.WEB',this)">Web Design</span>
-
-		<!--	<span class="filterino " onclick="berkut('.ADR',this)">Art Direction</span>
-
-	<span class="filterino " onclick="berkut('.ITF',this)">Interface</span>
-	<span class="filterino " onclick="berkut('.SKT',this)">Sketch</span>
-	<span class="filterino " onclick="berkut('.TCI',this)">Technical</span>
-	<span class="filterino " onclick="berkut('.CLB',this)">Collab</span>
-
-	<span class="filterino " onclick="berkut('.CRD',this)">Colour &amp; Render</span>
-	<span class="filterino " onclick="berkut('.TYP',this)">Typography</span>
-	<span class="filterino " onclick="berkut('.LGO',this)">Logotype</span>
-
-	-->
 </div>
 <div>
 

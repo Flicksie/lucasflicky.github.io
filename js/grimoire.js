@@ -1,5 +1,32 @@
 var gallery = [
-
+['fusa2',
+ 'ILS DGA CPA',
+'',
+5,
+			[
+				"Phuse Post-Transformation",//name
+				"Adobe Photoshop",//tool
+				"---",//client
+				"Personal Project",//project
+				"Original Character Concept",//details
+				"2017",//year
+				"",//assistant
+			],
+],
+['fusa',
+ 'ILS DGA CPA',
+'',
+5,
+			[
+				"Phuse Pre-Transformation",//name
+				"Adobe Photoshop",//tool
+				"---",//client
+				"Personal Project",//project
+				"Original Character Concept",//details
+				"2017",//year
+				"",//assistant
+			],
+],
 ['mistress',
  'ILS DGA',
 '',
@@ -49,7 +76,7 @@ var gallery = [
 
 ],*/
 
-
+/*
 ['artemiskt',
  'SKT CPT',
 '',
@@ -67,7 +94,7 @@ var gallery = [
 
 
 ],
-
+*/
 
 ['backface',
  'DSG ITF PRN',
@@ -142,7 +169,7 @@ var gallery = [
 	"",//assistant
 	],],
 
-
+/*
 ['card3',
  'DSG ITF ELY PRN ADR',
 '',
@@ -189,7 +216,7 @@ var gallery = [
 
 ],
 
-
+*/
 ['elfs',
  'ADR ILS CRD CLB DGA',
 '',
@@ -221,7 +248,7 @@ var gallery = [
 	],
 ],
 
-
+/*
 ['fabsaur',
  'PRN ILS DSG DGA',
 '',
@@ -236,7 +263,7 @@ var gallery = [
 	"",//assistant
 	],
 ],
-
+*/
 
 ['fus',
  'CPT ILS DGA SKT',
@@ -253,7 +280,7 @@ var gallery = [
 	],
 ],
 
-
+/*
 ['godot',
  'TRD FNA SKT',
 '',
@@ -268,7 +295,7 @@ var gallery = [
 	"",//assistant
 	],
 ],
-
+*/
 
 ['heidi',
  'ILS CPT TRD SKT',
@@ -463,7 +490,7 @@ var gallery = [
 	"",//assistant
 	],
 ],
-
+/*
 
 ['morigan',
  'HBD CRD ILS FNA TRD',
@@ -479,7 +506,7 @@ var gallery = [
 	"",//assistant
 	],
 ],
-
+*/
 
 //['mythosfont', 'DSG TYP CLB',''],
 
@@ -727,7 +754,7 @@ var gallery = [
 	"",//assistant
 	],
 ],
-
+/*
 ['vkps2',
  'SKT TRD ILS',
 '',
@@ -756,7 +783,7 @@ var gallery = [
 	"",//assistant
 	],
 ],
-
+*/
 
 ['silentun',
  'CPT SKT',
@@ -812,7 +839,7 @@ var gallery = [
 '',
 1],*/
 
-
+/*
 ['stud1',
  'SKT',
 '',
@@ -827,10 +854,10 @@ var gallery = [
 	"",//assistant
 	],
 ],
-
+*/
 
 ['sykes',
- 'TRD SKT',
+ 'SKT',
 '',
 3,
 	[
@@ -994,7 +1021,7 @@ var gallery = [
 	],
 ],
 	['artemis13',
- 'ILS DGA CPT SKT',
+ 'CPT SKT',
 '',
 3,
 	[
@@ -1133,7 +1160,7 @@ var gallery = [
 	`Part of a set of illustrations to be used on a card game.<br><br>Sketched by Pamela Grether`,//details
 	"Pamela Grether",//assistant
 	]
-	
+
 ]
 
 

@@ -43,7 +43,26 @@ $(document).ready(function () {
     //Galleries Feed
     for (var i in gallery) {
 
-        dumpoDVA += newPic(gallery[i][1], 'images/gallery/carouselle/', gallery[i][0], gallery[i][3], gallery[i][2], gallery[i][4], 'classy');
+
+
+    var path2 = "images/gallery/fullsize/";
+
+
+
+
+
+
+    if(classy!="classy"){
+        var outer = `<div class="overlayoutlink">
+
+ <a onclick="javascript:window.open('`+path2+imgname+`.png','Windows','width=800,height=600,toolbar=no,menubar=no,scrollbars=yes,resizable=yes,location=no,directories=no,status=no');return false" target="_blank">
+
+
+<span class="fa fa-external-link"></span></a></div>`
+    }else{var outer ="" }
+
+        dumpoDVA += newPic(gallery[i][1], 'images/gallery/', gallery[i][0], gallery[i][3], gallery[i][2], gallery[i][4], 'classy');
+
         dumpoTROIS += newPic(gallery[i][1], 'images/gallery/fullsize/', gallery[i][0], gallery[i][3], gallery[i][2], gallery[i][4], 'central', 'zoomer');
         dumpoCHETYRE += newInfo(gallery[i][4],gallery[i][1]);
     }
@@ -60,7 +79,9 @@ $(document).ready(function () {
         , autoplay: true
         , autoplaySpeed: 1000
         ,fade: true
-        , speed: 3550
+
+        , speed: 1550
+
         , arrows: true
         , dots: true
 
@@ -223,21 +244,6 @@ function newPic(category, path, imgname, rank, optName, arrau, classy, zoomclass
     classy = classy || '';
     zoomclass = zoomclass || '';
     imgname == 'infograp' ? speclass = "speclas='toolong'" : speclass = "speclas='normal'";
-    var path2 = "images/gallery/fullsize/";
-
-
-
-
-
-
-    if(classy!="classy"){
-        var outer = `<div class="overlayoutlink">
-
- <a onclick="javascript:window.open('`+path2+imgname+`.png','Windows','width=800,height=600,toolbar=no,menubar=no,scrollbars=yes,resizable=yes,location=no,directories=no,status=no');return false" target="_blank">
-
-
-<span class="fa fa-external-link"></span></a></div>`
-    }else{var outer ="" }
 
     return `<div class="` + classy + ' ' + category +`">
 
