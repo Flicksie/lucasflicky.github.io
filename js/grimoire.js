@@ -30,7 +30,7 @@ var gallery = [
 				"",//assistant
 			],
 ],
-        ['agtltv',
+        ['LANCER',
  'DGA CPT MDL3 CPA',
 '',
 5,
