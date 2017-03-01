@@ -1224,7 +1224,7 @@ var gallery = [
 	['minomont',
  'ADR ILS CRD CLB DGP DGA',
 '',
-5,
+4,
 	[
 	"Minotaur",//name
 	"Adobe Photoshop",//tool
