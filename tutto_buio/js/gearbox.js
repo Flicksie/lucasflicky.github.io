@@ -44,6 +44,23 @@ $(document).ready(function () {
     for (var i in gallery) {
 
 
+
+    var path2 = "images/gallery/fullsize/";
+
+
+
+
+
+
+    if(classy!="classy"){
+        var outer = `<div class="overlayoutlink">
+
+ <a onclick="javascript:window.open('`+path2+imgname+`.png','Windows','width=800,height=600,toolbar=no,menubar=no,scrollbars=yes,resizable=yes,location=no,directories=no,status=no');return false" target="_blank">
+
+
+<span class="fa fa-external-link"></span></a></div>`
+    }else{var outer ="" }
+
         dumpoDVA += newPic(gallery[i][1], 'images/gallery/', gallery[i][0], gallery[i][3], gallery[i][2], gallery[i][4], 'classy');
 
         dumpoTROIS += newPic(gallery[i][1], 'images/gallery/fullsize/', gallery[i][0], gallery[i][3], gallery[i][2], gallery[i][4], 'central', 'zoomer');
