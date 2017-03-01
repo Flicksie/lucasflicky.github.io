@@ -22,7 +22,6 @@
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
     <script src="js/grimoire.js"></script>
     <script>
-
         function isIE () {
             var myNav = navigator.userAgent.toLowerCase();
             return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
@@ -31,12 +30,9 @@ if (isIE () && isIE () < 10) {
     alert('BAD BROWSER')
  window.location.href = 'badbrowser.html';
 }
-
-
         function leSequence(destiny){
             $(this).parent('li').addClass('sel');
             $('.sel').removeClass('sel');
-
             $('#loader').animate({opacity: '1'},800);
             $('#topper').animate({opacity: '0'},800);
             $('#topper').animate({opacity: '0'},800);
@@ -53,24 +49,6 @@ if (isIE () && isIE () < 10) {
     </div>
     <div id="loader"><img src="ripple.svg"></div>
 
-<<<<<<< HEAD
-<div id="topper">
-
-
-    <div class="banner">
-        <div>
-            <h1>This is a fuckin TITLE!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit ex sit amet massa vulputate imperdiet. Duis tristique erat vel nisl imperdiet, sit amet auctor elit lobortis. Nam consectetur, mi non tincidunt eleifend, felis arcu volutpat dui, in tincidunt lacus ipsum non risus. Mauris dictum enim sit amet diam tempus, eget dapibus lorem vehicula. Curabitur nec tortor vitae urna maximus blandit. Ut vel consectetur lectus, at sodales tortor. Fusce mattis hendrerit ornare. Suspendisse congue mattis consectetur. Cras consectetur in lacus gravida molestie. Nullam laoreet suscipit nisi ac consectetur. </p>
-        </div>
-        <div>
-            <h1>This is a fuckin TITLE PART TWO!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis lacinia rutrum. Donec tincidunt congue magna eu varius. Cras a diam non libero facilisis volutpat. Fusce lobortis sed neque at pharetra. Aenean vel eleifend nunc, sed sodales purus. Sed pharetra ullamcorper enim, vel suscipit ex gravida at. Proin malesuada vitae arcu vel pharetra. </p>
-        </div>
-    </div>
-
-
-    <div id="carousel">
-=======
     <div id="topper">
 
 
@@ -87,7 +65,6 @@ if (isIE () && isIE () < 10) {
 
 
         <div id="carousel">
->>>>>>> origin/master
 
             <div class="fog"></div>
 
