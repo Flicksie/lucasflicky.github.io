@@ -1,5 +1,32 @@
 var gallery = [
-
+['fusa2',
+ 'ILS DGA CPA',
+'',
+5,
+			[
+				"Phuse Post-Transformation",//name
+				"Adobe Photoshop",//tool
+				"---",//client
+				"Personal Project",//project
+				"Original Character Concept",//details
+				"2017",//year
+				"",//assistant
+			],
+],
+['fusa',
+ 'ILS DGA CPA',
+'',
+5,
+			[
+				"Phuse Pre-Transformation",//name
+				"Adobe Photoshop",//tool
+				"---",//client
+				"Personal Project",//project
+				"Original Character Concept",//details
+				"2017",//year
+				"",//assistant
+			],
+],
 ['mistress',
  'ILS DGA',
 '',
