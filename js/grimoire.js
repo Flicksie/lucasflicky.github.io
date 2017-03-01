@@ -1,4 +1,49 @@
 var gallery = [
+
+
+    ['px (1)',
+ 'PXA',
+'',
+5,
+			[
+				"Pixel Art Building A",//name
+				"Adobe Photoshop",//tool
+				"---",//client
+				"Personal Project",//project
+				"Game-art asset",//details
+				"2016",//year
+				"",//assistant
+			],
+],
+        ['px (2)',
+ 'PXA',
+'',
+5,
+			[
+				"Pixel Art Building A",//name
+				"Adobe Photoshop",//tool
+				"---",//client
+				"Personal Project",//project
+				"Game-art asset",//details
+				"2016",//year
+				"",//assistant
+			],
+],
+        ['px (3)',
+ 'PXA',
+'',
+5,
+			[
+				"Pixel Art Building A",//name
+				"Adobe Photoshop",//tool
+				"---",//client
+				"Personal Project",//project
+				"Game-art asset",//details
+				"2016",//year
+				"",//assistant
+			],
+],
+
 ['fusa2',
  'ILS DGA CPA',
 '',
