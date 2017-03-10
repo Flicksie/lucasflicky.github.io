@@ -1,7 +1,7 @@
 var gallery = [
 
 
-    ['px1',
+    ['px (1)',
  'PXA',
 '',
 5,
@@ -44,7 +44,7 @@ var gallery = [
 				"",//assistant
 			],
 ],
-        ['px2',
+        ['px (2)',
  'PXA',
 '',
 4,
@@ -58,7 +58,7 @@ var gallery = [
 				"",//assistant
 			],
 ],
-        ['px3',
+        ['px (3)',
  'PXA',
 '',
 4,
@@ -168,6 +168,22 @@ var gallery = [
 
 
 ],
+*/
+
+['backface',
+ 'DSG ITF PRN',
+'',
+5,
+	[
+	"Card Backface",//name
+	"Adobe Illustrator / Adobe Photoshop / Alchemy",//tool
+	"Raphael Montero",//client
+	"Card Game",//project
+	"Abstract pattern to be used as playing cards backface.",//details
+	"2015",//year
+	"",//assistant
+	],
+],
 
 
 /*['bcm',
@@ -197,6 +213,35 @@ var gallery = [
 //''],
 
 
+['card1',
+ 'DSG ITF ELY PRN ADR',
+'',
+5,
+	[
+	"Card Demo #1 - Event",//name
+	"Adobe Illustrator / Adobe Photoshop",//tool
+	"Raphael Montero",//client
+	"Card Game",//project
+	"Demonstration mockup of a playing card bearing ilustration, number, ribbons, and texting (placeholder fonts)",//details
+	"2015",//year
+	"",//assistant
+	],
+],
+
+
+['card2',
+ 'DSG ITF ELY PRN ADR',
+'',
+5,
+	[
+	"Card Demo #2 - Action",//name
+	"Adobe Illustrator / Adobe Photoshop",//tool
+	"Raphael Montero",//client
+	"Card Game",//project
+	"Demonstration mockup of a playing card bearing number, icons, and texting (placeholder fonts)",//details
+	"2015",//year
+	"",//assistant
+	],],
 
 /*
 ['card3',
@@ -227,7 +272,7 @@ var gallery = [
 	"2014",//year
 	"",//assistant
 	],],
-*/
+
 
 ['dragon',
  'ADR ILS CRD CLB DGA',
@@ -245,7 +290,7 @@ var gallery = [
 
 ],
 
-
+*/
 ['elfs',
  'ADR ILS CRD CLB DGA',
 '',
@@ -297,7 +342,7 @@ var gallery = [
 ['fus',
  'CPT ILS DGA SKT',
 '',
-4,
+5,
 	[
 	"Phuse Sketch",//name
 	"Adobe Photoshop",//tool
@@ -326,6 +371,20 @@ var gallery = [
 ],
 */
 
+['heidi',
+ 'ILS CPT TRD SKT',
+'',
+3,
+	[
+	"Mahou Shop no Heidi",//name
+	"Ink Pen",//tool
+	"Novastrike",//client
+	"Fuquest",//project
+	"Concept art of the Game`s magic shop clerk based on a colleague from uni.",//details
+	"2013",//year
+	"",//assistant
+	],
+],
 
 
 ['hero',
@@ -359,6 +418,21 @@ var gallery = [
 	],
 ],
 
+
+['landpaint',
+ 'SKT DGP DGA',
+'',
+5,
+	[
+	"Landscape Painting Study",//name
+	"Adobe Photoshop",//tool
+	"---",//client
+	"Study",//project
+	"The beginning of my adventure into digital painting.",//details
+	"2014",//year
+	"",//assistant
+	],
+],
 
 
 ['lara',
@@ -412,6 +486,37 @@ var gallery = [
 ],
 
 
+['lith2k',
+ 'DGP DGA ILS CPT',
+'',
+3,
+	[
+	"Lithium 2k 2.0",//name
+	"Adobe Photoshop",//tool
+	"---",//client
+	"Study",//project
+	"My first painting using custom brushes",//details
+	"2015",//year
+	"",//assistant
+	],
+],
+
+
+['mazhoren',
+ 'CPT ILS TRD',
+'',
+3,
+	[
+	"Mazhoren Rider",//name
+	"Graphite",//tool
+	"---",//client
+	"Personal",//project
+	"Conceptual sketch for an original project.",//details
+	"2013",//year
+	"",//assistant
+	],
+],
+
 
 ['midna',
  'TRD SKT FNA',
@@ -428,6 +533,21 @@ var gallery = [
 	],
 ],
 
+
+['mythoslogo',
+ 'VID LGO DSG DGA CLB',
+'',
+4,
+	[
+	"Der Mythosmeister",//name
+	"Adobe Photoshop / Illustrator",//tool
+	"---",//client
+	"Personal",//project
+	"Crest for a group of awesome guys. Helped by Pamela Grether and William Tumeo, as well as many others providing some feedback.<br> It is basically a wing-shaped solid crest resembling those tipically found on MMO games to match the context of 'Mythic'. The actual proto-logotype inside the gem had its development halted. ",//details
+	"2015",//year
+	"",//assistant
+	],
+],
 
 
 ['molib',
@@ -550,7 +670,7 @@ var gallery = [
 ['photomanind',
  'PHM DGP',
 '',
-4,
+5,
 	[
 	"Industrial District",//name
 	"Adobe Photoshop",//tool
@@ -614,7 +734,7 @@ var gallery = [
 ['ameplant',
  'DSG TCI PRN CRD',
 '',
-3,
+5,
 	[
 	"Apartment Floor Manual Digital Render",//name
 	"Adobe Photoshop / Xara",//tool
@@ -626,6 +746,37 @@ var gallery = [
 	],
 ],
 
+
+['prime1',
+ 'DSG VID MKP',
+'',
+5,
+	[
+	"Prime Wash #1",//name
+	"Adobe Photoshop / Adobe Illustrator",//tool
+	"Prime Wash Lavanderias.",//client
+	"Rebranding",//project
+	"Rebranding project of a Rio-based laundry. The client wanted a clear and objective resemblance with a washing machine on its logo, as well as that specific color was the one ordered, the intention was to use only the round door as logotype, but it ended up as a full literal washing machine.",//details
+	"2013",//year
+	"",//assistant
+	],
+],
+
+
+['prime2',
+ 'DSG VID MKP',
+'',
+5,
+	[
+	"Prime Wash #2",//name
+	"Adobe Photoshop / Adobe Illustrator",//tool
+	"Prime Wash Lavanderias.",//client
+	"Rebranding",//project
+	"Rebranding project of a Rio-based laundry. The client wanted a clear and objective resemblance with a washing machine on its logo, as well as that specific color was the one ordered, the intention was to use only the round door as logotype, but it ended up as a full literal washing machine.",//details
+	"2013",//year
+	"",//assistant
+	],
+],
 
 
 ['primelog',
@@ -932,7 +1083,7 @@ var gallery = [
 	['vladmap',
  'PHM WBD DGA DSG CPT',
 '',
-4,
+5,
 	[
 	"Vladenorth Aerial Map",//name
 	"Fractal Editor / Adobe Photoshop",//tool
