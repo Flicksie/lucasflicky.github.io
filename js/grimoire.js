@@ -1,6 +1,19 @@
 var gallery = [
 
-
+    ['yorhaJo',
+ 'ILS DGA FNA',
+'',
+5,
+			[
+				"NieR meets JoJo",//name
+				"Adobe Photoshop",//tool
+				"---",//client
+				"4fun",//project
+				"Fanart from NieR:Automata featuring Jojo's Bizarre Adventure motif",//details
+				"2017",//year
+				"",//assistant
+			],
+],
     ['px1',
  'PXA',
 '',
