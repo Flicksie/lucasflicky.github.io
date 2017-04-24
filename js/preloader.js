@@ -5,7 +5,7 @@
 
 	}
 
-    document.ready(function () {
+    document.onload(function () {
 
 	image.onload(function () {
 		image.clearImages();
