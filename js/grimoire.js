@@ -1,9 +1,51 @@
 var gallery = [
+        ['harpshire',
+ 'DGP ILS DGA CPT',
+'',
+5,
+			[
+				"Capital City I",//name
+				"Adobe Photoshop",//tool
+				"---",//client
+				"Silenyte",//project
+				"Original Concept Art for the Silenyte Project",//details
+				"2017",//year
+				"",//assistant
+			],
+],
+    ['natsket',
+ 'SKT ILS DGA',
+'',
+5,
+			[
+				"Natsketch",//name
+				"Adobe Photoshop",//tool
+				"---",//client
+				"Silenyte",//project
+				"Sketch of Original Character for the Silenyte Project",//details
+				"2017",//year
+				"",//assistant
+			],
+],
+        ['tharmsket',
+ 'SKT ILS DGA',
+'',
+5,
+			[
+				"Tharma Sketch",//name
+				"Adobe Photoshop",//tool
+				"---",//client
+				"Silenyte",//project
+				"Sketch of Original Character for the Silenyte Project",//details
+				"2017",//year
+				"",//assistant
+			],
+],
 
     ['yorhaJo',
  'ILS DGA FNA',
 '',
-5,
+4,
 			[
 				"NieR meets JoJo",//name
 				"Adobe Photoshop",//tool
