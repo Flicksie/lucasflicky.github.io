@@ -4,6 +4,9 @@
 		image.load("/images/gallery/" + gallery[i][0] + ".png");
 
 	}
+
+    document.ready(function () {
+
 	image.onload(function () {
 		image.clearImages();
 
@@ -16,4 +19,6 @@
 			alert("Microsoft Edge NOT Supported. Use Internet Explorer, Chrome, Firefox, Safari, Vivaldi, Opera, Baidu Spark, or any other of your choice. All of these do work, Edge doesn't.")
 		}
 	});
+    }
+    )
 })();
