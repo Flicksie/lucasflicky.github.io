@@ -1111,8 +1111,8 @@ var projects = [
 						"slnt.jpg",
 						"icon",
 						"Personal SchizoTech-SciFi-Warfare-Fantasy Comic Book  & Worldbuilding Project.",
-						"Worldbuilding/Illustration",
-						"Undisclosed"
+						"Worldbuilding/Comic",
+						"http://silenyte.lucasflicky.com"
 					],
 					[
 						"Steam Travel",
