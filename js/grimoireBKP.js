@@ -1241,7 +1241,17 @@ var gallery = [
 ];
 
 var projects = [
+[
+						"Pollux Bot",
+						"Personal",
+						"pollux.png",
+						"icon",
+						"Pollux is a multipurpose community-driven bot for Discord. A kind and playful assistant to keep up servers always cheerful and fun to be in. Currently in very early stages of development. ",
+						"Application Development",
+						"http://pollux.lucasflicky.com",
 
+
+					],
 
 					[
 						"Silenyte",
@@ -1250,7 +1260,18 @@ var projects = [
 						"icon",
 						"Personal SchizoTech-SciFi-Warfare-Fantasy Comic Book  & Worldbuilding Project.",
 						"Worldbuilding/Illustration",
-						"Undisclosed"
+						"http://silenyte.lucasflicky.com"
+					],
+    [
+						"Toren",
+						"Music",
+						"toren.png",
+						"audio",
+						"Toren, the first adventure game from Brazilian indie developer Swordtales. You are Moonchild, destined to climb the tower (known as Toren) on a hauntingly solitary journey to find your purpose.",
+						"Soundtrack",
+						"http://toren-game.com",
+						"Vinicius Kleinsorgen:Sound Director"
+
 					],
 					[
 						"Steam Travel",
@@ -1270,16 +1291,6 @@ var projects = [
 						"Pedagogic DIgital Game developed within a research project, supported by Secretary of Distance Learning - UFRGS.",
 						"Soundtrack",
 						"http://pt.slideshare.net/CnthiaKulpa/jogo-digital-pedaggico-te-3-d-tetris"
-					], [
-						"Toren",
-						"Music",
-						"toren.png",
-						"audio",
-						"Toren, the first adventure game from Brazilian indie developer Swordtales. You are Moonchild, destined to climb the tower (known as Toren) on a hauntingly solitary journey to find your purpose.",
-						"Soundtrack",
-						"http://toren-game.com",
-						"Vinicius Kleinsorgen:Sound Director"
-
 					],
 					[
 						"Thuat",
