@@ -1156,6 +1156,17 @@ var projects = [
 						"Worldbuilding/Comic",
 						"http://silenyte.lucasflicky.com"
 					],
+    [
+						"Pollux Bot",
+						"Personal",
+						"pollux.png",
+						"icon",
+						"Pollux is a multipurpose community-driven bot for Discord. A kind and playful assistant to keep up servers always cheerful and fun to be in. Currently in very early stages of development. ",
+						"Application Development",
+						"http://pollux.lucasflicky.com",
+
+
+					],
 					[
 						"Steam Travel",
 						"Music",
